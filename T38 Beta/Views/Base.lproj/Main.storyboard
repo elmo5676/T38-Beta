@@ -13,7 +13,7 @@
         <!--Initial Load View Controller-->
         <scene sceneID="mpV-lD-Rbk">
             <objects>
-                <viewController id="Jwx-Y9-e9j" customClass="InitialLoadViewController" customModule="T38" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jwx-Y9-e9j" customClass="InitialLoadViewController" customModule="T38_Beta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LQg-oe-Gb5"/>
                         <viewControllerLayoutGuide type="bottom" id="uXi-E1-Dzd"/>
@@ -191,8 +191,8 @@
                         <color key="selectedImageTintColor" red="0.98039871450000005" green="0.98038035629999998" blue="0.98039287330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="jx9-Iw-P1B" kind="relationship" relationship="viewControllers" id="8hw-jt-faW"/>
                         <segue destination="t01-J6-iGZ" kind="relationship" relationship="viewControllers" id="drc-5E-Wny"/>
+                        <segue destination="jx9-Iw-P1B" kind="relationship" relationship="viewControllers" id="8hw-jt-faW"/>
                         <segue destination="GYa-1n-mmE" kind="relationship" relationship="viewControllers" id="2Fp-IB-9IY"/>
                     </connections>
                 </tabBarController>

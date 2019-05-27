@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import CoreLocation
 import CoreMotion
+import MessageUI
 
 
 protocol TOLDReconfiguredDelegate {
@@ -100,6 +101,8 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
     var homeMetar: Metar?
     var nrstMetar: Metar?
     var icaoMetar: Metar?
+    var pressAlt: Double?
+    var tailForLuc: String?
     var aircraftConfigSection: [Any] = []
     var userInputs: [String] = []
     var calcInputs: [String] = []
@@ -165,6 +168,11 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
     // MARK: - IBOutlets
     //Main View
     @IBOutlet weak var scrollViewMainHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var lineUpCardOutlet: UIButton!
+    @IBAction func printLineUpCard(_ sender: UIButton) {
+        lineUpCardOutlet.showPressed()
+    }
     //Collection Outlets
     @IBOutlet var inputNames: [UILabel]!
     @IBOutlet var subViews: [UIView]!
@@ -740,11 +748,14 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
         return title
     }
   
+    var results: (headWind: String?, crossWind: String?, macs: String?, macsDistance: String?, decisionSpeed: String?, refusalSpeed_EF: String?, setos: String?, speedAtEndOfRunway: String?, gearDnSECG: String?, gearUpSECG: String?, criticalFieldLength: String?, nacs: String?, refusalSpeedBEO: String?, rotationSpeed: String?, takeoffSpeed: String?, takeoffDistance: String?, criticalEngineFailureSpeed: String?, SpeedAtEndOfRunway_EF: String?, gearDnSECG_EF: String?, gearUpSECG_EF: String?, ErrorMessages: [Any?]?)
     func updateResultsDisplayed(validInputs: Bool, inputs: TOLDInputs) {
         switch validInputs {
         case true:
             clearResults()
             let results = inputs.getResults()
+            self.results = results
+            
             
 //            headWindLabel.attributedText = setResultAttText(result: results.headWind!, unit: .kias)      //setResultAttText(result: results.headWind!, unit: " KIAS")
 //            crossWindLabel.attributedText = setResultAttText(result: results.crossWind!, unit: .kias)  // + " KIAS"
@@ -1102,6 +1113,7 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
             let fieldElev = Double(metar.elevationM ?? "99999.5")?.metersToFeet
             var pressAlt = calcPressureAlt(altSetting: altSetting!, fieldElevation: fieldElev!)
             if pressAlt < 0 { pressAlt = 0 }
+            self.pressAlt = pressAlt
             resetTempToC()
             if let temp = metar.tempC {
                 let tempA = Double(temp)?.numberOfDecimalPlaces(0)
@@ -1128,6 +1140,7 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
         tailBasicWtTextField.text = ""
         tailBasicWtTextField.insertText("\(String(format: "%.0f",basicWeight))")
         tailButtonOutlet.setTitle(tailTitle, for: .normal)
+        self.tailForLuc = tailTitle
     }
     
     public enum GetSetConfig {
@@ -1277,6 +1290,7 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
             print("INPUTS VALID: \(inputValidation.valid)")
             setColorOfResultsLabelText(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
             updateResultsDisplayed(validInputs: true, inputs: inputs)
+            
         } else {
             inputsMatch = true
             setColorOfResultsLabelText(color: #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
@@ -1322,6 +1336,12 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
         case "errorMessagesSegue":
             let dvc = segue.destination as! ErrorTableViewController
             dvc.errorMessages = self.errorMessages
+        case "lineUpCardSegue":
+            let dvc = segue.destination as! LineUpCardViewController
+            dvc.results = results
+            dvc.metar = currentMetar
+            dvc.leadTail = tailForLuc
+            dvc.pa = pressAlt
         default:
             preconditionFailure("Unexpected segue identifier")
     }}
