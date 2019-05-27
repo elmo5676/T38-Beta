@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		528765B3229B9444007C4477 /* LineUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528765B2229B9444007C4477 /* LineUpCardViewController.swift */; };
 		528E15F0229B28F300269816 /* single_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15ED229B28F200269816 /* single_item.html */; };
 		528E15F1229B28F300269816 /* invoice.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15EE229B28F200269816 /* invoice.html */; };
 		528E15F2229B28F300269816 /* last_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15EF229B28F300269816 /* last_item.html */; };
@@ -111,6 +112,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		528765B2229B9444007C4477 /* LineUpCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCardViewController.swift; sourceTree = "<group>"; };
 		528E15ED229B28F200269816 /* single_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = single_item.html; sourceTree = "<group>"; };
 		528E15EE229B28F200269816 /* invoice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = invoice.html; sourceTree = "<group>"; };
 		528E15EF229B28F300269816 /* last_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = last_item.html; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 		52B8896E2291D8610056D816 /* ToldTab */ = {
 			isa = PBXGroup;
 			children = (
+				528765B2229B9444007C4477 /* LineUpCardViewController.swift */,
 				52B8896F2291D8610056D816 /* WindInfoPopOverViewController.swift */,
 				52B889702291D8610056D816 /* ErrorTableViewController.swift */,
 				52B889712291D8610056D816 /* TOLDReconfiguredViewController.swift */,
@@ -705,6 +708,7 @@
 				52B889A02291D8610056D816 /* ErrorMessagesTableViewController.swift in Sources */,
 				52B889B12291D8610056D816 /* NearestCellReconfiguredTableViewCell.swift in Sources */,
 				52B889A22291D8610056D816 /* TailTableViewController.swift in Sources */,
+				528765B3229B9444007C4477 /* LineUpCardViewController.swift in Sources */,
 				52B889D62291D9120056D816 /* NavaidCD+CoreDataClass.swift in Sources */,
 				52B8894E2291D8220056D816 /* Taf.swift in Sources */,
 				52B889992291D8610056D816 /* UIColorExtensions.swift in Sources */,
