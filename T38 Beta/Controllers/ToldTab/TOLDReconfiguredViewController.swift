@@ -169,7 +169,9 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
     //Main View
     @IBOutlet weak var scrollViewMainHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var lineUpCardOutlet: UIButton!
     @IBAction func printLineUpCard(_ sender: UIButton) {
+        lineUpCardOutlet.showPressed()
     }
     //Collection Outlets
     @IBOutlet var inputNames: [UILabel]!
