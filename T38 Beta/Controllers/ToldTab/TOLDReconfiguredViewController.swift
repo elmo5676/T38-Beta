@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import CoreLocation
 import CoreMotion
+import MessageUI
 
 
 protocol TOLDReconfiguredDelegate {
@@ -165,6 +166,19 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
     // MARK: - IBOutlets
     //Main View
     @IBOutlet weak var scrollViewMainHeight: NSLayoutConstraint!
+    
+    @IBAction func printLineUpCard(_ sender: UIButton) {
+        print("sadfasdfasdfgasdhae")
+        let htmlH = HTMLHandler()
+        do {
+            if let luc = htmlH.putCalculatedValuesInLineUpCard(callSign_1: "ROPER", callSign_2: "", callSign_3: "", callSign_4: "", callSignNum_1: "22", callSignNum_2: "", callSignNum_3: "", callSignNum_4: "", frontPilot_1: "ELMO", frontPilot_2: "", frontPilot_3: "", frontPilot_4: "", backPilot_1: "ATIS", backPilot_2: "", backPilot_3: "", backPilot_4: "", aircraft_1: "4923", aircraft_2: "", aircraft_3: "", aircraft_4: "", joker: "1.6", bingo: "1.3", macsSpeed: "90", macsDist: "1", ds: "0", rsEf: "128", setos: "172", setosp10: "182", cfl: "7666", eor: ">200", rsBeo: "114", grDnSecg: "178", grUpSecg: "123", pa: "6000", temp: "32°C", winds: "150/10", cieling: "2K", icing: "NONE", show: "11:00", brief: "11:15", step: "11:30", to: "12:00", land: "13:15", missionOb1: "Sight Seeing", missionOb2: "", trainingObj1: "", trainingObj2: "", trainingObj3: "", trainingObj4: "", trainingObj5: "") {
+                htmlH.exportHTMLContentToPDF(HTMLContent: luc, view: self)
+            }
+        } catch {
+            print(error)
+        }
+        
+    }
     //Collection Outlets
     @IBOutlet var inputNames: [UILabel]!
     @IBOutlet var subViews: [UIView]!

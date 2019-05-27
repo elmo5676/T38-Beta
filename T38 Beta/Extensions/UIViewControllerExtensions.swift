@@ -58,6 +58,22 @@ public extension UIViewController {
         }
     }
     
+    func passDataToShareSheet(fileName: String, ext: String, dataToWriteToFile: NSData){
+        let fileName = "\(fileName).\(ext)"
+        let path = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName)
+        do {
+            try dataToWriteToFile.write(to: path!, options: .atomic)
+            let vc = UIActivityViewController(activityItems: [path as Any], applicationActivities: [])
+            vc.popoverPresentationController?.sourceView = self.view
+            print("Success")
+            present(vc, animated: true, completion: nil)
+            print(dataToWriteToFile)
+        } catch {
+            print("Failed to create file")
+            print("\(error)")
+        }
+    }
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }

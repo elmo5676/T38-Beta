@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		528E15F0229B28F300269816 /* single_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15ED229B28F200269816 /* single_item.html */; };
+		528E15F1229B28F300269816 /* invoice.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15EE229B28F200269816 /* invoice.html */; };
+		528E15F2229B28F300269816 /* last_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15EF229B28F300269816 /* last_item.html */; };
+		528E15F5229B297600269816 /* HTMLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E15F4229B297600269816 /* HTMLHandler.swift */; };
+		528E15F7229B2D6000269816 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E15F6229B2D6000269816 /* PDFGenerator.swift */; };
+		528E1605229B563D00269816 /* luc.htm in Resources */ = {isa = PBXBuildFile; fileRef = 528E1604229B563D00269816 /* luc.htm */; };
 		52B888DE2291D6660056D816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B888DD2291D6660056D816 /* Assets.xcassets */; };
 		52B888E92291D8020056D816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B888E82291D8020056D816 /* AppDelegate.swift */; };
 		52B888F82291D8130056D816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B888EB2291D8130056D816 /* Main.storyboard */; };
@@ -105,6 +111,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		528E15ED229B28F200269816 /* single_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = single_item.html; sourceTree = "<group>"; };
+		528E15EE229B28F200269816 /* invoice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = invoice.html; sourceTree = "<group>"; };
+		528E15EF229B28F300269816 /* last_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = last_item.html; sourceTree = "<group>"; };
+		528E15F4229B297600269816 /* HTMLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLHandler.swift; sourceTree = "<group>"; };
+		528E15F6229B2D6000269816 /* PDFGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGenerator.swift; sourceTree = "<group>"; };
+		528E1604229B563D00269816 /* luc.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = luc.htm; sourceTree = SOURCE_ROOT; };
 		52B888D02291D6660056D816 /* T38 Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T38 Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B888DD2291D6660056D816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52B888E22291D6660056D816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -215,6 +227,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		528E15F3229B28F800269816 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				528E1604229B563D00269816 /* luc.htm */,
+				528E15EE229B28F200269816 /* invoice.html */,
+				528E15EF229B28F300269816 /* last_item.html */,
+				528E15ED229B28F200269816 /* single_item.html */,
+				528E15F4229B297600269816 /* HTMLHandler.swift */,
+				528E15F6229B2D6000269816 /* PDFGenerator.swift */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
 		52B888C72291D6660056D816 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +261,7 @@
 			children = (
 				52B888E82291D8020056D816 /* AppDelegate.swift */,
 				52B888E22291D6660056D816 /* Info.plist */,
+				528E15F3229B28F800269816 /* HTML */,
 				52B888EA2291D8130056D816 /* Views */,
 				52B888FF2291D8220056D816 /* Models */,
 				52B8895F2291D8550056D816 /* JSON */,
@@ -596,12 +622,16 @@
 				52B888FA2291D8130056D816 /* LaunchT38A.storyboard in Resources */,
 				52B888FB2291D8130056D816 /* SettingsTab.storyboard in Resources */,
 				52B888FC2291D8130056D816 /* CalculatorTab.storyboard in Resources */,
+				528E15F2229B28F300269816 /* last_item.html in Resources */,
 				52B888FD2291D8130056D816 /* TOLDTab.storyboard in Resources */,
 				52B888FE2291D8130056D816 /* LaunchT38C.storyboard in Resources */,
 				52B888F92291D8130056D816 /* SettingsTab~.storyboard in Resources */,
+				528E1605229B563D00269816 /* luc.htm in Resources */,
 				52B888F82291D8130056D816 /* Main.storyboard in Resources */,
 				52B889A72291D8610056D816 /* Preflight.mp4 in Resources */,
 				52B888DE2291D6660056D816 /* Assets.xcassets in Resources */,
+				528E15F0229B28F300269816 /* single_item.html in Resources */,
+				528E15F1229B28F300269816 /* invoice.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +673,7 @@
 				52B889A62291D8610056D816 /* ToldDefaultsViewController.swift in Sources */,
 				52B889982291D8610056D816 /* UIButtonExtensions.swift in Sources */,
 				52B889A52291D8610056D816 /* SettingsMainViewController.swift in Sources */,
+				528E15F5229B297600269816 /* HTMLHandler.swift in Sources */,
 				52B8895E2291D8220056D816 /* T38A_TOLD.swift in Sources */,
 				52B889D52291D9120056D816 /* RunwayCD+CoreDataProperties.swift in Sources */,
 				52B889AE2291D8610056D816 /* HowToViewController.swift in Sources */,
@@ -697,6 +728,7 @@
 				52B889A12291D8610056D816 /* RunwayCell.swift in Sources */,
 				52B8899D2291D8610056D816 /* TOLDReconfiguredViewController.swift in Sources */,
 				52B889A82291D8610056D816 /* PreflightVideoPlayerViewController.swift in Sources */,
+				528E15F7229B2D6000269816 /* PDFGenerator.swift in Sources */,
 				52B889CC2291D9120056D816 /* CommunicationCD+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
