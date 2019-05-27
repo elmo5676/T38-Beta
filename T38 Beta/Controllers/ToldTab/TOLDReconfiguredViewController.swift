@@ -21,7 +21,7 @@ protocol RunwayChoicesDelegate {
     func getRunwayInfo(chosenRwy: ChosenRunway)
 }
 
-class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIPopoverPresentationControllerDelegate, MetarDelegate, RunwayChoicesDelegate, TOLDReconfiguredDelegate {
+class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIPopoverPresentationControllerDelegate, MetarDelegate, RunwayChoicesDelegate, TOLDReconfiguredDelegate, CLLocationManagerDelegate {
     
     //Temp  :   C: -20 - 50, F: -4 - 122
     //Alt   :   0 - 6000
@@ -36,6 +36,7 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
     // MARK: -
     override func viewDidLoad() {
         super.viewDidLoad()
+        getLocationInformation()
         print("VIEW DID LOAD")
         moc = cdu.moc!
         getCurrentWeather(icao: nil, metarLoc: .home, refreshUI: false)
@@ -624,6 +625,7 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
     
     func getLocationInformation() {
         if let loc = locManager.location {
+            locManager.delegate = self
             locManager.requestAlwaysAuthorization()
             locManager.requestWhenInUseAuthorization()
             self.deviceLat = loc.coordinate.latitude

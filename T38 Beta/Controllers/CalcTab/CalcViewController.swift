@@ -11,7 +11,7 @@ import CoreLocation
 
 var corner = 0.0
 
-class CalcViewController: UIViewController {
+class CalcViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var display: UILabel!
     @IBOutlet weak var operatorLabel: UILabel!
@@ -30,6 +30,8 @@ class CalcViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         setFormatting()
+        let locMan = CLLocationManager()
+        locMan.delegate = self
         let times = delegate.timesAppHasOpened
         print(times)
     }
