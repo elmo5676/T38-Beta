@@ -1382,6 +1382,7 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
             label.adjustsFontSizeToFitWidth = true
         }
         for label in inputNames {
+            label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             label.adjustsFontSizeToFitWidth = true
         }
         for segCont in segmentedControls{

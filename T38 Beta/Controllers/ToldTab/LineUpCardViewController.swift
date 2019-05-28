@@ -507,7 +507,6 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
         callSign_3_Outlet.isHidden = hide
         callSign_3_Outlet.isEnabled = enable
         callSignNum_3_Outlet.isHidden = hide
-//        callSignNum_3_Outlet.insertText("")
         callSignNum_3_Outlet.isEnabled = enable
         front_3_Outlet.isHidden = hide
         front_3_Outlet.insertText("")
@@ -520,6 +519,8 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
         tail_3_Outlet.isEnabled = enable
     }
     
+    @IBOutlet weak var topSpacerStackView: UIStackView!
+    @IBOutlet weak var buttonSpacerStackView: UIStackView!
     func hideAcft4(_ hide: Bool) {
         let enable = !hide
         if hide {callSign_4 = ""} else {callSign_4 = callSign_1}
@@ -527,10 +528,11 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
             if hide {callSignNum_2 = ""} else {callSignNum_2 = "\(num + 3)"}
             print(num)
         }
+//        topSpacerStackView.isHidden = !hide
+        buttonSpacerStackView.isHidden = !hide
         callSign_4_Outlet.isHidden = hide
         callSign_4_Outlet.isEnabled = enable
         callSignNum_4_Outlet.isHidden = hide
-//        callSignNum_4_Outlet.insertText("")
         callSignNum_4_Outlet.isEnabled = enable
         front_4_Outlet.isHidden = hide
         front_4_Outlet.insertText("")
@@ -556,6 +558,9 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var dismissButtonOutlet: UIButton!
     @IBAction func dismiss(_ sender: UIButton) {
         dismissButtonOutlet.showPressed()
+        
+    }
+    @IBAction func dismissBarButton(_ sender: UIBarButtonItem) {
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
