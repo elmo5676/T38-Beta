@@ -53,6 +53,14 @@ extension UIButton {
         self.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
     }
     
+    func standardButtonFormatting2() {
+        self.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        self.layer.borderColor = #colorLiteral(red: 0.1960602105, green: 0.1960886121, blue: 0.1960505545, alpha: 1)
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 5
+        self.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+    }
+    
     func generateRandomNumbers(quantity: Int) -> [CGFloat] {
         var randomNumberArray = [CGFloat]()
         for _ in 1...quantity {

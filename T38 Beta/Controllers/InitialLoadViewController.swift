@@ -69,7 +69,7 @@ class InitialLoadViewController: UIViewController {
             initialLoadInfoLabel.text = "Welcome to T-38 Version \(buildNumber). Sit tight for a moment while the application downloads DAFIF from the NGA to make filling out TOLD a breeze."
         }
         if initialLoadProgressBar.progress >= 0.49 {
-            initialLoadInfoLabel.text = "Ok. All the files have been downloaded! Now to make them useful, you can do fun things like: hit the Direct To Button on the Calc and go DIRECT to the closest suitable airfield or have it autofill TOLD fields."
+            initialLoadInfoLabel.text = "Ok. All the files have been downloaded! Now to make them useful, you can do fun things like: hit the Divert Button on the Calc and go DIRECT to the closest suitable airfield or have it autofill TOLD fields."
         }
         if initialLoadProgressBar.progress < 0.999 {
             percentageCompleteLabel.text = "\(String(format: "%.0f",initialLoadProgressBar.progress * 100))%"

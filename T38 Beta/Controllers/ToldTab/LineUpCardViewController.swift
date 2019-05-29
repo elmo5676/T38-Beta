@@ -143,35 +143,43 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     }
     
     var callSign_1 = "" {
-        didSet{callSignOutlet_1.text = callSign_1
+        didSet{
+            callSignOutlet_1.text = callSign_1
         defaults.set(callSign_1, forKey: "callSign_1")
         }}
     var callSign_2 = "" {
-        didSet{callSign_2_Outlet.text = callSign_2
+        didSet{
+            callSign_2_Outlet.text = callSign_2
             defaults.set(callSign_2, forKey: "callSign_2")
         }}
     var callSign_3 = "" {
-        didSet{callSign_3_Outlet.text = callSign_3
+        didSet{
+            callSign_3_Outlet.text = callSign_3
             defaults.set(callSign_3, forKey: "callSign_3")
         }}
     var callSign_4 = "" {
-        didSet{callSign_4_Outlet.text = callSign_4
+        didSet{
+            callSign_4_Outlet.text = callSign_4
             defaults.set(callSign_4, forKey: "callSign_4")
         }}
     var callSignNum_1 = "" {
-        didSet{callSignNum_1_Outlet.text = callSignNum_1
+        didSet{
+            callSignNum_1_Outlet.text = callSignNum_1
             defaults.set(callSignNum_1, forKey: "callSignNum_1")
         }}
     var callSignNum_2 = "" {
-        didSet{callSignNum_2_Outlet.text = callSignNum_2
+        didSet{
+            callSignNum_2_Outlet.text = callSignNum_2
             defaults.set(callSignNum_2, forKey: "callSignNum_2")
         }}
     var callSignNum_3 = "" {
-        didSet{callSignNum_3_Outlet.text = callSignNum_3
+        didSet{
+            callSignNum_3_Outlet.text = callSignNum_3
             defaults.set(callSignNum_3, forKey: "callSignNum_3")
         }}
     var callSignNum_4 = "" {
-        didSet{callSignNum_4_Outlet.text = callSignNum_4
+        didSet{
+            callSignNum_4_Outlet.text = callSignNum_4
             defaults.set(callSignNum_4, forKey: "callSignNum_4")
         }}
     var front_1 = "" {
@@ -179,99 +187,123 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
             defaults.set(front_1, forKey: "front_1")
         }}
     var front_2 = "" {
-        didSet{front_2_Outlet.text = front_2
+        didSet{
+            front_2_Outlet.text = front_2
             defaults.set(front_2, forKey: "front_2")
         }}
     var front_3 = "" {
-        didSet{front_3_Outlet.text = front_3
+        didSet{
+            front_3_Outlet.text = front_3
             defaults.set(front_3, forKey: "front_3")
         }}
     var front_4 = "" {
-        didSet{front_4_Outlet.text = front_4
+        didSet{
+            front_4_Outlet.text = front_4
             defaults.set(front_4, forKey: "front_4")
         }}
     var back_1 = "" {
-        didSet{back_1_Outlet.text = back_1
+        didSet{
+            back_1_Outlet.text = back_1
             defaults.set(back_1, forKey: "back_1")
         }}
     var back_2 = "" {
-        didSet{back_2_Outlet.text = back_2
+        didSet{
+            back_2_Outlet.text = back_2
             defaults.set(back_2, forKey: "back_2")
         }}
     var back_3 = "" {
-        didSet{back_3_Outlet.text = back_3
+        didSet{
+            back_3_Outlet.text = back_3
             defaults.set(back_3, forKey: "back_3")
         }}
     var back_4 = "" {
-        didSet{back_4_Outlet.text = back_4
+        didSet{
+            back_4_Outlet.text = back_4
             defaults.set(back_4, forKey: "back_4")
         }}
     var tail_1 = "" {
-        didSet{tail_1_Outlet.text = tail_1
+        didSet{
+            tail_1_Outlet.text = tail_1
             defaults.set(tail_1, forKey: "tail_1")
         }}
     var tail_2 = "" {
-        didSet{tail_2_Outlet.text = tail_2
+        didSet{
+            tail_2_Outlet.text = tail_2
             defaults.set(tail_2, forKey: "tail_2")
         }}
     var tail_3 = "" {
-        didSet{tail_3_Outlet.text = tail_3
+        didSet{
+            tail_3_Outlet.text = tail_3
             defaults.set(tail_3, forKey: "tail_3")
         }}
     var tail_4 = "" {
-        didSet{tail_4_Outlet.text = tail_4
+        didSet{
+            tail_4_Outlet.text = tail_4
             defaults.set(tail_4, forKey: "tail_4")
         }}
     var show = "" {
-        didSet{show_Outlet.text = show
+        didSet{
+            show_Outlet.text = show
             defaults.set(show, forKey: "show")
         }}
     var brief = "" {
-        didSet{brief_Outlet.text = brief
+        didSet{
+            brief_Outlet.text = brief
             defaults.set(brief, forKey: "brief")
         }}
     var step = "" {
-        didSet{step_Outlet.text = step
+        didSet{
+            step_Outlet.text = step
             defaults.set(step, forKey: "step")
         }}
     var to = "" {
-        didSet{to_Outlet.text = to
+        didSet{
+            to_Outlet.text = to
             defaults.set(to, forKey: "to")
         }}
     var land = "" {
-        didSet{land_Outlet.text = land
+        didSet{
+            land_Outlet.text = land
             defaults.set(land, forKey: "land")
         }}
     var joker = "" {
-        didSet{joker_Outlet.text = joker
+        didSet{
+            joker_Outlet.text = joker
             defaults.set(joker, forKey: "joker")
         }}
     var bingo = "" {
-        didSet{bingo_Outlet.text = bingo
+        didSet{
+            bingo_Outlet.text = bingo
             defaults.set(bingo, forKey: "bingo")
         }}
     var missionObj1 = "" {
-        didSet{missionObj1_Outlet.text = missionObj1
+        didSet{
+            missionObj1_Outlet.text = missionObj1
             defaults.set(missionObj1, forKey: "missionObj1")
         }}
     var missionObj2 = "" {
-        didSet{missionObj2_Outlet.text = missionObj2
+        didSet{
+            missionObj2_Outlet.text = missionObj2
             defaults.set(missionObj2, forKey: "missionObj2")
         }}
     var trainingObj_1 = "" {
-        didSet{trainingObj_1_Outlet.text = trainingObj_1
+        didSet{
+            trainingObj_1_Outlet.text = trainingObj_1
             defaults.set(trainingObj_1, forKey: "trainingObj_1")
         }}
     var trainingObj_2 = "" {
-        didSet{trainingObj_2_Outlet.text = trainingObj_2
+        didSet{
+            trainingObj_2_Outlet.text = trainingObj_2
             defaults.set(trainingObj_2, forKey: "trainingObj_2")
         }}
     var trainingObj_3 = "" {
-        didSet{trainingObj_3_Outlet.text = trainingObj_3
+        didSet{
+            trainingObj_3_Outlet.text = trainingObj_3
             defaults.set(trainingObj_3, forKey: "trainingObj_3")
         }}
     var trainingObj_4 = "" {
-        didSet{trainingObj_4_Outlet.text = trainingObj_4
+        didSet{
+            trainingObj_4_Outlet.text = trainingObj_4
             defaults.set(trainingObj_4, forKey: "trainingObj_4")
         }}
     
@@ -448,8 +480,6 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
             trainingObj_4 = strValue
         }}
     
-    
-    
     @IBOutlet weak var numberOfAircraftSegOutlet: UISegmentedControl!
     @IBAction func numberOfAircraftSeg(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
@@ -471,17 +501,11 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
             hideAcft4(false)
         default:
             print("what the hell is going on here??")
-        }
-        
-    }
+        }}
     
     func hideAcft2(_ hide: Bool) {
         let enable = !hide
         if hide {callSign_2 = ""} else {callSign_2 = callSign_1}
-        if let num = Int(callSignNum_1) {
-            if hide {callSignNum_2 = ""} else {callSignNum_2 = "\(num + 1)"}
-            print(num)
-        }
         callSign_2_Outlet.isHidden = hide
         callSign_2_Outlet.isEnabled = enable
         callSignNum_2_Outlet.isHidden = hide
@@ -500,10 +524,6 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     func hideAcft3(_ hide: Bool) {
         let enable = !hide
         if hide {callSign_3 = ""} else {callSign_3 = callSign_1}
-        if let num = Int(callSignNum_1) {
-            if hide {callSignNum_2 = ""} else {callSignNum_2 = "\(num + 2)"}
-            print(num)
-        }
         callSign_3_Outlet.isHidden = hide
         callSign_3_Outlet.isEnabled = enable
         callSignNum_3_Outlet.isHidden = hide
@@ -524,11 +544,6 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     func hideAcft4(_ hide: Bool) {
         let enable = !hide
         if hide {callSign_4 = ""} else {callSign_4 = callSign_1}
-        if let num = Int(callSignNum_1) {
-            if hide {callSignNum_2 = ""} else {callSignNum_2 = "\(num + 3)"}
-            print(num)
-        }
-//        topSpacerStackView.isHidden = !hide
         buttonSpacerStackView.isHidden = !hide
         callSign_4_Outlet.isHidden = hide
         callSign_4_Outlet.isEnabled = enable
@@ -549,6 +564,9 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var clearAllButtonOutlet: UIButton!
     @IBAction func clearAllButton(_ sender: UIButton) {
         clearAllButtonOutlet.showPressed()
+        hideAcft2(true)
+        hideAcft3(true)
+        hideAcft4(true)
         for tf in textFields {
             tf.text = ""
             tf.insertText(" ")
@@ -637,9 +655,9 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
         hideAcft2(true)
         hideAcft3(true)
         hideAcft4(true)
-        clearAllButtonOutlet.standardButtonFormatting()
-        dismissButtonOutlet.standardButtonFormatting()
-        lineUpCardButtonOutlet.standardButtonFormatting()
+        clearAllButtonOutlet.standardButtonFormatting2()
+        dismissButtonOutlet.standardButtonFormatting2()
+        lineUpCardButtonOutlet.standardButtonFormatting2()
         let cornerRadius: CGFloat = 10
         iconBottom.layer.cornerRadius = cornerRadius
         mainView.layer.cornerRadius = cornerRadius
