@@ -7,6 +7,183 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525A131122A4613C00D80831 /* TrmRmk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12BD22A4613B00D80831 /* TrmRmk.swift */; };
+		525A131222A4613C00D80831 /* AddRwy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12BE22A4613B00D80831 /* AddRwy.swift */; };
+		525A131322A4613C00D80831 /* SuasPar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12BF22A4613B00D80831 /* SuasPar.swift */; };
+		525A131422A4613C00D80831 /* MtrPar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C022A4613B00D80831 /* MtrPar.swift */; };
+		525A131522A4613C00D80831 /* SvcRmk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C122A4613B00D80831 /* SvcRmk.swift */; };
+		525A131622A4613C00D80831 /* ArfAtc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C222A4613B00D80831 /* ArfAtc.swift */; };
+		525A131722A4613C00D80831 /* Ortca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C322A4613B00D80831 /* Ortca.swift */; };
+		525A131822A4613C00D80831 /* MtrOsm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C422A4613B00D80831 /* MtrOsm.swift */; };
+		525A131922A4613C00D80831 /* AtsCtry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C522A4613B00D80831 /* AtsCtry.swift */; };
+		525A131A22A4613C00D80831 /* TrmMin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C622A4613B00D80831 /* TrmMin.swift */; };
+		525A131B22A4613C00D80831 /* Mtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C722A4613B00D80831 /* Mtr.swift */; };
+		525A131C22A4613C00D80831 /* ArfPt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C822A4613B00D80831 /* ArfPt.swift */; };
+		525A131D22A4613C00D80831 /* VfrRte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12C922A4613B00D80831 /* VfrRte.swift */; };
+		525A131E22A4613C00D80831 /* VfrRteRmk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12CA22A4613B00D80831 /* VfrRteRmk.swift */; };
+		525A131F22A4613C00D80831 /* MtrRmk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12CB22A4613B00D80831 /* MtrRmk.swift */; };
+		525A132022A4613C00D80831 /* SuasNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12CC22A4613B00D80831 /* SuasNote.swift */; };
+		525A132122A4613C00D80831 /* ArfFt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12CD22A4613B00D80831 /* ArfFt.swift */; };
+		525A132222A4613C00D80831 /* TrmPar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12CE22A4613B00D80831 /* TrmPar.swift */; };
+		525A132322A4613C00D80831 /* Gen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12CF22A4613B00D80831 /* Gen.swift */; };
+		525A132422A4613C00D80831 /* MtrOv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D022A4613B00D80831 /* MtrOv.swift */; };
+		525A132522A4613C00D80831 /* BdryCtry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D122A4613B00D80831 /* BdryCtry.swift */; };
+		525A132622A4613C00D80831 /* Suas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D222A4613B00D80831 /* Suas.swift */; };
+		525A132722A4613C00D80831 /* ArfSch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D322A4613B00D80831 /* ArfSch.swift */; };
+		525A132822A4613C00D80831 /* BdryPar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D422A4613B00D80831 /* BdryPar.swift */; };
+		525A132922A4613C00D80831 /* TrmSeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D522A4613B00D80831 /* TrmSeg.swift */; };
+		525A132A22A4613C00D80831 /* Hold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D622A4613B00D80831 /* Hold.swift */; };
+		525A132B22A4613C00D80831 /* Fueloil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D722A4613B00D80831 /* Fueloil.swift */; };
+		525A132C22A4613C00D80831 /* ArfPar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D822A4613B00D80831 /* ArfPar.swift */; };
+		525A132D22A4613C00D80831 /* Wpt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12D922A4613B00D80831 /* Wpt.swift */; };
+		525A132E22A4613C00D80831 /* SuasCtry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12DA22A4613B00D80831 /* SuasCtry.swift */; };
+		525A132F22A4613C00D80831 /* Bdry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12DB22A4613B00D80831 /* Bdry.swift */; };
+		525A133022A4613C00D80831 /* Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12DC22A4613B00D80831 /* Nav.swift */; };
+		525A133122A4613C00D80831 /* TrmClb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12DD22A4613B00D80831 /* TrmClb.swift */; };
+		525A133222A4613C00D80831 /* Arpt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12DE22A4613B00D80831 /* Arpt.swift */; };
+		525A133322A4613C00D80831 /* VfrRteSeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12DF22A4613B00D80831 /* VfrRteSeg.swift */; };
+		525A133422A4613C00D80831 /* TrmMsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E022A4613B00D80831 /* TrmMsa.swift */; };
+		525A133522A4613C00D80831 /* ArfRmk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E122A4613B00D80831 /* ArfRmk.swift */; };
+		525A133622A4613C00D80831 /* AtsRmk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E222A4613B00D80831 /* AtsRmk.swift */; };
+		525A133722A4613C00D80831 /* Pja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E322A4613B00D80831 /* Pja.swift */; };
+		525A133822A4613C00D80831 /* Ats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E422A4613B00D80831 /* Ats.swift */; };
+		525A133922A4613C00D80831 /* NavCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E622A4613B00D80831 /* NavCDU.swift */; };
+		525A133A22A4613C00D80831 /* MtrOvCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E722A4613B00D80831 /* MtrOvCDU.swift */; };
+		525A133B22A4613C00D80831 /* BdryCtryCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E822A4613B00D80831 /* BdryCtryCDU.swift */; };
+		525A133C22A4613C00D80831 /* ArfAtcCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12E922A4613B00D80831 /* ArfAtcCDU.swift */; };
+		525A133D22A4613C00D80831 /* ArptCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12EA22A4613B00D80831 /* ArptCDU.swift */; };
+		525A133E22A4613C00D80831 /* TrmSegCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12EB22A4613B00D80831 /* TrmSegCDU.swift */; };
+		525A133F22A4613C00D80831 /* MtrOsmCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12EC22A4613B00D80831 /* MtrOsmCDU.swift */; };
+		525A134022A4613C00D80831 /* SvcRmkCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12ED22A4613B00D80831 /* SvcRmkCDU.swift */; };
+		525A134122A4613C00D80831 /* VfrRteCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12EE22A4613B00D80831 /* VfrRteCDU.swift */; };
+		525A134222A4613C00D80831 /* MtrCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12EF22A4613B00D80831 /* MtrCDU.swift */; };
+		525A134322A4613C00D80831 /* TrmRmkCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F022A4613B00D80831 /* TrmRmkCDU.swift */; };
+		525A134422A4613C00D80831 /* ArfSchCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F122A4613B00D80831 /* ArfSchCDU.swift */; };
+		525A134522A4613C00D80831 /* SuasCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F222A4613B00D80831 /* SuasCDU.swift */; };
+		525A134622A4613C00D80831 /* AddRwyCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F322A4613B00D80831 /* AddRwyCDU.swift */; };
+		525A134722A4613C00D80831 /* WptCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F422A4613B00D80831 /* WptCDU.swift */; };
+		525A134822A4613C00D80831 /* ArfFtCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F522A4613B00D80831 /* ArfFtCDU.swift */; };
+		525A134922A4613C00D80831 /* BdryParCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F622A4613B00D80831 /* BdryParCDU.swift */; };
+		525A134A22A4613C00D80831 /* AtsCtryCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F722A4613B00D80831 /* AtsCtryCDU.swift */; };
+		525A134B22A4613C00D80831 /* GenCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F822A4613B00D80831 /* GenCDU.swift */; };
+		525A134C22A4613C00D80831 /* TrmParCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12F922A4613B00D80831 /* TrmParCDU.swift */; };
+		525A134D22A4613C00D80831 /* VfrRteSegCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12FA22A4613B00D80831 /* VfrRteSegCDU.swift */; };
+		525A134E22A4613C00D80831 /* AtsCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12FB22A4613B00D80831 /* AtsCDU.swift */; };
+		525A134F22A4613C00D80831 /* TrmClbCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12FC22A4613B00D80831 /* TrmClbCDU.swift */; };
+		525A135022A4613C00D80831 /* VfrRteRmkCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12FD22A4613B00D80831 /* VfrRteRmkCDU.swift */; };
+		525A135122A4613C00D80831 /* PjaCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12FE22A4613B00D80831 /* PjaCDU.swift */; };
+		525A135222A4613C00D80831 /* SuasCtryCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A12FF22A4613B00D80831 /* SuasCtryCDU.swift */; };
+		525A135322A4613C00D80831 /* HoldCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130022A4613B00D80831 /* HoldCDU.swift */; };
+		525A135422A4613C00D80831 /* ArfPtCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130122A4613B00D80831 /* ArfPtCDU.swift */; };
+		525A135522A4613C00D80831 /* SuasNoteCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130222A4613B00D80831 /* SuasNoteCDU.swift */; };
+		525A135622A4613C00D80831 /* MtrRmkCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130322A4613B00D80831 /* MtrRmkCDU.swift */; };
+		525A135722A4613C00D80831 /* OrtcaCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130422A4613B00D80831 /* OrtcaCDU.swift */; };
+		525A135822A4613C00D80831 /* BdryCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130522A4613B00D80831 /* BdryCDU.swift */; };
+		525A135922A4613C00D80831 /* ArfParCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130622A4613B00D80831 /* ArfParCDU.swift */; };
+		525A135A22A4613C00D80831 /* TrmMsaCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130722A4613B00D80831 /* TrmMsaCDU.swift */; };
+		525A135B22A4613C00D80831 /* FueloilCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130822A4613B00D80831 /* FueloilCDU.swift */; };
+		525A135C22A4613C00D80831 /* AtsRmkCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130922A4613B00D80831 /* AtsRmkCDU.swift */; };
+		525A135D22A4613C00D80831 /* SuasParCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130A22A4613B00D80831 /* SuasParCDU.swift */; };
+		525A135E22A4613C00D80831 /* TrmMinCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130B22A4613B00D80831 /* TrmMinCDU.swift */; };
+		525A135F22A4613C00D80831 /* MtrParCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130C22A4613B00D80831 /* MtrParCDU.swift */; };
+		525A136022A4613C00D80831 /* ArfRmkCDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A130D22A4613B00D80831 /* ArfRmkCDU.swift */; };
+		525A136122A4613C00D80831 /* DafifCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 525A130E22A4613B00D80831 /* DafifCD.xcdatamodeld */; };
+		525A136222A4613C00D80831 /* DafifCDCDStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A131022A4613B00D80831 /* DafifCDCDStack.swift */; };
+		525A13B322A4614F00D80831 /* AtsRmk_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136322A4614E00D80831 /* AtsRmk_CD+CoreDataClass.swift */; };
+		525A13B422A4614F00D80831 /* AtsRmk_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136422A4614E00D80831 /* AtsRmk_CD+CoreDataProperties.swift */; };
+		525A13B522A4614F00D80831 /* AtsCtry_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136522A4614E00D80831 /* AtsCtry_CD+CoreDataClass.swift */; };
+		525A13B622A4614F00D80831 /* AtsCtry_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136622A4614E00D80831 /* AtsCtry_CD+CoreDataProperties.swift */; };
+		525A13B722A4614F00D80831 /* Arpt_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136722A4614E00D80831 /* Arpt_CD+CoreDataClass.swift */; };
+		525A13B822A4614F00D80831 /* Arpt_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136822A4614E00D80831 /* Arpt_CD+CoreDataProperties.swift */; };
+		525A13B922A4614F00D80831 /* Nav_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136922A4614E00D80831 /* Nav_CD+CoreDataClass.swift */; };
+		525A13BA22A4614F00D80831 /* Nav_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136A22A4614E00D80831 /* Nav_CD+CoreDataProperties.swift */; };
+		525A13BB22A4614F00D80831 /* Ats_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136B22A4614E00D80831 /* Ats_CD+CoreDataClass.swift */; };
+		525A13BC22A4614F00D80831 /* Ats_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136C22A4614E00D80831 /* Ats_CD+CoreDataProperties.swift */; };
+		525A13BD22A4614F00D80831 /* Fueloil_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136D22A4614E00D80831 /* Fueloil_CD+CoreDataClass.swift */; };
+		525A13BE22A4614F00D80831 /* Fueloil_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136E22A4614E00D80831 /* Fueloil_CD+CoreDataProperties.swift */; };
+		525A13BF22A4614F00D80831 /* Suas_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A136F22A4614E00D80831 /* Suas_CD+CoreDataClass.swift */; };
+		525A13C022A4614F00D80831 /* Suas_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137022A4614E00D80831 /* Suas_CD+CoreDataProperties.swift */; };
+		525A13C122A4614F00D80831 /* TrmRmk_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137122A4614E00D80831 /* TrmRmk_CD+CoreDataClass.swift */; };
+		525A13C222A4614F00D80831 /* TrmRmk_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137222A4614E00D80831 /* TrmRmk_CD+CoreDataProperties.swift */; };
+		525A13C322A4614F00D80831 /* TrmPar_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137322A4614E00D80831 /* TrmPar_CD+CoreDataClass.swift */; };
+		525A13C422A4614F00D80831 /* TrmPar_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137422A4614E00D80831 /* TrmPar_CD+CoreDataProperties.swift */; };
+		525A13C522A4614F00D80831 /* AddRwy_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137522A4614E00D80831 /* AddRwy_CD+CoreDataClass.swift */; };
+		525A13C622A4614F00D80831 /* AddRwy_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137622A4614E00D80831 /* AddRwy_CD+CoreDataProperties.swift */; };
+		525A13C722A4614F00D80831 /* VfrRteRmk_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137722A4614E00D80831 /* VfrRteRmk_CD+CoreDataClass.swift */; };
+		525A13C822A4614F00D80831 /* VfrRteRmk_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137822A4614E00D80831 /* VfrRteRmk_CD+CoreDataProperties.swift */; };
+		525A13C922A4614F00D80831 /* ArfFt_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137922A4614E00D80831 /* ArfFt_CD+CoreDataClass.swift */; };
+		525A13CA22A4614F00D80831 /* ArfFt_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137A22A4614E00D80831 /* ArfFt_CD+CoreDataProperties.swift */; };
+		525A13CB22A4614F00D80831 /* ArfSch_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137B22A4614E00D80831 /* ArfSch_CD+CoreDataClass.swift */; };
+		525A13CC22A4614F00D80831 /* ArfSch_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137C22A4614E00D80831 /* ArfSch_CD+CoreDataProperties.swift */; };
+		525A13CD22A4614F00D80831 /* MtrRmk_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137D22A4614E00D80831 /* MtrRmk_CD+CoreDataClass.swift */; };
+		525A13CE22A4614F00D80831 /* MtrRmk_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137E22A4614E00D80831 /* MtrRmk_CD+CoreDataProperties.swift */; };
+		525A13CF22A4614F00D80831 /* VfrRteSeg_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A137F22A4614E00D80831 /* VfrRteSeg_CD+CoreDataClass.swift */; };
+		525A13D022A4614F00D80831 /* VfrRteSeg_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138022A4614E00D80831 /* VfrRteSeg_CD+CoreDataProperties.swift */; };
+		525A13D122A4614F00D80831 /* ArfPt_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138122A4614E00D80831 /* ArfPt_CD+CoreDataClass.swift */; };
+		525A13D222A4614F00D80831 /* ArfPt_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138222A4614E00D80831 /* ArfPt_CD+CoreDataProperties.swift */; };
+		525A13D322A4614F00D80831 /* BdryCtry_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138322A4614E00D80831 /* BdryCtry_CD+CoreDataClass.swift */; };
+		525A13D422A4614F00D80831 /* BdryCtry_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138422A4614E00D80831 /* BdryCtry_CD+CoreDataProperties.swift */; };
+		525A13D522A4614F00D80831 /* TrmMin_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138522A4614E00D80831 /* TrmMin_CD+CoreDataClass.swift */; };
+		525A13D622A4614F00D80831 /* TrmMin_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138622A4614E00D80831 /* TrmMin_CD+CoreDataProperties.swift */; };
+		525A13D722A4614F00D80831 /* SvcRmk_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138722A4614E00D80831 /* SvcRmk_CD+CoreDataClass.swift */; };
+		525A13D822A4614F00D80831 /* SvcRmk_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138822A4614E00D80831 /* SvcRmk_CD+CoreDataProperties.swift */; };
+		525A13D922A4614F00D80831 /* Gen_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138922A4614E00D80831 /* Gen_CD+CoreDataClass.swift */; };
+		525A13DA22A4614F00D80831 /* Gen_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138A22A4614E00D80831 /* Gen_CD+CoreDataProperties.swift */; };
+		525A13DB22A4614F00D80831 /* TrmSeg_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138B22A4614E00D80831 /* TrmSeg_CD+CoreDataClass.swift */; };
+		525A13DC22A4614F00D80831 /* TrmSeg_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138C22A4614E00D80831 /* TrmSeg_CD+CoreDataProperties.swift */; };
+		525A13DD22A4614F00D80831 /* Mtr_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138D22A4614E00D80831 /* Mtr_CD+CoreDataClass.swift */; };
+		525A13DE22A4614F00D80831 /* Mtr_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138E22A4614E00D80831 /* Mtr_CD+CoreDataProperties.swift */; };
+		525A13DF22A4614F00D80831 /* SuasPar_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A138F22A4614E00D80831 /* SuasPar_CD+CoreDataClass.swift */; };
+		525A13E022A4614F00D80831 /* SuasPar_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139022A4614E00D80831 /* SuasPar_CD+CoreDataProperties.swift */; };
+		525A13E122A4614F00D80831 /* Hold_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139122A4614E00D80831 /* Hold_CD+CoreDataClass.swift */; };
+		525A13E222A4614F00D80831 /* Hold_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139222A4614E00D80831 /* Hold_CD+CoreDataProperties.swift */; };
+		525A13E322A4614F00D80831 /* Ortca_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139322A4614E00D80831 /* Ortca_CD+CoreDataClass.swift */; };
+		525A13E422A4614F00D80831 /* Ortca_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139422A4614E00D80831 /* Ortca_CD+CoreDataProperties.swift */; };
+		525A13E522A4614F00D80831 /* ArfAtc_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139522A4614E00D80831 /* ArfAtc_CD+CoreDataClass.swift */; };
+		525A13E622A4614F00D80831 /* ArfAtc_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139622A4614E00D80831 /* ArfAtc_CD+CoreDataProperties.swift */; };
+		525A13E722A4614F00D80831 /* ArfRmk_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139722A4614E00D80831 /* ArfRmk_CD+CoreDataClass.swift */; };
+		525A13E822A4614F00D80831 /* ArfRmk_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139822A4614E00D80831 /* ArfRmk_CD+CoreDataProperties.swift */; };
+		525A13E922A4614F00D80831 /* MtrOsm_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139922A4614E00D80831 /* MtrOsm_CD+CoreDataClass.swift */; };
+		525A13EA22A4614F00D80831 /* MtrOsm_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139A22A4614E00D80831 /* MtrOsm_CD+CoreDataProperties.swift */; };
+		525A13EB22A4614F00D80831 /* MtrOv_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139B22A4614E00D80831 /* MtrOv_CD+CoreDataClass.swift */; };
+		525A13EC22A4614F00D80831 /* MtrOv_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139C22A4614E00D80831 /* MtrOv_CD+CoreDataProperties.swift */; };
+		525A13ED22A4614F00D80831 /* SuasNote_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139D22A4614E00D80831 /* SuasNote_CD+CoreDataClass.swift */; };
+		525A13EE22A4614F00D80831 /* SuasNote_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139E22A4614E00D80831 /* SuasNote_CD+CoreDataProperties.swift */; };
+		525A13EF22A4614F00D80831 /* TrmClb_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A139F22A4614E00D80831 /* TrmClb_CD+CoreDataClass.swift */; };
+		525A13F022A4614F00D80831 /* TrmClb_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A022A4614E00D80831 /* TrmClb_CD+CoreDataProperties.swift */; };
+		525A13F122A4614F00D80831 /* VfrRte_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A122A4614E00D80831 /* VfrRte_CD+CoreDataClass.swift */; };
+		525A13F222A4614F00D80831 /* VfrRte_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A222A4614E00D80831 /* VfrRte_CD+CoreDataProperties.swift */; };
+		525A13F322A4614F00D80831 /* TrmMsa_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A322A4614E00D80831 /* TrmMsa_CD+CoreDataClass.swift */; };
+		525A13F422A4614F00D80831 /* TrmMsa_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A422A4614E00D80831 /* TrmMsa_CD+CoreDataProperties.swift */; };
+		525A13F522A4614F00D80831 /* Pja_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A522A4614E00D80831 /* Pja_CD+CoreDataClass.swift */; };
+		525A13F622A4614F00D80831 /* Pja_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A622A4614F00D80831 /* Pja_CD+CoreDataProperties.swift */; };
+		525A13F722A4614F00D80831 /* SuasCtry_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A722A4614F00D80831 /* SuasCtry_CD+CoreDataClass.swift */; };
+		525A13F822A4614F00D80831 /* SuasCtry_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A822A4614F00D80831 /* SuasCtry_CD+CoreDataProperties.swift */; };
+		525A13F922A4614F00D80831 /* Bdry_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13A922A4614F00D80831 /* Bdry_CD+CoreDataClass.swift */; };
+		525A13FA22A4614F00D80831 /* Bdry_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13AA22A4614F00D80831 /* Bdry_CD+CoreDataProperties.swift */; };
+		525A13FB22A4614F00D80831 /* ArfPar_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13AB22A4614F00D80831 /* ArfPar_CD+CoreDataClass.swift */; };
+		525A13FC22A4614F00D80831 /* ArfPar_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13AC22A4614F00D80831 /* ArfPar_CD+CoreDataProperties.swift */; };
+		525A13FD22A4614F00D80831 /* BdryPar_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13AD22A4614F00D80831 /* BdryPar_CD+CoreDataClass.swift */; };
+		525A13FE22A4614F00D80831 /* BdryPar_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13AE22A4614F00D80831 /* BdryPar_CD+CoreDataProperties.swift */; };
+		525A13FF22A4614F00D80831 /* MtrPar_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13AF22A4614F00D80831 /* MtrPar_CD+CoreDataClass.swift */; };
+		525A140022A4614F00D80831 /* MtrPar_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13B022A4614F00D80831 /* MtrPar_CD+CoreDataProperties.swift */; };
+		525A140122A4614F00D80831 /* Wpt_CD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13B122A4614F00D80831 /* Wpt_CD+CoreDataClass.swift */; };
+		525A140222A4614F00D80831 /* Wpt_CD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A13B222A4614F00D80831 /* Wpt_CD+CoreDataProperties.swift */; };
+		525A140422A4647400D80831 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525A140322A4647400D80831 /* Zip.framework */; };
+		525A140522A4647400D80831 /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 525A140322A4647400D80831 /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		525A141922A4657500D80831 /* CDUCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A140B22A4657500D80831 /* CDUCreator.swift */; };
+		525A141A22A4657500D80831 /* JSONFromDAFFIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A140C22A4657500D80831 /* JSONFromDAFFIF.swift */; };
+		525A141B22A4657500D80831 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A140D22A4657500D80831 /* Downloader.swift */; };
+		525A141C22A4657500D80831 /* DAFIFDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A140E22A4657500D80831 /* DAFIFDataController.swift */; };
+		525A141D22A4657500D80831 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A140F22A4657500D80831 /* Enums.swift */; };
+		525A141E22A4657500D80831 /* FileNames+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A141122A4657500D80831 /* FileNames+Extension.swift */; };
+		525A141F22A4657500D80831 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A141222A4657500D80831 /* URL+Extension.swift */; };
+		525A142022A4657500D80831 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A141322A4657500D80831 /* String+Extension.swift */; };
+		525A142122A4657500D80831 /* CoreDataStackCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A141422A4657500D80831 /* CoreDataStackCreator.swift */; };
+		525A142222A4657500D80831 /* UnzipDAFIF8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A141522A4657500D80831 /* UnzipDAFIF8.swift */; };
+		525A142322A4657500D80831 /* DPCopier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A141622A4657500D80831 /* DPCopier.swift */; };
+		525A142422A4657500D80831 /* CoreDataXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A141722A4657500D80831 /* CoreDataXML.swift */; };
+		525A142522A4657500D80831 /* SwiftDecoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A141822A4657500D80831 /* SwiftDecoders.swift */; };
 		5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */; };
 		528765B3229B9444007C4477 /* LineUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528765B2229B9444007C4477 /* LineUpCardViewController.swift */; };
 		528E15F0229B28F300269816 /* single_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15ED229B28F200269816 /* single_item.html */; };
@@ -109,7 +286,197 @@
 		52B889DB2291D9120056D816 /* FreqCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B889CB2291D9120056D816 /* FreqCD+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		525A140622A4647400D80831 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				525A140522A4647400D80831 /* Zip.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		525A12BD22A4613B00D80831 /* TrmRmk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmRmk.swift; sourceTree = "<group>"; };
+		525A12BE22A4613B00D80831 /* AddRwy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRwy.swift; sourceTree = "<group>"; };
+		525A12BF22A4613B00D80831 /* SuasPar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuasPar.swift; sourceTree = "<group>"; };
+		525A12C022A4613B00D80831 /* MtrPar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrPar.swift; sourceTree = "<group>"; };
+		525A12C122A4613B00D80831 /* SvcRmk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SvcRmk.swift; sourceTree = "<group>"; };
+		525A12C222A4613B00D80831 /* ArfAtc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfAtc.swift; sourceTree = "<group>"; };
+		525A12C322A4613B00D80831 /* Ortca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ortca.swift; sourceTree = "<group>"; };
+		525A12C422A4613B00D80831 /* MtrOsm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrOsm.swift; sourceTree = "<group>"; };
+		525A12C522A4613B00D80831 /* AtsCtry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtsCtry.swift; sourceTree = "<group>"; };
+		525A12C622A4613B00D80831 /* TrmMin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmMin.swift; sourceTree = "<group>"; };
+		525A12C722A4613B00D80831 /* Mtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mtr.swift; sourceTree = "<group>"; };
+		525A12C822A4613B00D80831 /* ArfPt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfPt.swift; sourceTree = "<group>"; };
+		525A12C922A4613B00D80831 /* VfrRte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VfrRte.swift; sourceTree = "<group>"; };
+		525A12CA22A4613B00D80831 /* VfrRteRmk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VfrRteRmk.swift; sourceTree = "<group>"; };
+		525A12CB22A4613B00D80831 /* MtrRmk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrRmk.swift; sourceTree = "<group>"; };
+		525A12CC22A4613B00D80831 /* SuasNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuasNote.swift; sourceTree = "<group>"; };
+		525A12CD22A4613B00D80831 /* ArfFt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfFt.swift; sourceTree = "<group>"; };
+		525A12CE22A4613B00D80831 /* TrmPar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmPar.swift; sourceTree = "<group>"; };
+		525A12CF22A4613B00D80831 /* Gen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gen.swift; sourceTree = "<group>"; };
+		525A12D022A4613B00D80831 /* MtrOv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrOv.swift; sourceTree = "<group>"; };
+		525A12D122A4613B00D80831 /* BdryCtry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BdryCtry.swift; sourceTree = "<group>"; };
+		525A12D222A4613B00D80831 /* Suas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suas.swift; sourceTree = "<group>"; };
+		525A12D322A4613B00D80831 /* ArfSch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfSch.swift; sourceTree = "<group>"; };
+		525A12D422A4613B00D80831 /* BdryPar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BdryPar.swift; sourceTree = "<group>"; };
+		525A12D522A4613B00D80831 /* TrmSeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmSeg.swift; sourceTree = "<group>"; };
+		525A12D622A4613B00D80831 /* Hold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hold.swift; sourceTree = "<group>"; };
+		525A12D722A4613B00D80831 /* Fueloil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fueloil.swift; sourceTree = "<group>"; };
+		525A12D822A4613B00D80831 /* ArfPar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfPar.swift; sourceTree = "<group>"; };
+		525A12D922A4613B00D80831 /* Wpt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wpt.swift; sourceTree = "<group>"; };
+		525A12DA22A4613B00D80831 /* SuasCtry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuasCtry.swift; sourceTree = "<group>"; };
+		525A12DB22A4613B00D80831 /* Bdry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bdry.swift; sourceTree = "<group>"; };
+		525A12DC22A4613B00D80831 /* Nav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav.swift; sourceTree = "<group>"; };
+		525A12DD22A4613B00D80831 /* TrmClb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmClb.swift; sourceTree = "<group>"; };
+		525A12DE22A4613B00D80831 /* Arpt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arpt.swift; sourceTree = "<group>"; };
+		525A12DF22A4613B00D80831 /* VfrRteSeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VfrRteSeg.swift; sourceTree = "<group>"; };
+		525A12E022A4613B00D80831 /* TrmMsa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmMsa.swift; sourceTree = "<group>"; };
+		525A12E122A4613B00D80831 /* ArfRmk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfRmk.swift; sourceTree = "<group>"; };
+		525A12E222A4613B00D80831 /* AtsRmk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtsRmk.swift; sourceTree = "<group>"; };
+		525A12E322A4613B00D80831 /* Pja.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pja.swift; sourceTree = "<group>"; };
+		525A12E422A4613B00D80831 /* Ats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ats.swift; sourceTree = "<group>"; };
+		525A12E622A4613B00D80831 /* NavCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavCDU.swift; sourceTree = "<group>"; };
+		525A12E722A4613B00D80831 /* MtrOvCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrOvCDU.swift; sourceTree = "<group>"; };
+		525A12E822A4613B00D80831 /* BdryCtryCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BdryCtryCDU.swift; sourceTree = "<group>"; };
+		525A12E922A4613B00D80831 /* ArfAtcCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfAtcCDU.swift; sourceTree = "<group>"; };
+		525A12EA22A4613B00D80831 /* ArptCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArptCDU.swift; sourceTree = "<group>"; };
+		525A12EB22A4613B00D80831 /* TrmSegCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmSegCDU.swift; sourceTree = "<group>"; };
+		525A12EC22A4613B00D80831 /* MtrOsmCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrOsmCDU.swift; sourceTree = "<group>"; };
+		525A12ED22A4613B00D80831 /* SvcRmkCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SvcRmkCDU.swift; sourceTree = "<group>"; };
+		525A12EE22A4613B00D80831 /* VfrRteCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VfrRteCDU.swift; sourceTree = "<group>"; };
+		525A12EF22A4613B00D80831 /* MtrCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrCDU.swift; sourceTree = "<group>"; };
+		525A12F022A4613B00D80831 /* TrmRmkCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmRmkCDU.swift; sourceTree = "<group>"; };
+		525A12F122A4613B00D80831 /* ArfSchCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfSchCDU.swift; sourceTree = "<group>"; };
+		525A12F222A4613B00D80831 /* SuasCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuasCDU.swift; sourceTree = "<group>"; };
+		525A12F322A4613B00D80831 /* AddRwyCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRwyCDU.swift; sourceTree = "<group>"; };
+		525A12F422A4613B00D80831 /* WptCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WptCDU.swift; sourceTree = "<group>"; };
+		525A12F522A4613B00D80831 /* ArfFtCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfFtCDU.swift; sourceTree = "<group>"; };
+		525A12F622A4613B00D80831 /* BdryParCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BdryParCDU.swift; sourceTree = "<group>"; };
+		525A12F722A4613B00D80831 /* AtsCtryCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtsCtryCDU.swift; sourceTree = "<group>"; };
+		525A12F822A4613B00D80831 /* GenCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenCDU.swift; sourceTree = "<group>"; };
+		525A12F922A4613B00D80831 /* TrmParCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmParCDU.swift; sourceTree = "<group>"; };
+		525A12FA22A4613B00D80831 /* VfrRteSegCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VfrRteSegCDU.swift; sourceTree = "<group>"; };
+		525A12FB22A4613B00D80831 /* AtsCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtsCDU.swift; sourceTree = "<group>"; };
+		525A12FC22A4613B00D80831 /* TrmClbCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmClbCDU.swift; sourceTree = "<group>"; };
+		525A12FD22A4613B00D80831 /* VfrRteRmkCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VfrRteRmkCDU.swift; sourceTree = "<group>"; };
+		525A12FE22A4613B00D80831 /* PjaCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PjaCDU.swift; sourceTree = "<group>"; };
+		525A12FF22A4613B00D80831 /* SuasCtryCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuasCtryCDU.swift; sourceTree = "<group>"; };
+		525A130022A4613B00D80831 /* HoldCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldCDU.swift; sourceTree = "<group>"; };
+		525A130122A4613B00D80831 /* ArfPtCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfPtCDU.swift; sourceTree = "<group>"; };
+		525A130222A4613B00D80831 /* SuasNoteCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuasNoteCDU.swift; sourceTree = "<group>"; };
+		525A130322A4613B00D80831 /* MtrRmkCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrRmkCDU.swift; sourceTree = "<group>"; };
+		525A130422A4613B00D80831 /* OrtcaCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrtcaCDU.swift; sourceTree = "<group>"; };
+		525A130522A4613B00D80831 /* BdryCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BdryCDU.swift; sourceTree = "<group>"; };
+		525A130622A4613B00D80831 /* ArfParCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfParCDU.swift; sourceTree = "<group>"; };
+		525A130722A4613B00D80831 /* TrmMsaCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmMsaCDU.swift; sourceTree = "<group>"; };
+		525A130822A4613B00D80831 /* FueloilCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FueloilCDU.swift; sourceTree = "<group>"; };
+		525A130922A4613B00D80831 /* AtsRmkCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtsRmkCDU.swift; sourceTree = "<group>"; };
+		525A130A22A4613B00D80831 /* SuasParCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuasParCDU.swift; sourceTree = "<group>"; };
+		525A130B22A4613B00D80831 /* TrmMinCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrmMinCDU.swift; sourceTree = "<group>"; };
+		525A130C22A4613B00D80831 /* MtrParCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtrParCDU.swift; sourceTree = "<group>"; };
+		525A130D22A4613B00D80831 /* ArfRmkCDU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArfRmkCDU.swift; sourceTree = "<group>"; };
+		525A130F22A4613B00D80831 /* DafifCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DafifCD.xcdatamodel; sourceTree = "<group>"; };
+		525A131022A4613B00D80831 /* DafifCDCDStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DafifCDCDStack.swift; sourceTree = "<group>"; };
+		525A136322A4614E00D80831 /* AtsRmk_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AtsRmk_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A136422A4614E00D80831 /* AtsRmk_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AtsRmk_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A136522A4614E00D80831 /* AtsCtry_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AtsCtry_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A136622A4614E00D80831 /* AtsCtry_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AtsCtry_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A136722A4614E00D80831 /* Arpt_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Arpt_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A136822A4614E00D80831 /* Arpt_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Arpt_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A136922A4614E00D80831 /* Nav_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A136A22A4614E00D80831 /* Nav_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A136B22A4614E00D80831 /* Ats_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ats_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A136C22A4614E00D80831 /* Ats_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ats_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A136D22A4614E00D80831 /* Fueloil_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fueloil_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A136E22A4614E00D80831 /* Fueloil_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fueloil_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A136F22A4614E00D80831 /* Suas_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Suas_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A137022A4614E00D80831 /* Suas_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Suas_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A137122A4614E00D80831 /* TrmRmk_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmRmk_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A137222A4614E00D80831 /* TrmRmk_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmRmk_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A137322A4614E00D80831 /* TrmPar_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmPar_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A137422A4614E00D80831 /* TrmPar_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmPar_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A137522A4614E00D80831 /* AddRwy_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddRwy_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A137622A4614E00D80831 /* AddRwy_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddRwy_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A137722A4614E00D80831 /* VfrRteRmk_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VfrRteRmk_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A137822A4614E00D80831 /* VfrRteRmk_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VfrRteRmk_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A137922A4614E00D80831 /* ArfFt_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfFt_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A137A22A4614E00D80831 /* ArfFt_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfFt_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A137B22A4614E00D80831 /* ArfSch_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfSch_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A137C22A4614E00D80831 /* ArfSch_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfSch_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A137D22A4614E00D80831 /* MtrRmk_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MtrRmk_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A137E22A4614E00D80831 /* MtrRmk_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MtrRmk_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A137F22A4614E00D80831 /* VfrRteSeg_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VfrRteSeg_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A138022A4614E00D80831 /* VfrRteSeg_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VfrRteSeg_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A138122A4614E00D80831 /* ArfPt_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfPt_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A138222A4614E00D80831 /* ArfPt_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfPt_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A138322A4614E00D80831 /* BdryCtry_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BdryCtry_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A138422A4614E00D80831 /* BdryCtry_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BdryCtry_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A138522A4614E00D80831 /* TrmMin_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmMin_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A138622A4614E00D80831 /* TrmMin_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmMin_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A138722A4614E00D80831 /* SvcRmk_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SvcRmk_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A138822A4614E00D80831 /* SvcRmk_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SvcRmk_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A138922A4614E00D80831 /* Gen_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gen_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A138A22A4614E00D80831 /* Gen_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gen_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A138B22A4614E00D80831 /* TrmSeg_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmSeg_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A138C22A4614E00D80831 /* TrmSeg_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmSeg_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A138D22A4614E00D80831 /* Mtr_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mtr_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A138E22A4614E00D80831 /* Mtr_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mtr_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A138F22A4614E00D80831 /* SuasPar_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuasPar_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A139022A4614E00D80831 /* SuasPar_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuasPar_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A139122A4614E00D80831 /* Hold_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hold_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A139222A4614E00D80831 /* Hold_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hold_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A139322A4614E00D80831 /* Ortca_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ortca_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A139422A4614E00D80831 /* Ortca_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ortca_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A139522A4614E00D80831 /* ArfAtc_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfAtc_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A139622A4614E00D80831 /* ArfAtc_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfAtc_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A139722A4614E00D80831 /* ArfRmk_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfRmk_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A139822A4614E00D80831 /* ArfRmk_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfRmk_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A139922A4614E00D80831 /* MtrOsm_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MtrOsm_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A139A22A4614E00D80831 /* MtrOsm_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MtrOsm_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A139B22A4614E00D80831 /* MtrOv_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MtrOv_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A139C22A4614E00D80831 /* MtrOv_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MtrOv_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A139D22A4614E00D80831 /* SuasNote_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuasNote_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A139E22A4614E00D80831 /* SuasNote_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuasNote_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A139F22A4614E00D80831 /* TrmClb_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmClb_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13A022A4614E00D80831 /* TrmClb_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmClb_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13A122A4614E00D80831 /* VfrRte_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VfrRte_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13A222A4614E00D80831 /* VfrRte_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VfrRte_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13A322A4614E00D80831 /* TrmMsa_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmMsa_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13A422A4614E00D80831 /* TrmMsa_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrmMsa_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13A522A4614E00D80831 /* Pja_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pja_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13A622A4614F00D80831 /* Pja_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pja_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13A722A4614F00D80831 /* SuasCtry_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuasCtry_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13A822A4614F00D80831 /* SuasCtry_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuasCtry_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13A922A4614F00D80831 /* Bdry_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bdry_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13AA22A4614F00D80831 /* Bdry_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bdry_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13AB22A4614F00D80831 /* ArfPar_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfPar_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13AC22A4614F00D80831 /* ArfPar_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArfPar_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13AD22A4614F00D80831 /* BdryPar_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BdryPar_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13AE22A4614F00D80831 /* BdryPar_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BdryPar_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13AF22A4614F00D80831 /* MtrPar_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MtrPar_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13B022A4614F00D80831 /* MtrPar_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MtrPar_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A13B122A4614F00D80831 /* Wpt_CD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wpt_CD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A13B222A4614F00D80831 /* Wpt_CD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wpt_CD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		525A140322A4647400D80831 /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Carthage/Build/iOS/Zip.framework; sourceTree = "<group>"; };
+		525A140B22A4657500D80831 /* CDUCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDUCreator.swift; sourceTree = "<group>"; };
+		525A140C22A4657500D80831 /* JSONFromDAFFIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFromDAFFIF.swift; sourceTree = "<group>"; };
+		525A140D22A4657500D80831 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		525A140E22A4657500D80831 /* DAFIFDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAFIFDataController.swift; sourceTree = "<group>"; };
+		525A140F22A4657500D80831 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		525A141122A4657500D80831 /* FileNames+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileNames+Extension.swift"; sourceTree = "<group>"; };
+		525A141222A4657500D80831 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		525A141322A4657500D80831 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		525A141422A4657500D80831 /* CoreDataStackCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackCreator.swift; sourceTree = "<group>"; };
+		525A141522A4657500D80831 /* UnzipDAFIF8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnzipDAFIF8.swift; sourceTree = "<group>"; };
+		525A141622A4657500D80831 /* DPCopier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPCopier.swift; sourceTree = "<group>"; };
+		525A141722A4657500D80831 /* CoreDataXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataXML.swift; sourceTree = "<group>"; };
+		525A141822A4657500D80831 /* SwiftDecoders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDecoders.swift; sourceTree = "<group>"; };
 		5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsReconfigured.storyboard; sourceTree = "<group>"; };
 		528765B2229B9444007C4477 /* LineUpCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCardViewController.swift; sourceTree = "<group>"; };
 		528E15ED229B28F200269816 /* single_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = single_item.html; sourceTree = "<group>"; };
@@ -219,12 +586,234 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525A140422A4647400D80831 /* Zip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		525A12BA22A4611F00D80831 /* Dafif */ = {
+			isa = PBXGroup;
+			children = (
+				525A130E22A4613B00D80831 /* DafifCD.xcdatamodeld */,
+				525A131022A4613B00D80831 /* DafifCDCDStack.swift */,
+				525A12E522A4613B00D80831 /* SwiftCoreDataUtilities */,
+				525A12BC22A4613B00D80831 /* SwiftDecoders */,
+				525A12BB22A4612A00D80831 /* DafifEntities */,
+			);
+			path = Dafif;
+			sourceTree = "<group>";
+		};
+		525A12BB22A4612A00D80831 /* DafifEntities */ = {
+			isa = PBXGroup;
+			children = (
+				525A136322A4614E00D80831 /* AtsRmk_CD+CoreDataClass.swift */,
+				525A136422A4614E00D80831 /* AtsRmk_CD+CoreDataProperties.swift */,
+				525A136522A4614E00D80831 /* AtsCtry_CD+CoreDataClass.swift */,
+				525A136622A4614E00D80831 /* AtsCtry_CD+CoreDataProperties.swift */,
+				525A136722A4614E00D80831 /* Arpt_CD+CoreDataClass.swift */,
+				525A136822A4614E00D80831 /* Arpt_CD+CoreDataProperties.swift */,
+				525A136922A4614E00D80831 /* Nav_CD+CoreDataClass.swift */,
+				525A136A22A4614E00D80831 /* Nav_CD+CoreDataProperties.swift */,
+				525A136B22A4614E00D80831 /* Ats_CD+CoreDataClass.swift */,
+				525A136C22A4614E00D80831 /* Ats_CD+CoreDataProperties.swift */,
+				525A136D22A4614E00D80831 /* Fueloil_CD+CoreDataClass.swift */,
+				525A136E22A4614E00D80831 /* Fueloil_CD+CoreDataProperties.swift */,
+				525A136F22A4614E00D80831 /* Suas_CD+CoreDataClass.swift */,
+				525A137022A4614E00D80831 /* Suas_CD+CoreDataProperties.swift */,
+				525A137122A4614E00D80831 /* TrmRmk_CD+CoreDataClass.swift */,
+				525A137222A4614E00D80831 /* TrmRmk_CD+CoreDataProperties.swift */,
+				525A137322A4614E00D80831 /* TrmPar_CD+CoreDataClass.swift */,
+				525A137422A4614E00D80831 /* TrmPar_CD+CoreDataProperties.swift */,
+				525A137522A4614E00D80831 /* AddRwy_CD+CoreDataClass.swift */,
+				525A137622A4614E00D80831 /* AddRwy_CD+CoreDataProperties.swift */,
+				525A137722A4614E00D80831 /* VfrRteRmk_CD+CoreDataClass.swift */,
+				525A137822A4614E00D80831 /* VfrRteRmk_CD+CoreDataProperties.swift */,
+				525A137922A4614E00D80831 /* ArfFt_CD+CoreDataClass.swift */,
+				525A137A22A4614E00D80831 /* ArfFt_CD+CoreDataProperties.swift */,
+				525A137B22A4614E00D80831 /* ArfSch_CD+CoreDataClass.swift */,
+				525A137C22A4614E00D80831 /* ArfSch_CD+CoreDataProperties.swift */,
+				525A137D22A4614E00D80831 /* MtrRmk_CD+CoreDataClass.swift */,
+				525A137E22A4614E00D80831 /* MtrRmk_CD+CoreDataProperties.swift */,
+				525A137F22A4614E00D80831 /* VfrRteSeg_CD+CoreDataClass.swift */,
+				525A138022A4614E00D80831 /* VfrRteSeg_CD+CoreDataProperties.swift */,
+				525A138122A4614E00D80831 /* ArfPt_CD+CoreDataClass.swift */,
+				525A138222A4614E00D80831 /* ArfPt_CD+CoreDataProperties.swift */,
+				525A138322A4614E00D80831 /* BdryCtry_CD+CoreDataClass.swift */,
+				525A138422A4614E00D80831 /* BdryCtry_CD+CoreDataProperties.swift */,
+				525A138522A4614E00D80831 /* TrmMin_CD+CoreDataClass.swift */,
+				525A138622A4614E00D80831 /* TrmMin_CD+CoreDataProperties.swift */,
+				525A138722A4614E00D80831 /* SvcRmk_CD+CoreDataClass.swift */,
+				525A138822A4614E00D80831 /* SvcRmk_CD+CoreDataProperties.swift */,
+				525A138922A4614E00D80831 /* Gen_CD+CoreDataClass.swift */,
+				525A138A22A4614E00D80831 /* Gen_CD+CoreDataProperties.swift */,
+				525A138B22A4614E00D80831 /* TrmSeg_CD+CoreDataClass.swift */,
+				525A138C22A4614E00D80831 /* TrmSeg_CD+CoreDataProperties.swift */,
+				525A138D22A4614E00D80831 /* Mtr_CD+CoreDataClass.swift */,
+				525A138E22A4614E00D80831 /* Mtr_CD+CoreDataProperties.swift */,
+				525A138F22A4614E00D80831 /* SuasPar_CD+CoreDataClass.swift */,
+				525A139022A4614E00D80831 /* SuasPar_CD+CoreDataProperties.swift */,
+				525A139122A4614E00D80831 /* Hold_CD+CoreDataClass.swift */,
+				525A139222A4614E00D80831 /* Hold_CD+CoreDataProperties.swift */,
+				525A139322A4614E00D80831 /* Ortca_CD+CoreDataClass.swift */,
+				525A139422A4614E00D80831 /* Ortca_CD+CoreDataProperties.swift */,
+				525A139522A4614E00D80831 /* ArfAtc_CD+CoreDataClass.swift */,
+				525A139622A4614E00D80831 /* ArfAtc_CD+CoreDataProperties.swift */,
+				525A139722A4614E00D80831 /* ArfRmk_CD+CoreDataClass.swift */,
+				525A139822A4614E00D80831 /* ArfRmk_CD+CoreDataProperties.swift */,
+				525A139922A4614E00D80831 /* MtrOsm_CD+CoreDataClass.swift */,
+				525A139A22A4614E00D80831 /* MtrOsm_CD+CoreDataProperties.swift */,
+				525A139B22A4614E00D80831 /* MtrOv_CD+CoreDataClass.swift */,
+				525A139C22A4614E00D80831 /* MtrOv_CD+CoreDataProperties.swift */,
+				525A139D22A4614E00D80831 /* SuasNote_CD+CoreDataClass.swift */,
+				525A139E22A4614E00D80831 /* SuasNote_CD+CoreDataProperties.swift */,
+				525A139F22A4614E00D80831 /* TrmClb_CD+CoreDataClass.swift */,
+				525A13A022A4614E00D80831 /* TrmClb_CD+CoreDataProperties.swift */,
+				525A13A122A4614E00D80831 /* VfrRte_CD+CoreDataClass.swift */,
+				525A13A222A4614E00D80831 /* VfrRte_CD+CoreDataProperties.swift */,
+				525A13A322A4614E00D80831 /* TrmMsa_CD+CoreDataClass.swift */,
+				525A13A422A4614E00D80831 /* TrmMsa_CD+CoreDataProperties.swift */,
+				525A13A522A4614E00D80831 /* Pja_CD+CoreDataClass.swift */,
+				525A13A622A4614F00D80831 /* Pja_CD+CoreDataProperties.swift */,
+				525A13A722A4614F00D80831 /* SuasCtry_CD+CoreDataClass.swift */,
+				525A13A822A4614F00D80831 /* SuasCtry_CD+CoreDataProperties.swift */,
+				525A13A922A4614F00D80831 /* Bdry_CD+CoreDataClass.swift */,
+				525A13AA22A4614F00D80831 /* Bdry_CD+CoreDataProperties.swift */,
+				525A13AB22A4614F00D80831 /* ArfPar_CD+CoreDataClass.swift */,
+				525A13AC22A4614F00D80831 /* ArfPar_CD+CoreDataProperties.swift */,
+				525A13AD22A4614F00D80831 /* BdryPar_CD+CoreDataClass.swift */,
+				525A13AE22A4614F00D80831 /* BdryPar_CD+CoreDataProperties.swift */,
+				525A13AF22A4614F00D80831 /* MtrPar_CD+CoreDataClass.swift */,
+				525A13B022A4614F00D80831 /* MtrPar_CD+CoreDataProperties.swift */,
+				525A13B122A4614F00D80831 /* Wpt_CD+CoreDataClass.swift */,
+				525A13B222A4614F00D80831 /* Wpt_CD+CoreDataProperties.swift */,
+			);
+			path = DafifEntities;
+			sourceTree = "<group>";
+		};
+		525A12BC22A4613B00D80831 /* SwiftDecoders */ = {
+			isa = PBXGroup;
+			children = (
+				525A12BD22A4613B00D80831 /* TrmRmk.swift */,
+				525A12BE22A4613B00D80831 /* AddRwy.swift */,
+				525A12BF22A4613B00D80831 /* SuasPar.swift */,
+				525A12C022A4613B00D80831 /* MtrPar.swift */,
+				525A12C122A4613B00D80831 /* SvcRmk.swift */,
+				525A12C222A4613B00D80831 /* ArfAtc.swift */,
+				525A12C322A4613B00D80831 /* Ortca.swift */,
+				525A12C422A4613B00D80831 /* MtrOsm.swift */,
+				525A12C522A4613B00D80831 /* AtsCtry.swift */,
+				525A12C622A4613B00D80831 /* TrmMin.swift */,
+				525A12C722A4613B00D80831 /* Mtr.swift */,
+				525A12C822A4613B00D80831 /* ArfPt.swift */,
+				525A12C922A4613B00D80831 /* VfrRte.swift */,
+				525A12CA22A4613B00D80831 /* VfrRteRmk.swift */,
+				525A12CB22A4613B00D80831 /* MtrRmk.swift */,
+				525A12CC22A4613B00D80831 /* SuasNote.swift */,
+				525A12CD22A4613B00D80831 /* ArfFt.swift */,
+				525A12CE22A4613B00D80831 /* TrmPar.swift */,
+				525A12CF22A4613B00D80831 /* Gen.swift */,
+				525A12D022A4613B00D80831 /* MtrOv.swift */,
+				525A12D122A4613B00D80831 /* BdryCtry.swift */,
+				525A12D222A4613B00D80831 /* Suas.swift */,
+				525A12D322A4613B00D80831 /* ArfSch.swift */,
+				525A12D422A4613B00D80831 /* BdryPar.swift */,
+				525A12D522A4613B00D80831 /* TrmSeg.swift */,
+				525A12D622A4613B00D80831 /* Hold.swift */,
+				525A12D722A4613B00D80831 /* Fueloil.swift */,
+				525A12D822A4613B00D80831 /* ArfPar.swift */,
+				525A12D922A4613B00D80831 /* Wpt.swift */,
+				525A12DA22A4613B00D80831 /* SuasCtry.swift */,
+				525A12DB22A4613B00D80831 /* Bdry.swift */,
+				525A12DC22A4613B00D80831 /* Nav.swift */,
+				525A12DD22A4613B00D80831 /* TrmClb.swift */,
+				525A12DE22A4613B00D80831 /* Arpt.swift */,
+				525A12DF22A4613B00D80831 /* VfrRteSeg.swift */,
+				525A12E022A4613B00D80831 /* TrmMsa.swift */,
+				525A12E122A4613B00D80831 /* ArfRmk.swift */,
+				525A12E222A4613B00D80831 /* AtsRmk.swift */,
+				525A12E322A4613B00D80831 /* Pja.swift */,
+				525A12E422A4613B00D80831 /* Ats.swift */,
+			);
+			path = SwiftDecoders;
+			sourceTree = "<group>";
+		};
+		525A12E522A4613B00D80831 /* SwiftCoreDataUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				525A12E622A4613B00D80831 /* NavCDU.swift */,
+				525A12E722A4613B00D80831 /* MtrOvCDU.swift */,
+				525A12E822A4613B00D80831 /* BdryCtryCDU.swift */,
+				525A12E922A4613B00D80831 /* ArfAtcCDU.swift */,
+				525A12EA22A4613B00D80831 /* ArptCDU.swift */,
+				525A12EB22A4613B00D80831 /* TrmSegCDU.swift */,
+				525A12EC22A4613B00D80831 /* MtrOsmCDU.swift */,
+				525A12ED22A4613B00D80831 /* SvcRmkCDU.swift */,
+				525A12EE22A4613B00D80831 /* VfrRteCDU.swift */,
+				525A12EF22A4613B00D80831 /* MtrCDU.swift */,
+				525A12F022A4613B00D80831 /* TrmRmkCDU.swift */,
+				525A12F122A4613B00D80831 /* ArfSchCDU.swift */,
+				525A12F222A4613B00D80831 /* SuasCDU.swift */,
+				525A12F322A4613B00D80831 /* AddRwyCDU.swift */,
+				525A12F422A4613B00D80831 /* WptCDU.swift */,
+				525A12F522A4613B00D80831 /* ArfFtCDU.swift */,
+				525A12F622A4613B00D80831 /* BdryParCDU.swift */,
+				525A12F722A4613B00D80831 /* AtsCtryCDU.swift */,
+				525A12F822A4613B00D80831 /* GenCDU.swift */,
+				525A12F922A4613B00D80831 /* TrmParCDU.swift */,
+				525A12FA22A4613B00D80831 /* VfrRteSegCDU.swift */,
+				525A12FB22A4613B00D80831 /* AtsCDU.swift */,
+				525A12FC22A4613B00D80831 /* TrmClbCDU.swift */,
+				525A12FD22A4613B00D80831 /* VfrRteRmkCDU.swift */,
+				525A12FE22A4613B00D80831 /* PjaCDU.swift */,
+				525A12FF22A4613B00D80831 /* SuasCtryCDU.swift */,
+				525A130022A4613B00D80831 /* HoldCDU.swift */,
+				525A130122A4613B00D80831 /* ArfPtCDU.swift */,
+				525A130222A4613B00D80831 /* SuasNoteCDU.swift */,
+				525A130322A4613B00D80831 /* MtrRmkCDU.swift */,
+				525A130422A4613B00D80831 /* OrtcaCDU.swift */,
+				525A130522A4613B00D80831 /* BdryCDU.swift */,
+				525A130622A4613B00D80831 /* ArfParCDU.swift */,
+				525A130722A4613B00D80831 /* TrmMsaCDU.swift */,
+				525A130822A4613B00D80831 /* FueloilCDU.swift */,
+				525A130922A4613B00D80831 /* AtsRmkCDU.swift */,
+				525A130A22A4613B00D80831 /* SuasParCDU.swift */,
+				525A130B22A4613B00D80831 /* TrmMinCDU.swift */,
+				525A130C22A4613B00D80831 /* MtrParCDU.swift */,
+				525A130D22A4613B00D80831 /* ArfRmkCDU.swift */,
+			);
+			path = SwiftCoreDataUtilities;
+			sourceTree = "<group>";
+		};
+		525A140A22A4657500D80831 /* DAFIFProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				525A140B22A4657500D80831 /* CDUCreator.swift */,
+				525A140C22A4657500D80831 /* JSONFromDAFFIF.swift */,
+				525A140D22A4657500D80831 /* Downloader.swift */,
+				525A140E22A4657500D80831 /* DAFIFDataController.swift */,
+				525A140F22A4657500D80831 /* Enums.swift */,
+				525A141022A4657500D80831 /* Extensions */,
+				525A141422A4657500D80831 /* CoreDataStackCreator.swift */,
+				525A141522A4657500D80831 /* UnzipDAFIF8.swift */,
+				525A141622A4657500D80831 /* DPCopier.swift */,
+				525A141722A4657500D80831 /* CoreDataXML.swift */,
+				525A141822A4657500D80831 /* SwiftDecoders.swift */,
+			);
+			path = DAFIFProcessor;
+			sourceTree = "<group>";
+		};
+		525A141022A4657500D80831 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				525A141122A4657500D80831 /* FileNames+Extension.swift */,
+				525A141222A4657500D80831 /* URL+Extension.swift */,
+				525A141322A4657500D80831 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		528E15F3229B28F800269816 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +830,7 @@
 		52B888C72291D6660056D816 = {
 			isa = PBXGroup;
 			children = (
+				525A140322A4647400D80831 /* Zip.framework */,
 				52B888D22291D6660056D816 /* T38 Beta */,
 				52B888D12291D6660056D816 /* Products */,
 			);
@@ -285,6 +875,7 @@
 		52B888FF2291D8220056D816 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				525A140A22A4657500D80831 /* DAFIFProcessor */,
 				52B889002291D8220056D816 /* CoreData */,
 				52B8890E2291D8220056D816 /* KML */,
 				52B889192291D8220056D816 /* Weather */,
@@ -298,6 +889,7 @@
 		52B889002291D8220056D816 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				525A12BA22A4611F00D80831 /* Dafif */,
 				52B889DC2291D91B0056D816 /* Entities */,
 				52B889072291D8220056D816 /* T38CD.xcdatamodeld */,
 				52B8890A2291D8220056D816 /* CoreDataUtilities.swift */,
@@ -551,6 +1143,8 @@
 				52B888CC2291D6660056D816 /* Sources */,
 				52B888CD2291D6660056D816 /* Frameworks */,
 				52B888CE2291D6660056D816 /* Resources */,
+				525A140622A4647400D80831 /* Embed Frameworks */,
+				525A140722A4648400D80831 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -616,100 +1210,296 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		525A140722A4648400D80831 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Zip.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52B888CC2291D6660056D816 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525A133422A4613C00D80831 /* TrmMsa.swift in Sources */,
+				525A13E422A4614F00D80831 /* Ortca_CD+CoreDataProperties.swift in Sources */,
 				52B889502291D8220056D816 /* TafParser.swift in Sources */,
 				52B889952291D8610056D816 /* UIViewControllerExtensions.swift in Sources */,
 				52B889D12291D9120056D816 /* ToldResults+CoreDataProperties.swift in Sources */,
+				525A136222A4613C00D80831 /* DafifCDCDStack.swift in Sources */,
 				52B889A42291D8610056D816 /* RunwayChoicesTableViewController.swift in Sources */,
+				525A131622A4613C00D80831 /* ArfAtc.swift in Sources */,
+				525A141E22A4657500D80831 /* FileNames+Extension.swift in Sources */,
+				525A135622A4613C00D80831 /* MtrRmkCDU.swift in Sources */,
 				52B8894B2291D8220056D816 /* MetarParser.swift in Sources */,
+				525A133222A4613C00D80831 /* Arpt.swift in Sources */,
+				525A131E22A4613C00D80831 /* VfrRteRmk.swift in Sources */,
+				525A135022A4613C00D80831 /* VfrRteRmkCDU.swift in Sources */,
 				52B8894C2291D8220056D816 /* MetarDownLoader.swift in Sources */,
+				525A13C622A4614F00D80831 /* AddRwy_CD+CoreDataProperties.swift in Sources */,
+				525A134F22A4613C00D80831 /* TrmClbCDU.swift in Sources */,
 				52B889DB2291D9120056D816 /* FreqCD+CoreDataProperties.swift in Sources */,
 				52B889DA2291D9120056D816 /* FreqCD+CoreDataClass.swift in Sources */,
+				525A142222A4657500D80831 /* UnzipDAFIF8.swift in Sources */,
+				525A142522A4657500D80831 /* SwiftDecoders.swift in Sources */,
 				52B889492291D8220056D816 /* Spoke.swift in Sources */,
+				525A134B22A4613C00D80831 /* GenCDU.swift in Sources */,
 				52B889D32291D9120056D816 /* UserPreferencesCD+CoreDataProperties.swift in Sources */,
+				525A132A22A4613C00D80831 /* Hold.swift in Sources */,
 				52B889D42291D9120056D816 /* RunwayCD+CoreDataClass.swift in Sources */,
+				525A135322A4613C00D80831 /* HoldCDU.swift in Sources */,
+				525A133F22A4613C00D80831 /* MtrOsmCDU.swift in Sources */,
+				525A135822A4613C00D80831 /* BdryCDU.swift in Sources */,
 				52B8895A2291D8220056D816 /* Heading.swift in Sources */,
 				52B889442291D8220056D816 /* BEBearingMark.swift in Sources */,
+				525A131D22A4613C00D80831 /* VfrRte.swift in Sources */,
 				52B889922291D8610056D816 /* UIView+Extensions.swift in Sources */,
+				525A13E022A4614F00D80831 /* SuasPar_CD+CoreDataProperties.swift in Sources */,
 				52B8895C2291D8220056D816 /* FirstLaunch.swift in Sources */,
+				525A135D22A4613C00D80831 /* SuasParCDU.swift in Sources */,
 				52B889CE2291D9120056D816 /* ToldInputsCD+CoreDataClass.swift in Sources */,
 				52B889A92291D8610056D816 /* InitialVideoPlayerViewController.swift in Sources */,
+				525A135422A4613C00D80831 /* ArfPtCDU.swift in Sources */,
+				525A141B22A4657500D80831 /* Downloader.swift in Sources */,
 				52B889912291D8610056D816 /* UITableViewExtensions.swift in Sources */,
+				525A13FC22A4614F00D80831 /* ArfPar_CD+CoreDataProperties.swift in Sources */,
+				525A13E822A4614F00D80831 /* ArfRmk_CD+CoreDataProperties.swift in Sources */,
 				52B889AB2291D8610056D816 /* ToldSettingsViewController.swift in Sources */,
+				525A131C22A4613C00D80831 /* ArfPt.swift in Sources */,
+				525A13BE22A4614F00D80831 /* Fueloil_CD+CoreDataProperties.swift in Sources */,
+				525A134322A4613C00D80831 /* TrmRmkCDU.swift in Sources */,
+				525A131922A4613C00D80831 /* AtsCtry.swift in Sources */,
 				52B889D72291D9120056D816 /* NavaidCD+CoreDataProperties.swift in Sources */,
 				52B8895D2291D8220056D816 /* EdgeInsetLabel.swift in Sources */,
+				525A13B322A4614F00D80831 /* AtsRmk_CD+CoreDataClass.swift in Sources */,
+				525A13E922A4614F00D80831 /* MtrOsm_CD+CoreDataClass.swift in Sources */,
+				525A133D22A4613C00D80831 /* ArptCDU.swift in Sources */,
+				525A132322A4613C00D80831 /* Gen.swift in Sources */,
+				525A13C322A4614F00D80831 /* TrmPar_CD+CoreDataClass.swift in Sources */,
+				525A13C522A4614F00D80831 /* AddRwy_CD+CoreDataClass.swift in Sources */,
+				525A13BF22A4614F00D80831 /* Suas_CD+CoreDataClass.swift in Sources */,
 				52B8893A2291D8220056D816 /* T38CD.xcdatamodeld in Sources */,
+				525A13DC22A4614F00D80831 /* TrmSeg_CD+CoreDataProperties.swift in Sources */,
+				525A141922A4657500D80831 /* CDUCreator.swift in Sources */,
+				525A131122A4613C00D80831 /* TrmRmk.swift in Sources */,
+				525A133E22A4613C00D80831 /* TrmSegCDU.swift in Sources */,
+				525A134022A4613C00D80831 /* SvcRmkCDU.swift in Sources */,
+				525A131322A4613C00D80831 /* SuasPar.swift in Sources */,
 				52B8899C2291D8610056D816 /* ErrorTableViewController.swift in Sources */,
 				52B889452291D8220056D816 /* StyleKML.swift in Sources */,
+				525A132122A4613C00D80831 /* ArfFt.swift in Sources */,
 				52B889942291D8610056D816 /* DoubleExtensions.swift in Sources */,
 				52B8894A2291D8220056D816 /* AddsWeatherAPI.swift in Sources */,
+				525A132822A4613C00D80831 /* BdryPar.swift in Sources */,
+				525A141C22A4657500D80831 /* DAFIFDataController.swift in Sources */,
 				52B889D82291D9120056D816 /* AirfieldCD+CoreDataClass.swift in Sources */,
+				525A132F22A4613C00D80831 /* Bdry.swift in Sources */,
+				525A142022A4657500D80831 /* String+Extension.swift in Sources */,
+				525A141F22A4657500D80831 /* URL+Extension.swift in Sources */,
 				52B889A32291D8610056D816 /* InputsCellTableViewCell.swift in Sources */,
+				525A13C122A4614F00D80831 /* TrmRmk_CD+CoreDataClass.swift in Sources */,
 				52B889A62291D8610056D816 /* ToldDefaultsViewController.swift in Sources */,
+				525A13F222A4614F00D80831 /* VfrRte_CD+CoreDataProperties.swift in Sources */,
+				525A134C22A4613C00D80831 /* TrmParCDU.swift in Sources */,
+				525A13FF22A4614F00D80831 /* MtrPar_CD+CoreDataClass.swift in Sources */,
+				525A13DF22A4614F00D80831 /* SuasPar_CD+CoreDataClass.swift in Sources */,
+				525A132422A4613C00D80831 /* MtrOv.swift in Sources */,
+				525A131F22A4613C00D80831 /* MtrRmk.swift in Sources */,
+				525A141A22A4657500D80831 /* JSONFromDAFFIF.swift in Sources */,
+				525A13B522A4614F00D80831 /* AtsCtry_CD+CoreDataClass.swift in Sources */,
+				525A13D622A4614F00D80831 /* TrmMin_CD+CoreDataProperties.swift in Sources */,
 				52B889982291D8610056D816 /* UIButtonExtensions.swift in Sources */,
 				52B889A52291D8610056D816 /* SettingsMainViewController.swift in Sources */,
 				528E15F5229B297600269816 /* HTMLHandler.swift in Sources */,
+				525A13D722A4614F00D80831 /* SvcRmk_CD+CoreDataClass.swift in Sources */,
+				525A13F522A4614F00D80831 /* Pja_CD+CoreDataClass.swift in Sources */,
+				525A13F422A4614F00D80831 /* TrmMsa_CD+CoreDataProperties.swift in Sources */,
 				52B8895E2291D8220056D816 /* T38A_TOLD.swift in Sources */,
 				52B889D52291D9120056D816 /* RunwayCD+CoreDataProperties.swift in Sources */,
 				52B889AE2291D8610056D816 /* HowToViewController.swift in Sources */,
+				525A133A22A4613C00D80831 /* MtrOvCDU.swift in Sources */,
+				525A140122A4614F00D80831 /* Wpt_CD+CoreDataClass.swift in Sources */,
+				525A135222A4613C00D80831 /* SuasCtryCDU.swift in Sources */,
+				525A13BA22A4614F00D80831 /* Nav_CD+CoreDataProperties.swift in Sources */,
 				52B889532291D8220056D816 /* JSONHandler.swift in Sources */,
 				52B889CD2291D9120056D816 /* CommunicationCD+CoreDataProperties.swift in Sources */,
+				525A13D322A4614F00D80831 /* BdryCtry_CD+CoreDataClass.swift in Sources */,
+				525A13DA22A4614F00D80831 /* Gen_CD+CoreDataProperties.swift in Sources */,
+				525A13F822A4614F00D80831 /* SuasCtry_CD+CoreDataProperties.swift in Sources */,
 				52B889592291D8220056D816 /* AlwaysPopupSeque.swift in Sources */,
+				525A13ED22A4614F00D80831 /* SuasNote_CD+CoreDataClass.swift in Sources */,
+				525A13F122A4614F00D80831 /* VfrRte_CD+CoreDataClass.swift in Sources */,
 				52B889D22291D9120056D816 /* UserPreferencesCD+CoreDataClass.swift in Sources */,
 				52B889582291D8220056D816 /* InfoStrings.swift in Sources */,
+				525A13E222A4614F00D80831 /* Hold_CD+CoreDataProperties.swift in Sources */,
+				525A13CE22A4614F00D80831 /* MtrRmk_CD+CoreDataProperties.swift in Sources */,
 				52B889B32291D8610056D816 /* PlanningViewController.swift in Sources */,
+				525A132522A4613C00D80831 /* BdryCtry.swift in Sources */,
+				525A136022A4613C00D80831 /* ArfRmkCDU.swift in Sources */,
+				525A141D22A4657500D80831 /* Enums.swift in Sources */,
+				525A13CC22A4614F00D80831 /* ArfSch_CD+CoreDataProperties.swift in Sources */,
+				525A133B22A4613C00D80831 /* BdryCtryCDU.swift in Sources */,
+				525A142422A4657500D80831 /* CoreDataXML.swift in Sources */,
+				525A131822A4613C00D80831 /* MtrOsm.swift in Sources */,
 				52B889462291D8220056D816 /* PlacemarkKML.swift in Sources */,
 				52B8895B2291D8220056D816 /* Reachability.swift in Sources */,
+				525A13C422A4614F00D80831 /* TrmPar_CD+CoreDataProperties.swift in Sources */,
 				52B889482291D8220056D816 /* Enumurations.swift in Sources */,
 				52B889AF2291D8610056D816 /* CalcViewController.swift in Sources */,
+				525A133122A4613C00D80831 /* TrmClb.swift in Sources */,
+				525A134D22A4613C00D80831 /* VfrRteSegCDU.swift in Sources */,
+				525A13F322A4614F00D80831 /* TrmMsa_CD+CoreDataClass.swift in Sources */,
+				525A132922A4613C00D80831 /* TrmSeg.swift in Sources */,
+				525A13B722A4614F00D80831 /* Arpt_CD+CoreDataClass.swift in Sources */,
 				52B888E92291D8020056D816 /* AppDelegate.swift in Sources */,
+				525A142322A4657500D80831 /* DPCopier.swift in Sources */,
+				525A134922A4613C00D80831 /* BdryParCDU.swift in Sources */,
+				525A13EE22A4614F00D80831 /* SuasNote_CD+CoreDataProperties.swift in Sources */,
 				52B889972291D8610056D816 /* UILabel+Extensions.swift in Sources */,
+				525A135122A4613C00D80831 /* PjaCDU.swift in Sources */,
 				52B889612291D8550056D816 /* JSONDownLoader.swift in Sources */,
+				525A134A22A4613C00D80831 /* AtsCtryCDU.swift in Sources */,
 				52B889422291D8220056D816 /* OpenCloseKML.swift in Sources */,
+				525A135A22A4613C00D80831 /* TrmMsaCDU.swift in Sources */,
+				525A131522A4613C00D80831 /* SvcRmk.swift in Sources */,
 				52B889AC2291D8610056D816 /* AboutThisAppViewController.swift in Sources */,
+				525A13EC22A4614F00D80831 /* MtrOv_CD+CoreDataProperties.swift in Sources */,
+				525A13DE22A4614F00D80831 /* Mtr_CD+CoreDataProperties.swift in Sources */,
+				525A134422A4613C00D80831 /* ArfSchCDU.swift in Sources */,
+				525A13E622A4614F00D80831 /* ArfAtc_CD+CoreDataProperties.swift in Sources */,
+				525A133822A4613C00D80831 /* Ats.swift in Sources */,
 				52B889542291D8220056D816 /* Wind.swift in Sources */,
 				52B889AA2291D8610056D816 /* CalcLogicViewController.swift in Sources */,
+				525A135722A4613C00D80831 /* OrtcaCDU.swift in Sources */,
+				525A13C022A4614F00D80831 /* Suas_CD+CoreDataProperties.swift in Sources */,
+				525A13CF22A4614F00D80831 /* VfrRteSeg_CD+CoreDataClass.swift in Sources */,
+				525A13B822A4614F00D80831 /* Arpt_CD+CoreDataProperties.swift in Sources */,
 				52B889412291D8220056D816 /* BullsEyeKML.swift in Sources */,
+				525A13D822A4614F00D80831 /* SvcRmk_CD+CoreDataProperties.swift in Sources */,
+				525A131222A4613C00D80831 /* AddRwy.swift in Sources */,
+				525A134522A4613C00D80831 /* SuasCDU.swift in Sources */,
+				525A133322A4613C00D80831 /* VfrRteSeg.swift in Sources */,
+				525A13DD22A4614F00D80831 /* Mtr_CD+CoreDataClass.swift in Sources */,
+				525A13E722A4614F00D80831 /* ArfRmk_CD+CoreDataClass.swift in Sources */,
+				525A13B422A4614F00D80831 /* AtsRmk_CD+CoreDataProperties.swift in Sources */,
 				52B889B42291D8610056D816 /* calcInfoViewController.swift in Sources */,
 				52B8899B2291D8610056D816 /* WindInfoPopOverViewController.swift in Sources */,
+				525A13B622A4614F00D80831 /* AtsCtry_CD+CoreDataProperties.swift in Sources */,
+				525A133522A4613C00D80831 /* ArfRmk.swift in Sources */,
 				52B889B02291D8610056D816 /* NearestReconfiguredViewController.swift in Sources */,
+				525A133C22A4613C00D80831 /* ArfAtcCDU.swift in Sources */,
 				52B889D02291D9120056D816 /* ToldResults+CoreDataClass.swift in Sources */,
+				525A135F22A4613C00D80831 /* MtrParCDU.swift in Sources */,
 				52B889552291D8220056D816 /* DivertGonkulator.swift in Sources */,
+				525A134822A4613C00D80831 /* ArfFtCDU.swift in Sources */,
+				525A13C922A4614F00D80831 /* ArfFt_CD+CoreDataClass.swift in Sources */,
+				525A133022A4613C00D80831 /* Nav.swift in Sources */,
+				525A140022A4614F00D80831 /* MtrPar_CD+CoreDataProperties.swift in Sources */,
+				525A13F022A4614F00D80831 /* TrmClb_CD+CoreDataProperties.swift in Sources */,
 				52B889AD2291D8610056D816 /* NotesViewController.swift in Sources */,
+				525A13D222A4614F00D80831 /* ArfPt_CD+CoreDataProperties.swift in Sources */,
+				525A13E322A4614F00D80831 /* Ortca_CD+CoreDataClass.swift in Sources */,
 				52B8894F2291D8220056D816 /* TafDownloader.swift in Sources */,
+				525A132222A4613C00D80831 /* TrmPar.swift in Sources */,
 				52B889A02291D8610056D816 /* ErrorMessagesTableViewController.swift in Sources */,
+				525A13CD22A4614F00D80831 /* MtrRmk_CD+CoreDataClass.swift in Sources */,
+				525A13DB22A4614F00D80831 /* TrmSeg_CD+CoreDataClass.swift in Sources */,
+				525A13EB22A4614F00D80831 /* MtrOv_CD+CoreDataClass.swift in Sources */,
 				52B889B12291D8610056D816 /* NearestCellReconfiguredTableViewCell.swift in Sources */,
 				52B889A22291D8610056D816 /* TailTableViewController.swift in Sources */,
 				528765B3229B9444007C4477 /* LineUpCardViewController.swift in Sources */,
+				525A131422A4613C00D80831 /* MtrPar.swift in Sources */,
+				525A13FA22A4614F00D80831 /* Bdry_CD+CoreDataProperties.swift in Sources */,
+				525A132B22A4613C00D80831 /* Fueloil.swift in Sources */,
 				52B889D62291D9120056D816 /* NavaidCD+CoreDataClass.swift in Sources */,
+				525A13BB22A4614F00D80831 /* Ats_CD+CoreDataClass.swift in Sources */,
 				52B8894E2291D8220056D816 /* Taf.swift in Sources */,
+				525A135922A4613C00D80831 /* ArfParCDU.swift in Sources */,
+				525A134622A4613C00D80831 /* AddRwyCDU.swift in Sources */,
+				525A13C822A4614F00D80831 /* VfrRteRmk_CD+CoreDataProperties.swift in Sources */,
+				525A13F722A4614F00D80831 /* SuasCtry_CD+CoreDataClass.swift in Sources */,
 				52B889992291D8610056D816 /* UIColorExtensions.swift in Sources */,
+				525A13C722A4614F00D80831 /* VfrRteRmk_CD+CoreDataClass.swift in Sources */,
 				52B889402291D8220056D816 /* PolygonKML.swift in Sources */,
 				52B8899A2291D8610056D816 /* InitialLoadViewController.swift in Sources */,
+				525A13C222A4614F00D80831 /* TrmRmk_CD+CoreDataProperties.swift in Sources */,
+				525A135E22A4613C00D80831 /* TrmMinCDU.swift in Sources */,
+				525A13EA22A4614F00D80831 /* MtrOsm_CD+CoreDataProperties.swift in Sources */,
 				52B889522291D8220056D816 /* Weather.swift in Sources */,
+				525A13D422A4614F00D80831 /* BdryCtry_CD+CoreDataProperties.swift in Sources */,
+				525A135C22A4613C00D80831 /* AtsRmkCDU.swift in Sources */,
 				52B889962291D8610056D816 /* UIStackView+Extensions.swift in Sources */,
+				525A131B22A4613C00D80831 /* Mtr.swift in Sources */,
+				525A134E22A4613C00D80831 /* AtsCDU.swift in Sources */,
+				525A13B922A4614F00D80831 /* Nav_CD+CoreDataClass.swift in Sources */,
 				52B889572291D8220056D816 /* CalcBrains.swift in Sources */,
 				52B8899E2291D8610056D816 /* FlasherButtonView.swift in Sources */,
 				52B8893C2291D8220056D816 /* CoreDataUtilities.swift in Sources */,
+				525A13FB22A4614F00D80831 /* ArfPar_CD+CoreDataClass.swift in Sources */,
+				525A13D022A4614F00D80831 /* VfrRteSeg_CD+CoreDataProperties.swift in Sources */,
 				52B8899F2291D8610056D816 /* InputAlertTableViewController.swift in Sources */,
 				52B889432291D8220056D816 /* CircleKML.swift in Sources */,
+				525A13FD22A4614F00D80831 /* BdryPar_CD+CoreDataClass.swift in Sources */,
+				525A135522A4613C00D80831 /* SuasNoteCDU.swift in Sources */,
+				525A13F922A4614F00D80831 /* Bdry_CD+CoreDataClass.swift in Sources */,
 				52B889562291D8220056D816 /* PlanningGonk.swift in Sources */,
 				52B889932291D8610056D816 /* StringExtensions.swift in Sources */,
+				525A13CB22A4614F00D80831 /* ArfSch_CD+CoreDataClass.swift in Sources */,
+				525A13F622A4614F00D80831 /* Pja_CD+CoreDataProperties.swift in Sources */,
+				525A140222A4614F00D80831 /* Wpt_CD+CoreDataProperties.swift in Sources */,
 				52B889D92291D9120056D816 /* AirfieldCD+CoreDataProperties.swift in Sources */,
+				525A132622A4613C00D80831 /* Suas.swift in Sources */,
+				525A136122A4613C00D80831 /* DafifCD.xcdatamodeld in Sources */,
+				525A134122A4613C00D80831 /* VfrRteCDU.swift in Sources */,
 				52B889512291D8220056D816 /* Airfields.swift in Sources */,
 				52B889B22291D8610056D816 /* PlanningCellTableViewCell.swift in Sources */,
+				525A13D922A4614F00D80831 /* Gen_CD+CoreDataClass.swift in Sources */,
+				525A13FE22A4614F00D80831 /* BdryPar_CD+CoreDataProperties.swift in Sources */,
+				525A132C22A4613C00D80831 /* ArfPar.swift in Sources */,
+				525A13CA22A4614F00D80831 /* ArfFt_CD+CoreDataProperties.swift in Sources */,
+				525A13E122A4614F00D80831 /* Hold_CD+CoreDataClass.swift in Sources */,
+				525A133622A4613C00D80831 /* AtsRmk.swift in Sources */,
+				525A142122A4657500D80831 /* CoreDataStackCreator.swift in Sources */,
+				525A134722A4613C00D80831 /* WptCDU.swift in Sources */,
 				52B889CF2291D9120056D816 /* ToldInputsCD+CoreDataProperties.swift in Sources */,
 				52B889472291D8220056D816 /* BEDistanceMarker.swift in Sources */,
+				525A131A22A4613C00D80831 /* TrmMin.swift in Sources */,
 				52B8894D2291D8220056D816 /* Metar.swift in Sources */,
+				525A134222A4613C00D80831 /* MtrCDU.swift in Sources */,
+				525A13D122A4614F00D80831 /* ArfPt_CD+CoreDataClass.swift in Sources */,
+				525A13BD22A4614F00D80831 /* Fueloil_CD+CoreDataClass.swift in Sources */,
+				525A135B22A4613C00D80831 /* FueloilCDU.swift in Sources */,
 				52B889A12291D8610056D816 /* RunwayCell.swift in Sources */,
+				525A132022A4613C00D80831 /* SuasNote.swift in Sources */,
 				52B8899D2291D8610056D816 /* TOLDReconfiguredViewController.swift in Sources */,
 				52B889A82291D8610056D816 /* PreflightVideoPlayerViewController.swift in Sources */,
+				525A132E22A4613C00D80831 /* SuasCtry.swift in Sources */,
 				528E15F7229B2D6000269816 /* PDFGenerator.swift in Sources */,
 				52B889CC2291D9120056D816 /* CommunicationCD+CoreDataClass.swift in Sources */,
+				525A13D522A4614F00D80831 /* TrmMin_CD+CoreDataClass.swift in Sources */,
+				525A13E522A4614F00D80831 /* ArfAtc_CD+CoreDataClass.swift in Sources */,
+				525A132722A4613C00D80831 /* ArfSch.swift in Sources */,
+				525A133922A4613C00D80831 /* NavCDU.swift in Sources */,
+				525A131722A4613C00D80831 /* Ortca.swift in Sources */,
+				525A132D22A4613C00D80831 /* Wpt.swift in Sources */,
+				525A133722A4613C00D80831 /* Pja.swift in Sources */,
+				525A13EF22A4614F00D80831 /* TrmClb_CD+CoreDataClass.swift in Sources */,
+				525A13BC22A4614F00D80831 /* Ats_CD+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +1648,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VR6Z5GU2W7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "T38 Beta/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -879,6 +1673,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VR6Z5GU2W7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "T38 Beta/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -916,6 +1714,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		525A130E22A4613B00D80831 /* DafifCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				525A130F22A4613B00D80831 /* DafifCD.xcdatamodel */,
+			);
+			currentVersion = 525A130F22A4613B00D80831 /* DafifCD.xcdatamodel */;
+			path = DafifCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		52B889072291D8220056D816 /* T38CD.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
