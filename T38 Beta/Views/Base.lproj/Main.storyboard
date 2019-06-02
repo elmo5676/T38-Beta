@@ -193,7 +193,7 @@
                     <connections>
                         <segue destination="jx9-Iw-P1B" kind="relationship" relationship="viewControllers" id="8hw-jt-faW"/>
                         <segue destination="t01-J6-iGZ" kind="relationship" relationship="viewControllers" id="drc-5E-Wny"/>
-                        <segue destination="GYa-1n-mmE" kind="relationship" relationship="viewControllers" id="2Fp-IB-9IY"/>
+                        <segue destination="4fH-S9-IJB" kind="relationship" relationship="viewControllers" id="P6C-aS-VBT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -302,10 +302,21 @@
             </objects>
             <point key="canvasLocation" x="-21981" y="-9471"/>
         </scene>
+        <!--SettingsReconfigured-->
+        <scene sceneID="htb-3L-Db4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsReconfigured" id="4fH-S9-IJB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" selectedImage="icons8-horizontal_settings_mixer_filled" systemItem="more" id="HSD-Dl-IyX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9h-KS-4hJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21671" y="-9729"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GroupA" width="1522" height="1917"/>
         <image name="LaunchBG-A" width="1522" height="1917"/>
+        <image name="icons8-horizontal_settings_mixer_filled" width="25" height="25"/>
         <image name="loadScreen" width="100" height="100"/>
     </resources>
 </document>

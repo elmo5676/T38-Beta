@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */; };
 		528765B3229B9444007C4477 /* LineUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528765B2229B9444007C4477 /* LineUpCardViewController.swift */; };
 		528E15F0229B28F300269816 /* single_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15ED229B28F200269816 /* single_item.html */; };
 		528E15F1229B28F300269816 /* invoice.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15EE229B28F200269816 /* invoice.html */; };
@@ -112,6 +113,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsReconfigured.storyboard; sourceTree = "<group>"; };
 		528765B2229B9444007C4477 /* LineUpCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCardViewController.swift; sourceTree = "<group>"; };
 		528E15ED229B28F200269816 /* single_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = single_item.html; sourceTree = "<group>"; };
 		528E15EE229B28F200269816 /* invoice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = invoice.html; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				52B888EB2291D8130056D816 /* Main.storyboard */,
+				5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */,
 				52B888ED2291D8130056D816 /* SettingsTab~.storyboard */,
 				52B888EF2291D8130056D816 /* LaunchT38A.storyboard */,
 				52B888F02291D8130056D816 /* T38 */,
@@ -622,6 +625,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */,
 				52B888FA2291D8130056D816 /* LaunchT38A.storyboard in Resources */,
 				52B888FB2291D8130056D816 /* SettingsTab.storyboard in Resources */,
 				52B888FC2291D8130056D816 /* CalculatorTab.storyboard in Resources */,
