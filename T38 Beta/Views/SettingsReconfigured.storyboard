@@ -524,19 +524,25 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="768" height="71.5"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cx9-GK-b2A">
-                                                                        <rect key="frame" x="38.5" y="0.0" width="691" height="71.5"/>
+                                                                        <rect key="frame" x="19" y="0.0" width="730" height="71.5"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation, Takeoff, and 50 FT Obstacle Speed :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olp-T2-kbP">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="71.5"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation, Takeoff, and 50 FT Obstacle Speed :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olp-T2-kbP">
+                                                                                <rect key="frame" x="0.0" y="8.5" width="146" height="54"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                                </variation>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Aft stick applied at the rotation speed shown and 7.5° pitch attitude held after rotation through 50ft AGL" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9y-Bi-yi7">
-                                                                                <rect key="frame" x="158" y="17.5" width="533" height="36"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Aft stick applied at the rotation speed shown and 7.5° pitch attitude held after rotation through 50ft AGL" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9y-Bi-yi7">
+                                                                                <rect key="frame" x="166" y="17.5" width="564" height="36"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                                </variation>
                                                                             </label>
                                                                         </subviews>
                                                                         <constraints>
@@ -549,28 +555,34 @@
                                                                     <constraint firstItem="cx9-GK-b2A" firstAttribute="centerX" secondItem="PPU-g2-zJh" secondAttribute="centerX" id="9LS-ku-ssf"/>
                                                                     <constraint firstItem="cx9-GK-b2A" firstAttribute="height" secondItem="PPU-g2-zJh" secondAttribute="height" id="KcF-jF-Gnp"/>
                                                                     <constraint firstItem="cx9-GK-b2A" firstAttribute="centerY" secondItem="PPU-g2-zJh" secondAttribute="centerY" id="nCC-dY-FJY"/>
-                                                                    <constraint firstItem="cx9-GK-b2A" firstAttribute="width" secondItem="PPU-g2-zJh" secondAttribute="width" multiplier="0.9" id="nLd-cr-pV8"/>
+                                                                    <constraint firstItem="cx9-GK-b2A" firstAttribute="width" secondItem="PPU-g2-zJh" secondAttribute="width" multiplier="0.95" id="nLd-cr-pV8"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nET-q8-Ilc">
                                                                 <rect key="frame" x="0.0" y="71.5" width="768" height="71"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dPH-aG-DbO">
-                                                                        <rect key="frame" x="38.5" y="0.0" width="691" height="71"/>
+                                                                        <rect key="frame" x="19" y="0.0" width="730" height="71"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Takeoff Distance :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9h-sn-BBA">
-                                                                                <rect key="frame" x="0.0" y="15" width="138" height="41"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Takeoff Distance :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9h-sn-BBA">
+                                                                                <rect key="frame" x="0.0" y="26.5" width="146" height="18"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                                </variation>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owl-eQ-Ujm">
-                                                                                <rect key="frame" x="158" y="8.5" width="533" height="54"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owl-eQ-Ujm">
+                                                                                <rect key="frame" x="166" y="8.5" width="564" height="54"/>
                                                                                 <string key="text">- Data based on normal takeoff procedures:
 - Aft stick applied at the rotation speed shown and 7.5° pitch attitude held after rotation</string>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                                </variation>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
@@ -586,19 +598,25 @@
                                                                 <rect key="frame" x="0.0" y="142.5" width="768" height="71.5"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YoE-EH-Frk">
-                                                                        <rect key="frame" x="38.5" y="0.0" width="691" height="71.5"/>
+                                                                        <rect key="frame" x="19" y="0.0" width="730" height="71.5"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical Field Length (CFL) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qx-0m-phZ">
-                                                                                <rect key="frame" x="0.0" y="15" width="138" height="41"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical Field Length (CFL) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qx-0m-phZ">
+                                                                                <rect key="frame" x="0.0" y="17.5" width="146" height="36"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                                </variation>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- CFL valid up to SETOS. '- Aero-brake if possible. These data assume no aero-braking." textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh7-rs-ads">
-                                                                                <rect key="frame" x="158" y="17.5" width="533" height="36"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- CFL valid up to SETOS. '- Aero-brake if possible. These data assume no aero-braking." textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh7-rs-ads">
+                                                                                <rect key="frame" x="166" y="17.5" width="564" height="36"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                                </variation>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
@@ -614,21 +632,27 @@
                                                                 <rect key="frame" x="0.0" y="214" width="768" height="71"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fuW-Pq-JgS">
-                                                                        <rect key="frame" x="38.5" y="0.0" width="691" height="71"/>
+                                                                        <rect key="frame" x="19" y="0.0" width="730" height="71"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refusal Speed/Both Engines Operating (RS-BEO) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHz-y3-DPI">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="71"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refusal Speed/Both Engines Operating (RS-BEO) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHz-y3-DPI">
+                                                                                <rect key="frame" x="0.0" y="8.5" width="146" height="54"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                                </variation>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-Ll-ePJ">
-                                                                                <rect key="frame" x="158" y="8.5" width="533" height="54"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-Ll-ePJ">
+                                                                                <rect key="frame" x="166" y="8.5" width="564" height="54"/>
                                                                                 <string key="text">- These data assume non-engine failure.
 - For aero-braking:  Aft stick applied at the rotation speed and 7.5° pitch attitude held from rotation to 120 KIAS.</string>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                                </variation>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
@@ -644,22 +668,28 @@
                                                                 <rect key="frame" x="0.0" y="285" width="768" height="71.5"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-1R-5gg">
-                                                                        <rect key="frame" x="38.5" y="0.0" width="691" height="71.5"/>
+                                                                        <rect key="frame" x="19" y="0.0" width="730" height="71.5"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refusal Speed/Engine Failure (RS-EF) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XE6-jv-a3S">
-                                                                                <rect key="frame" x="0.0" y="5" width="138" height="61"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refusal Speed/Engine Failure (RS-EF) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XE6-jv-a3S">
+                                                                                <rect key="frame" x="0.0" y="8.5" width="146" height="54"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                                </variation>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixc-fb-Ehy">
-                                                                                <rect key="frame" x="158" y="0.0" width="533" height="71.5"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixc-fb-Ehy">
+                                                                                <rect key="frame" x="166" y="8.5" width="564" height="54"/>
                                                                                 <string key="text">- These data assume engine failure.
 - Refusal Speed valid up to SETOS
 - For aero-braking: Aft stick applied at the rotation speed and 7.5° pitch attitude held from rotation to 120 KIAS.</string>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                                </variation>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
@@ -675,16 +705,19 @@
                                                                 <rect key="frame" x="0.0" y="356.5" width="768" height="71"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uTY-rQ-VYV">
-                                                                        <rect key="frame" x="38.5" y="0.0" width="691" height="71"/>
+                                                                        <rect key="frame" x="19" y="0.0" width="730" height="71"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Engine Takeoff Speed (SETOS) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NS-HY-GZM">
-                                                                                <rect key="frame" x="0.0" y="5" width="138" height="61"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Engine Takeoff Speed (SETOS) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NS-HY-GZM">
+                                                                                <rect key="frame" x="0.0" y="8.5" width="146" height="54"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                                </variation>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTN-w4-SZA">
-                                                                                <rect key="frame" x="158" y="0.0" width="533" height="71"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTN-w4-SZA">
+                                                                                <rect key="frame" x="166" y="8.5" width="564" height="54"/>
                                                                                 <string key="text">- SETOS is the greater of:
    (a)  Two-engine takeoff speed (single engine rate of climb is then greater than 100 FPM)
    (b)  Speed for 100 FPM single engine rate of climb out of ground effect 60% flaps, gear down.
@@ -694,6 +727,9 @@
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                                </variation>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
@@ -709,22 +745,28 @@
                                                                 <rect key="frame" x="0.0" y="427.5" width="768" height="71.5"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5yt-fx-NvJ">
-                                                                        <rect key="frame" x="38.5" y="0.0" width="691" height="71.5"/>
+                                                                        <rect key="frame" x="19" y="0.0" width="730" height="71.5"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical Engine Failure Speed (CEFS) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-Rg-o16">
-                                                                                <rect key="frame" x="0.0" y="5" width="138" height="61"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical Engine Failure Speed (CEFS) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-Rg-o16">
+                                                                                <rect key="frame" x="0.0" y="8.5" width="146" height="54"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                                </variation>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bv-0u-R62">
-                                                                                <rect key="frame" x="158" y="8.5" width="533" height="54"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bv-0u-R62">
+                                                                                <rect key="frame" x="166" y="8.5" width="564" height="54"/>
                                                                                 <string key="text">- CEFS valid up to SETOS. Aero-brake if possible.
 - Data assumes no aero-braking.
 - Assumes rotation 1000 FT prior to the end of the runway</string>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                                </variation>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
@@ -740,16 +782,19 @@
                                                                 <rect key="frame" x="0.0" y="499" width="768" height="71"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GHG-1R-WmK">
-                                                                        <rect key="frame" x="38.5" y="0.0" width="691" height="71"/>
+                                                                        <rect key="frame" x="19" y="0.0" width="730" height="71"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decision Speed (DS) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggx-IK-k2q">
-                                                                                <rect key="frame" x="0.0" y="15" width="138" height="41"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decision Speed (DS) :" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggx-IK-k2q">
+                                                                                <rect key="frame" x="0.0" y="17.5" width="146" height="36"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                                </variation>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="RYf-er-Jnq">
-                                                                                <rect key="frame" x="158" y="0.0" width="533" height="71"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="RYf-er-Jnq">
+                                                                                <rect key="frame" x="166" y="8.5" width="564" height="54"/>
                                                                                 <string key="text">- Following engine failure, select max afterburner on the operating engine
 - Accelerate in a 3-point attitude to SETOS
 - Rotate smoothly at SETOS until takeoff occurs
@@ -758,6 +803,9 @@
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <variation key="widthClass=compact">
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                                </variation>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
@@ -820,6 +868,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="NOTES" id="g5w-Rv-srI"/>
+                    <connections>
+                        <outletCollection property="keyLabelsLeft" destination="olp-T2-kbP" collectionClass="NSMutableArray" id="i31-Iq-ARR"/>
+                        <outletCollection property="valueLabelsRight" destination="a9y-Bi-yi7" collectionClass="NSMutableArray" id="n7d-qi-Pea"/>
+                        <outletCollection property="keyLabelsLeft" destination="i9h-sn-BBA" collectionClass="NSMutableArray" id="Lvh-Pq-WkR"/>
+                        <outletCollection property="keyLabelsLeft" destination="8qx-0m-phZ" collectionClass="NSMutableArray" id="EKz-sz-GCd"/>
+                        <outletCollection property="keyLabelsLeft" destination="bHz-y3-DPI" collectionClass="NSMutableArray" id="wqW-1z-mNG"/>
+                        <outletCollection property="keyLabelsLeft" destination="XE6-jv-a3S" collectionClass="NSMutableArray" id="MSl-ZR-w88"/>
+                        <outletCollection property="keyLabelsLeft" destination="7NS-HY-GZM" collectionClass="NSMutableArray" id="cDw-Ch-Irb"/>
+                        <outletCollection property="keyLabelsLeft" destination="ahe-Rg-o16" collectionClass="NSMutableArray" id="IDO-kg-N0f"/>
+                        <outletCollection property="keyLabelsLeft" destination="ggx-IK-k2q" collectionClass="NSMutableArray" id="Mwq-pm-25F"/>
+                        <outletCollection property="valueLabelsRight" destination="a9y-Bi-yi7" collectionClass="NSMutableArray" id="qJw-1g-mi1"/>
+                        <outletCollection property="valueLabelsRight" destination="Owl-eQ-Ujm" collectionClass="NSMutableArray" id="PKP-3v-d0R"/>
+                        <outletCollection property="valueLabelsRight" destination="Jh7-rs-ads" collectionClass="NSMutableArray" id="7n9-J6-GNy"/>
+                        <outletCollection property="valueLabelsRight" destination="BGP-Ll-ePJ" collectionClass="NSMutableArray" id="9bJ-nd-3yg"/>
+                        <outletCollection property="valueLabelsRight" destination="Ixc-fb-Ehy" collectionClass="NSMutableArray" id="w7n-Ar-eRB"/>
+                        <outletCollection property="valueLabelsRight" destination="FTN-w4-SZA" collectionClass="NSMutableArray" id="gFQ-6Q-Ksm"/>
+                        <outletCollection property="valueLabelsRight" destination="9Bv-0u-R62" collectionClass="NSMutableArray" id="kgS-PT-nrC"/>
+                        <outletCollection property="valueLabelsRight" destination="RYf-er-Jnq" collectionClass="NSMutableArray" id="Tvu-cZ-kd3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHj-xN-9Wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

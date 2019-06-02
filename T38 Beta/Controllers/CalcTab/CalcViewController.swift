@@ -22,7 +22,11 @@ class CalcViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var versionLabel: UILabel!
     
-
+    @IBOutlet weak var planButtonOutlet: UIButton!
+    @IBAction func planButton(_ sender: UIButton) {
+        sender.showPressed()
+    }
+    
     var cdu = CoreDataUtilies()
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -64,6 +68,7 @@ class CalcViewController: UIViewController, CLLocationManagerDelegate {
     private var userIsInTheMiddleOfTyping = false
     
     @IBAction func touchDigit(_ sender: UIButton) {
+        sender.showPressed()
         let digit = sender.currentTitle!
         if userIsInTheMiddleOfTyping {
             let textCurrentlyInDisplay = display.text!
@@ -125,6 +130,7 @@ class CalcViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func performOperation(_ sender: UIButton) {
+        sender.showPressed()
         let operatorTitle = sender.currentTitle!
         if sender.currentTitle == "C" {
             brain.clearState()

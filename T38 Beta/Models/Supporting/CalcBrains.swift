@@ -49,7 +49,7 @@ class CalcBrains {
         "÷"      : Operation.BinaryOperation({$0 / $1}),
         "+"      : Operation.BinaryOperation({$0 + $1}),
         "−"      : Operation.BinaryOperation({$0 - $1}),
-        "G"      : Operation.BinaryOperation({($0/60) * $1}),
+        "GAS"    : Operation.BinaryOperation({($0/60) * $1}),
         "."      : Operation.BinaryOperation({$0 + $1}),
         
         "xW"     :  Operation.BinaryOperation({sin($0.degreesToRadians) * $1}),

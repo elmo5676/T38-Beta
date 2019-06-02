@@ -122,8 +122,9 @@ class NearestReconfiguredViewController: UIViewController, UITableViewDelegate, 
     
     func updateDivertDisplay(gas: Double) -> (greenRange: Double, yellowRange: Double) {
         let alt = getGPSAltitudeInFeet()/1000
+        stayAtAlt.text = "\(String(format: "%.0f",alt))K"
         let data = getDivertData(alt: alt, gas: gas, config: self.config)
-        if alt < 1000 { stayAtAlt.text = "SL" } else { stayAtAlt.text = "\(String(format: "%.0f",alt))K" }
+//        if alt < 1000 { stayAtAlt.text = "SL" } else { stayAtAlt.text = "\(String(format: "%.0f",alt))K" }
         if data.stayAtRange.valid {
             stayAtRange.text = "\(String(format: "%.0f",data.stayAtRange.value))NM"
         } else {stayAtRange.text = "---"}
