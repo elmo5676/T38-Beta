@@ -117,6 +117,7 @@ class HTMLHandler: NSObject {
 //        }
         let actionShare = UIAlertAction(title: "Export", style: .default) { (action) in
             on.passDataToShareSheet(fileName: "LUC", ext: ".pdf", dataToWriteToFile: pdfData)
+//            on.presentingViewController?.dismiss(animated: true, completion: nil)
         }
 //        let actionPrint = UIAlertAction(title: "Print", style: .default) { (action) in
 //            self.airPrint(htmlLineUpCard: htmlLineUpCard)
