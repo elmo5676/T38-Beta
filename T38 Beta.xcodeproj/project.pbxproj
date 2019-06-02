@@ -18,12 +18,9 @@
 		52B888DE2291D6660056D816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B888DD2291D6660056D816 /* Assets.xcassets */; };
 		52B888E92291D8020056D816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B888E82291D8020056D816 /* AppDelegate.swift */; };
 		52B888F82291D8130056D816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B888EB2291D8130056D816 /* Main.storyboard */; };
-		52B888F92291D8130056D816 /* SettingsTab~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B888ED2291D8130056D816 /* SettingsTab~.storyboard */; };
 		52B888FA2291D8130056D816 /* LaunchT38A.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B888EF2291D8130056D816 /* LaunchT38A.storyboard */; };
-		52B888FB2291D8130056D816 /* SettingsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B888F22291D8130056D816 /* SettingsTab.storyboard */; };
 		52B888FC2291D8130056D816 /* CalculatorTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B888F42291D8130056D816 /* CalculatorTab.storyboard */; };
 		52B888FD2291D8130056D816 /* TOLDTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B888F62291D8130056D816 /* TOLDTab.storyboard */; };
-		52B888FE2291D8130056D816 /* LaunchT38C.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B888F72291D8130056D816 /* LaunchT38C.storyboard */; };
 		52B8893A2291D8220056D816 /* T38CD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52B889072291D8220056D816 /* T38CD.xcdatamodeld */; };
 		52B8893C2291D8220056D816 /* CoreDataUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B8890A2291D8220056D816 /* CoreDataUtilities.swift */; };
 		52B889402291D8220056D816 /* PolygonKML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B8890F2291D8220056D816 /* PolygonKML.swift */; };
@@ -126,12 +123,9 @@
 		52B888E22291D6660056D816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52B888E82291D8020056D816 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52B888EC2291D8130056D816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		52B888EE2291D8130056D816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/SettingsTab~.storyboard"; sourceTree = "<group>"; };
 		52B888EF2291D8130056D816 /* LaunchT38A.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchT38A.storyboard; sourceTree = "<group>"; };
-		52B888F32291D8130056D816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SettingsTab.storyboard; sourceTree = "<group>"; };
 		52B888F52291D8130056D816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CalculatorTab.storyboard; sourceTree = "<group>"; };
 		52B888F62291D8130056D816 /* TOLDTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TOLDTab.storyboard; sourceTree = "<group>"; };
-		52B888F72291D8130056D816 /* LaunchT38C.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchT38C.storyboard; sourceTree = "<group>"; };
 		52B889082291D8220056D816 /* T38CD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = T38CD.xcdatamodel; sourceTree = "<group>"; };
 		52B8890A2291D8220056D816 /* CoreDataUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataUtilities.swift; sourceTree = "<group>"; };
 		52B8890F2291D8220056D816 /* PolygonKML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonKML.swift; sourceTree = "<group>"; };
@@ -281,28 +275,9 @@
 			children = (
 				52B888EB2291D8130056D816 /* Main.storyboard */,
 				5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */,
-				52B888ED2291D8130056D816 /* SettingsTab~.storyboard */,
-				52B888EF2291D8130056D816 /* LaunchT38A.storyboard */,
-				52B888F02291D8130056D816 /* T38 */,
-				52B888F62291D8130056D816 /* TOLDTab.storyboard */,
-				52B888F72291D8130056D816 /* LaunchT38C.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		52B888F02291D8130056D816 /* T38 */ = {
-			isa = PBXGroup;
-			children = (
-				52B888F12291D8130056D816 /* Views */,
-			);
-			path = T38;
-			sourceTree = "<group>";
-		};
-		52B888F12291D8130056D816 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				52B888F22291D8130056D816 /* SettingsTab.storyboard */,
 				52B888F42291D8130056D816 /* CalculatorTab.storyboard */,
+				52B888EF2291D8130056D816 /* LaunchT38A.storyboard */,
+				52B888F62291D8130056D816 /* TOLDTab.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -627,12 +602,9 @@
 			files = (
 				5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */,
 				52B888FA2291D8130056D816 /* LaunchT38A.storyboard in Resources */,
-				52B888FB2291D8130056D816 /* SettingsTab.storyboard in Resources */,
 				52B888FC2291D8130056D816 /* CalculatorTab.storyboard in Resources */,
 				528E15F2229B28F300269816 /* last_item.html in Resources */,
 				52B888FD2291D8130056D816 /* TOLDTab.storyboard in Resources */,
-				52B888FE2291D8130056D816 /* LaunchT38C.storyboard in Resources */,
-				52B888F92291D8130056D816 /* SettingsTab~.storyboard in Resources */,
 				528E1605229B563D00269816 /* luc.htm in Resources */,
 				52B888F82291D8130056D816 /* Main.storyboard in Resources */,
 				52B889A72291D8610056D816 /* Preflight.mp4 in Resources */,
@@ -750,22 +722,6 @@
 				52B888EC2291D8130056D816 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		52B888ED2291D8130056D816 /* SettingsTab~.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52B888EE2291D8130056D816 /* Base */,
-			);
-			name = "SettingsTab~.storyboard";
-			sourceTree = "<group>";
-		};
-		52B888F22291D8130056D816 /* SettingsTab.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52B888F32291D8130056D816 /* Base */,
-			);
-			name = SettingsTab.storyboard;
 			sourceTree = "<group>";
 		};
 		52B888F42291D8130056D816 /* CalculatorTab.storyboard */ = {
