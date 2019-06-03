@@ -9,38 +9,13 @@
 import Foundation
 import UIKit
 
-///Added to be called after JSON is downloaded and processed. This is where you put your CoreData handlers
-protocol JSONLoaderDelagate {
-    func loadJSONafterDownloadedAndProcessed()
 
-//    Below goes where you are going to load the JSON into CoreData, Same place that subscribes to JSONLoaderDelagate protocol
-//    var moc: NSManagedObjectContext? {
-//        return (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
-//    }
-//    var dafif = DAFIFDataController(wantedData: wantedData, jsonOnly: false)
-//    dafif.jsonLoaderDelegate = self
-//    dafif.handleDAFIF()
-    
+protocol JSONLoaderDelagate {
+    ///This is where you put your CoreData handlers
+    func loadJSONafterDownloadedAndProcessed()
 }
 
-/**
- DAFIFDataController: Can either be set up for the initial build of an application where it will create all of the CoreData
- and JSON processing files needed to handle the DAFIF or it can be set to process the DAFIF in the app for updates.
- 
- Zip Framework:
- - Terminal:
- 	- Navigate to folder containing .xcodeproj file
- 	- touch Cartfile
- 	- github "marmelroy/Zip"
- 	- carthage update
- - Finder:
- 	- drag and drop Zip framework into xcode: Target > General > Embedded Binaries"
- - Xcode:
- 	- Build Phases > + Run Script Phase
- 		- /usr/local/bin/carthage copy-frameworks
- 		- + Input Files
-        - $(SRCROOT)/Carthage/Build/iOS/Zip.framework
- */
+
 struct DAFIFDataController {
     
     private var wantedData: [FileNames]?
@@ -50,22 +25,18 @@ struct DAFIFDataController {
     public var jsonLoaderDelegate: JSONLoaderDelagate?
     private let fileManager = FileManager.default
     
+    
+    
     init(wantedData: [FileNames]?,
-         jsonOnly: Bool,
          coreDataModelName: String) {
         self.wantedData = wantedData
-        self.jsonOnly = jsonOnly
+        self.jsonOnly = true
         self.coreDataModelName = coreDataModelName
     }
     
     
     mutating func handleDAFIF() {
-        switch self.jsonOnly {
-        case true:
-            _ = DAFIFDownloader(myDocuments: documentsDirectory, wantedData: wantedData, completion: whenDownloadCompleteJSONOnly)
-        case false:
-            print("You can't do that on television!!")
-        }
+        _ = DAFIFDownloader(myDocuments: documentsDirectory, wantedData: wantedData, completion: whenDownloadCompleteJSONOnly)
     }
     
     private func whenDownloadCompleteJSONOnly(wantedData: [FileNames]?) {

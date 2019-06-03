@@ -10,13 +10,14 @@ struct MtrOsmCDU {
 	func loadMtrOsmToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/MTR_MTR_OSM.json")
+		var tempArray: [MtrOsm_CD] = []
 
 		do {
 			let results = try decoder.decode([MtrOsm].self, from: Data(contentsOf: fileName))
-			_ = results.map { (mtrOsm_CD) -> MtrOsm_CD in
+			for mtrOsm_CD in results {
 				let mtrOsm_CD_DB = MtrOsm_CD(context: moc)
 				mtrOsm_CD_DB.mtrIdent_CD = mtrOsm_CD.mtrIdent				mtrOsm_CD_DB.segNbr_CD = mtrOsm_CD.segNbr as? NSDecimalNumber				mtrOsm_CD_DB.seqNbr_CD = mtrOsm_CD.seqNbr as? NSDecimalNumber				mtrOsm_CD_DB.suasMoaId_CD = mtrOsm_CD.suasMoaId				mtrOsm_CD_DB.cycleDate_CD = mtrOsm_CD.cycleDate as? NSDecimalNumber				mtrOsm_CD_DB.sector_CD = mtrOsm_CD.sector				mtrOsm_CD_DB.ptIdent_CD = mtrOsm_CD.ptIdent				mtrOsm_CD_DB.nxPoint_CD = mtrOsm_CD.nxPoint
-				return mtrOsm_CD_DB
+				tempArray.append(mtrOsm_CD_DB)
 			}
 			moc.performAndWait {
 				do {

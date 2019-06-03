@@ -10,13 +10,14 @@ struct ArfRmkCDU {
 	func loadArfRmkToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/ARF_ARF_RMK.json")
+		var tempArray: [ArfRmk_CD] = []
 
 		do {
 			let results = try decoder.decode([ArfRmk].self, from: Data(contentsOf: fileName))
-			_ = results.map { (arfRmk_CD) -> ArfRmk_CD in
+			for arfRmk_CD in results {
 				let arfRmk_CD_DB = ArfRmk_CD(context: moc)
 				arfRmk_CD_DB.arfIdent_CD = arfRmk_CD.arfIdent				arfRmk_CD_DB.direction_CD = arfRmk_CD.direction				arfRmk_CD_DB.rmkSeq_CD = arfRmk_CD.rmkSeq as? NSDecimalNumber				arfRmk_CD_DB.icao_CD = arfRmk_CD.icao				arfRmk_CD_DB.remarks_CD = arfRmk_CD.remarks				arfRmk_CD_DB.cycleDate_CD = arfRmk_CD.cycleDate as? NSDecimalNumber
-				return arfRmk_CD_DB
+				tempArray.append(arfRmk_CD_DB)
 			}
 			moc.performAndWait {
 				do {

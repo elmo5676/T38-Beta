@@ -10,13 +10,14 @@ struct AtsRmkCDU {
 	func loadAtsRmkToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/ATS_ATS_RMK.json")
+		var tempArray: [AtsRmk_CD] = []
 
 		do {
 			let results = try decoder.decode([AtsRmk].self, from: Data(contentsOf: fileName))
-			_ = results.map { (atsRmk_CD) -> AtsRmk_CD in
+			for atsRmk_CD in results {
 				let atsRmk_CD_DB = AtsRmk_CD(context: moc)
 				atsRmk_CD_DB.atsIdent_CD = atsRmk_CD.atsIdent				atsRmk_CD_DB.seqNbr_CD = atsRmk_CD.seqNbr as? NSDecimalNumber				atsRmk_CD_DB.direction_CD = atsRmk_CD.direction				atsRmk_CD_DB.type_CD = atsRmk_CD.type				atsRmk_CD_DB.icao_CD = atsRmk_CD.icao				atsRmk_CD_DB.rmkSeq_CD = atsRmk_CD.rmkSeq as? NSDecimalNumber				atsRmk_CD_DB.remark_CD = atsRmk_CD.remark				atsRmk_CD_DB.cycleDate_CD = atsRmk_CD.cycleDate as? NSDecimalNumber
-				return atsRmk_CD_DB
+				tempArray.append(atsRmk_CD_DB)
 			}
 			moc.performAndWait {
 				do {

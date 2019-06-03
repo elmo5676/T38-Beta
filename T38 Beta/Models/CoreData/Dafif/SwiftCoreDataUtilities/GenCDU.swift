@@ -10,13 +10,14 @@ struct GenCDU {
 	func loadGenToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/SUPP_GEN.json")
+		var tempArray: [Gen_CD] = []
 
 		do {
 			let results = try decoder.decode([Gen].self, from: Data(contentsOf: fileName))
-			_ = results.map { (gen_CD) -> Gen_CD in
+			for gen_CD in results {
 				let gen_CD_DB = Gen_CD(context: moc)
 				gen_CD_DB.arptIdent_CD = gen_CD.arptIdent				gen_CD_DB.icao_CD = gen_CD.icao				gen_CD_DB.altName_CD = gen_CD.altName				gen_CD_DB.cityCrossRef_CD = gen_CD.cityCrossRef				gen_CD_DB.islGroup_CD = gen_CD.islGroup				gen_CD_DB.notam_CD = gen_CD.notam				gen_CD_DB.oprHrs_CD = gen_CD.oprHrs				gen_CD_DB.clearStatus_CD = gen_CD.clearStatus				gen_CD_DB.utmGrid_CD = gen_CD.utmGrid				gen_CD_DB.time_CD = gen_CD.time				gen_CD_DB.daylightSave_CD = gen_CD.daylightSave				gen_CD_DB.flipPub_CD = gen_CD.flipPub				gen_CD_DB.cycleDate_CD = gen_CD.cycleDate as? NSDecimalNumber
-				return gen_CD_DB
+				tempArray.append(gen_CD_DB)
 			}
 			moc.performAndWait {
 				do {

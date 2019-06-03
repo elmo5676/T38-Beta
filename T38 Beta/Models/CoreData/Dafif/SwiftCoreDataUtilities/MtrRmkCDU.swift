@@ -10,13 +10,14 @@ struct MtrRmkCDU {
 	func loadMtrRmkToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/MTR_MTR_RMK.json")
+		var tempArray: [MtrRmk_CD] = []
 
 		do {
 			let results = try decoder.decode([MtrRmk].self, from: Data(contentsOf: fileName))
-			_ = results.map { (mtrRmk_CD) -> MtrRmk_CD in
+			for mtrRmk_CD in results {
 				let mtrRmk_CD_DB = MtrRmk_CD(context: moc)
 				mtrRmk_CD_DB.mtrIdent_CD = mtrRmk_CD.mtrIdent				mtrRmk_CD_DB.rmkSeq_CD = mtrRmk_CD.rmkSeq as? NSDecimalNumber				mtrRmk_CD_DB.remarks_CD = mtrRmk_CD.remarks				mtrRmk_CD_DB.cycleDate_CD = mtrRmk_CD.cycleDate as? NSDecimalNumber
-				return mtrRmk_CD_DB
+				tempArray.append(mtrRmk_CD_DB)
 			}
 			moc.performAndWait {
 				do {

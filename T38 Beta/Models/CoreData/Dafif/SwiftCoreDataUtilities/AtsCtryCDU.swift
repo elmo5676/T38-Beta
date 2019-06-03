@@ -10,13 +10,14 @@ struct AtsCtryCDU {
 	func loadAtsCtryToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/ATS_ATS_CTRY.json")
+		var tempArray: [AtsCtry_CD] = []
 
 		do {
 			let results = try decoder.decode([AtsCtry].self, from: Data(contentsOf: fileName))
-			_ = results.map { (atsCtry_CD) -> AtsCtry_CD in
+			for atsCtry_CD in results {
 				let atsCtry_CD_DB = AtsCtry_CD(context: moc)
 				atsCtry_CD_DB.atsIdent_CD = atsCtry_CD.atsIdent				atsCtry_CD_DB.seqNbr_CD = atsCtry_CD.seqNbr as? NSDecimalNumber				atsCtry_CD_DB.direction_CD = atsCtry_CD.direction				atsCtry_CD_DB.type_CD = atsCtry_CD.type				atsCtry_CD_DB.icao_CD = atsCtry_CD.icao				atsCtry_CD_DB.ctry_CD = atsCtry_CD.ctry				atsCtry_CD_DB.stateProv_CD = atsCtry_CD.stateProv				atsCtry_CD_DB.cycleDate_CD = atsCtry_CD.cycleDate as? NSDecimalNumber
-				return atsCtry_CD_DB
+				tempArray.append(atsCtry_CD_DB)
 			}
 			moc.performAndWait {
 				do {

@@ -10,13 +10,14 @@ struct ArfFtCDU {
 	func loadArfFtToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/ARF_ARF_FT.json")
+		var tempArray: [ArfFt_CD] = []
 
 		do {
 			let results = try decoder.decode([ArfFt].self, from: Data(contentsOf: fileName))
-			_ = results.map { (arfFt_CD) -> ArfFt_CD in
+			for arfFt_CD in results {
 				let arfFt_CD_DB = ArfFt_CD(context: moc)
 				arfFt_CD_DB.arfIdent_CD = arfFt_CD.arfIdent				arfFt_CD_DB.direction_CD = arfFt_CD.direction				arfFt_CD_DB.icao_CD = arfFt_CD.icao				arfFt_CD_DB.ftType_CD = arfFt_CD.ftType				arfFt_CD_DB.ftNo_CD = arfFt_CD.ftNo as? NSDecimalNumber				arfFt_CD_DB.rmkSeq_CD = arfFt_CD.rmkSeq as? NSDecimalNumber				arfFt_CD_DB.remarks_CD = arfFt_CD.remarks				arfFt_CD_DB.cycleDate_CD = arfFt_CD.cycleDate as? NSDecimalNumber
-				return arfFt_CD_DB
+				tempArray.append(arfFt_CD_DB)
 			}
 			moc.performAndWait {
 				do {

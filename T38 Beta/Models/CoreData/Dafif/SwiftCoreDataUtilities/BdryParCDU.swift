@@ -10,10 +10,11 @@ struct BdryParCDU {
 	func loadBdryParToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/BDRY_BDRY_PAR.json")
+		var tempArray: [BdryPar_CD] = []
 
 		do {
 			let results = try decoder.decode([BdryPar].self, from: Data(contentsOf: fileName))
-			_ = results.map { (bdryPar_CD) -> BdryPar_CD in
+			for bdryPar_CD in results {
 				let bdryPar_CD_DB = BdryPar_CD(context: moc)
 				bdryPar_CD_DB.bdryIdent_CD = bdryPar_CD.bdryIdent
 				bdryPar_CD_DB.type_CD = bdryPar_CD.type as? NSDecimalNumber
@@ -35,7 +36,7 @@ struct BdryParCDU {
 				bdryPar_CD_DB.cycleDate_CD = bdryPar_CD.cycleDate as? NSDecimalNumber
 				bdryPar_CD_DB.upRvsm_CD = bdryPar_CD.upRvsm
 				bdryPar_CD_DB.loRvsm_CD = bdryPar_CD.loRvsm
-				return bdryPar_CD_DB
+				tempArray.append(bdryPar_CD_DB)
 			}
 			moc.performAndWait {
 				do {

@@ -10,13 +10,14 @@ struct SuasNoteCDU {
 	func loadSuasNoteToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/SUAS_SUAS_NOTE.json")
+		var tempArray: [SuasNote_CD] = []
 
 		do {
 			let results = try decoder.decode([SuasNote].self, from: Data(contentsOf: fileName))
-			_ = results.map { (suasNote_CD) -> SuasNote_CD in
+			for suasNote_CD in results {
 				let suasNote_CD_DB = SuasNote_CD(context: moc)
 				suasNote_CD_DB.suasIdent_CD = suasNote_CD.suasIdent				suasNote_CD_DB.sector_CD = suasNote_CD.sector				suasNote_CD_DB.noteType_CD = suasNote_CD.noteType				suasNote_CD_DB.noteNbr_CD = suasNote_CD.noteNbr as? NSDecimalNumber				suasNote_CD_DB.remarks_CD = suasNote_CD.remarks				suasNote_CD_DB.cycleDate_CD = suasNote_CD.cycleDate as? NSDecimalNumber
-				return suasNote_CD_DB
+				tempArray.append(suasNote_CD_DB)
 			}
 			moc.performAndWait {
 				do {

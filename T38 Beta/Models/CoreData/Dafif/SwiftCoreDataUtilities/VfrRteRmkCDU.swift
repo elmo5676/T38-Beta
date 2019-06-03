@@ -10,13 +10,14 @@ struct VfrRteRmkCDU {
 	func loadVfrRteRmkToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/VFR_VFR_RTE_RMK.json")
+		var tempArray: [VfrRteRmk_CD] = []
 
 		do {
 			let results = try decoder.decode([VfrRteRmk].self, from: Data(contentsOf: fileName))
-			_ = results.map { (vfrRteRmk_CD) -> VfrRteRmk_CD in
+			for vfrRteRmk_CD in results {
 				let vfrRteRmk_CD_DB = VfrRteRmk_CD(context: moc)
 				vfrRteRmk_CD_DB.heliIdent_CD = vfrRteRmk_CD.heliIdent				vfrRteRmk_CD_DB.rmkSeq_CD = vfrRteRmk_CD.rmkSeq as? NSDecimalNumber				vfrRteRmk_CD_DB.remarks_CD = vfrRteRmk_CD.remarks				vfrRteRmk_CD_DB.cycleDate_CD = vfrRteRmk_CD.cycleDate as? NSDecimalNumber
-				return vfrRteRmk_CD_DB
+				tempArray.append(vfrRteRmk_CD_DB)
 			}
 			moc.performAndWait {
 				do {

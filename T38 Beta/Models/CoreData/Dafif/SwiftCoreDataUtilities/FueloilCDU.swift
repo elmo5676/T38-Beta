@@ -10,13 +10,14 @@ struct FueloilCDU {
 	func loadFueloilToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/SUPP_FUELOIL.json")
+		var tempArray: [Fueloil_CD] = []
 
 		do {
 			let results = try decoder.decode([Fueloil].self, from: Data(contentsOf: fileName))
-			_ = results.map { (fueloil_CD) -> Fueloil_CD in
+			for fueloil_CD in results {
 				let fueloil_CD_DB = Fueloil_CD(context: moc)
 				fueloil_CD_DB.arptIdent_CD = fueloil_CD.arptIdent				fueloil_CD_DB.icao_CD = fueloil_CD.icao				fueloil_CD_DB.fuel_CD = fueloil_CD.fuel				fueloil_CD_DB.oil_CD = fueloil_CD.oil				fueloil_CD_DB.jasu_CD = fueloil_CD.jasu				fueloil_CD_DB.supFluids_CD = fueloil_CD.supFluids				fueloil_CD_DB.cycleDate_CD = fueloil_CD.cycleDate as? NSDecimalNumber
-				return fueloil_CD_DB
+				tempArray.append(fueloil_CD_DB)
 			}
 			moc.performAndWait {
 				do {

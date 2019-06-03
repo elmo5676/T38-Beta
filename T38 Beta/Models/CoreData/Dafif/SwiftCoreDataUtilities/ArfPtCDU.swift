@@ -10,13 +10,14 @@ struct ArfPtCDU {
 	func loadArfPtToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/ARF_ARF_PT.json")
+		var tempArray: [ArfPt_CD] = []
 
 		do {
 			let results = try decoder.decode([ArfPt].self, from: Data(contentsOf: fileName))
-			_ = results.map { (arfPt_CD) -> ArfPt_CD in
+			for arfPt_CD in results {
 				let arfPt_CD_DB = ArfPt_CD(context: moc)
 				arfPt_CD_DB.arfIdent_CD = arfPt_CD.arfIdent				arfPt_CD_DB.direction_CD = arfPt_CD.direction				arfPt_CD_DB.ptSeqNbr_CD = arfPt_CD.ptSeqNbr as? NSDecimalNumber				arfPt_CD_DB.icao_CD = arfPt_CD.icao				arfPt_CD_DB.usage_CD = arfPt_CD.usage				arfPt_CD_DB.ptNavFlag_CD = arfPt_CD.ptNavFlag				arfPt_CD_DB.navIdent_CD = arfPt_CD.navIdent				arfPt_CD_DB.navType_CD = arfPt_CD.navType				arfPt_CD_DB.navCtry_CD = arfPt_CD.navCtry				arfPt_CD_DB.navKeyCd_CD = arfPt_CD.navKeyCd				arfPt_CD_DB.bearing_CD = arfPt_CD.bearing				arfPt_CD_DB.distance_CD = arfPt_CD.distance				arfPt_CD_DB.wgsLat_CD = arfPt_CD.wgsLat				arfPt_CD_DB.wgsDlat_CD = arfPt_CD.wgsDlat as? NSDecimalNumber				arfPt_CD_DB.wgsLong_CD = arfPt_CD.wgsLong				arfPt_CD_DB.wgsDlong_CD = arfPt_CD.wgsDlong as? NSDecimalNumber				arfPt_CD_DB.cycleDate_CD = arfPt_CD.cycleDate as? NSDecimalNumber				arfPt_CD_DB.ptIdent_CD = arfPt_CD.ptIdent
-				return arfPt_CD_DB
+				tempArray.append(arfPt_CD_DB)
 			}
 			moc.performAndWait {
 				do {

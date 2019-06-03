@@ -10,13 +10,14 @@ struct TrmParCDU {
 	func loadTrmParToCDfromJSON(moc: NSManagedObjectContext){
 		let decoder = JSONDecoder()
 		let fileName = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).first!.appendingPathComponent("DAFIF_JSON/TRM_TRM_PAR.json")
+		var tempArray: [TrmPar_CD] = []
 
 		do {
 			let results = try decoder.decode([TrmPar].self, from: Data(contentsOf: fileName))
-			_ = results.map { (trmPar_CD) -> TrmPar_CD in
+			for trmPar_CD in results {
 				let trmPar_CD_DB = TrmPar_CD(context: moc)
 				trmPar_CD_DB.arptIdent_CD = trmPar_CD.arptIdent				trmPar_CD_DB.proc_CD = trmPar_CD.proc as? NSDecimalNumber				trmPar_CD_DB.trmIdent_CD = trmPar_CD.trmIdent				trmPar_CD_DB.icao_CD = trmPar_CD.icao				trmPar_CD_DB.esAlt_CD = trmPar_CD.esAlt				trmPar_CD_DB.julianDate_CD = trmPar_CD.julianDate as? NSDecimalNumber				trmPar_CD_DB.amdtNo_CD = trmPar_CD.amdtNo as? NSDecimalNumber				trmPar_CD_DB.opr_CD = trmPar_CD.opr				trmPar_CD_DB.hostCtryAuth_CD = trmPar_CD.hostCtryAuth				trmPar_CD_DB.cycleDate_CD = trmPar_CD.cycleDate as? NSDecimalNumber				trmPar_CD_DB.altMin_CD = trmPar_CD.altMin				trmPar_CD_DB.tranAlt_CD = trmPar_CD.tranAlt as? NSDecimalNumber				trmPar_CD_DB.tranLvl_CD = trmPar_CD.tranLvl as? NSDecimalNumber				trmPar_CD_DB.rteTypeQual_CD = trmPar_CD.rteTypeQual
-				return trmPar_CD_DB
+				tempArray.append(trmPar_CD_DB)
 			}
 			moc.performAndWait {
 				do {
