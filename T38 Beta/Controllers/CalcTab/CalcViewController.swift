@@ -175,7 +175,7 @@ class CalcViewController: UIViewController, CLLocationManagerDelegate {
     let buildNumber: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
     
     func setFormatting() {
-        nearestButtonOutlet.imageView?.contentMode = .scaleAspectFit
+        nearestButtonOutlet.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
         iconImage.layer.cornerRadius = 8
         versionLabel.text = "\(buildNumber)"
         versionLabel.adjustsFontSizeToFitWidth = true

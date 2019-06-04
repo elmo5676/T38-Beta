@@ -649,6 +649,40 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func addMin(min: Int, toHr: Int, toMin: Int) -> String {
+        var hour = toHr
+        var minute = toMin
+        var strMinute = ""
+        if (toMin + min) >= 120 {
+            hour += 2
+            minute = (toMin + min) - 120
+        } else if (toMin + min) >= 60 {
+            hour += 1
+            minute = (toMin + min) - 60
+        } else {
+            hour = toHr
+            minute = toMin + min
+        }
+        if minute < 10 {
+            strMinute = "0\(minute)"
+        } else {
+            strMinute = "\(minute)"
+        }
+        return "\(hour):\(strMinute)"
+    }
+    
+    func get38Times(showHour: Int, showMin: Int) -> (brief: String,
+        step: String, to: String, land: String) {
+            let briefTime = addMin(min: 15, toHr: showHour, toMin: showMin)
+            let stepTime = addMin(min: 30, toHr: showHour, toMin: showMin)
+            let toTime = addMin(min: 45, toHr: showHour, toMin: showMin)
+            let landTime = addMin(min: 80, toHr: showHour, toMin: showMin)
+            return (brief: briefTime,
+                    step: stepTime,
+                    to: toTime,
+                    land: landTime)
+    }
+    
     @IBOutlet weak var iconBottom: UIImageView!
     func setFormatting() {
         numberOfAircraftSegOutlet.selectedSegmentIndex = 0

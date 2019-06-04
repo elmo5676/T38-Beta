@@ -1455,7 +1455,7 @@ class TOLDReconfiguredViewController: UIViewController, UITextFieldDelegate, UIP
             rcrSegmentedOutlet.setTitle("Wet (12)", forSegmentAt: 1)
             rcrSegmentedOutlet.setTitle("Icy (6)", forSegmentAt: 2)
             crewComplimentSegmentedOutlet.setTitle("Dog House", forSegmentAt: 2)
-            scrollViewMainHeight.constant = 1100
+            scrollViewMainHeight.constant = 1200
         }
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523C58E022A57B810055BD31 /* TimeCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C58DF22A57B800055BD31 /* TimeCalculations.swift */; };
 		5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */; };
 		528765B3229B9444007C4477 /* LineUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528765B2229B9444007C4477 /* LineUpCardViewController.swift */; };
 		528E15F0229B28F300269816 /* single_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15ED229B28F200269816 /* single_item.html */; };
@@ -110,6 +111,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		523C58DF22A57B800055BD31 /* TimeCalculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCalculations.swift; sourceTree = "<group>"; };
 		5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsReconfigured.storyboard; sourceTree = "<group>"; };
 		528765B2229B9444007C4477 /* LineUpCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCardViewController.swift; sourceTree = "<group>"; };
 		528E15ED229B28F200269816 /* single_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = single_item.html; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 		52B889272291D8220056D816 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				523C58DF22A57B800055BD31 /* TimeCalculations.swift */,
 				52B889282291D8220056D816 /* Wind.swift */,
 				52B889292291D8220056D816 /* DivertGonkulator.swift */,
 				52B8892A2291D8220056D816 /* PlanningGonk.swift */,
@@ -687,6 +690,7 @@
 				528765B3229B9444007C4477 /* LineUpCardViewController.swift in Sources */,
 				52B889D62291D9120056D816 /* NavaidCD+CoreDataClass.swift in Sources */,
 				52B8894E2291D8220056D816 /* Taf.swift in Sources */,
+				523C58E022A57B810055BD31 /* TimeCalculations.swift in Sources */,
 				52B889992291D8610056D816 /* UIColorExtensions.swift in Sources */,
 				52B889402291D8220056D816 /* PolygonKML.swift in Sources */,
 				52B8899A2291D8610056D816 /* InitialLoadViewController.swift in Sources */,
