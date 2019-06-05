@@ -10,9 +10,6 @@
 		523C58E022A57B810055BD31 /* TimeCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C58DF22A57B800055BD31 /* TimeCalculations.swift */; };
 		5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */; };
 		528765B3229B9444007C4477 /* LineUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528765B2229B9444007C4477 /* LineUpCardViewController.swift */; };
-		528E15F0229B28F300269816 /* single_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15ED229B28F200269816 /* single_item.html */; };
-		528E15F1229B28F300269816 /* invoice.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15EE229B28F200269816 /* invoice.html */; };
-		528E15F2229B28F300269816 /* last_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 528E15EF229B28F300269816 /* last_item.html */; };
 		528E15F5229B297600269816 /* HTMLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E15F4229B297600269816 /* HTMLHandler.swift */; };
 		528E15F7229B2D6000269816 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E15F6229B2D6000269816 /* PDFGenerator.swift */; };
 		528E1605229B563D00269816 /* luc.htm in Resources */ = {isa = PBXBuildFile; fileRef = 528E1604229B563D00269816 /* luc.htm */; };
@@ -108,15 +105,16 @@
 		52B889D92291D9120056D816 /* AirfieldCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B889C92291D9120056D816 /* AirfieldCD+CoreDataProperties.swift */; };
 		52B889DA2291D9120056D816 /* FreqCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B889CA2291D9120056D816 /* FreqCD+CoreDataClass.swift */; };
 		52B889DB2291D9120056D816 /* FreqCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B889CB2291D9120056D816 /* FreqCD+CoreDataProperties.swift */; };
+		52BF843522A73E7B007C9E55 /* LineUpCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF843422A73E7B007C9E55 /* LineUpCard.swift */; };
+		52BF843722A74B01007C9E55 /* image01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52BF843622A74B01007C9E55 /* image01.jpg */; };
+		52BF843922A74B3F007C9E55 /* image02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52BF843822A74B3F007C9E55 /* image02.jpg */; };
+		52BF843B22A74ED4007C9E55 /* LineUpCardPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF843A22A74ED4007C9E55 /* LineUpCardPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		523C58DF22A57B800055BD31 /* TimeCalculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCalculations.swift; sourceTree = "<group>"; };
 		5263A10C22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsReconfigured.storyboard; sourceTree = "<group>"; };
 		528765B2229B9444007C4477 /* LineUpCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCardViewController.swift; sourceTree = "<group>"; };
-		528E15ED229B28F200269816 /* single_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = single_item.html; sourceTree = "<group>"; };
-		528E15EE229B28F200269816 /* invoice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = invoice.html; sourceTree = "<group>"; };
-		528E15EF229B28F300269816 /* last_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = last_item.html; sourceTree = "<group>"; };
 		528E15F4229B297600269816 /* HTMLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLHandler.swift; sourceTree = "<group>"; };
 		528E15F6229B2D6000269816 /* PDFGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGenerator.swift; sourceTree = "<group>"; };
 		528E1604229B563D00269816 /* luc.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = luc.htm; sourceTree = SOURCE_ROOT; };
@@ -214,6 +212,10 @@
 		52B889C92291D9120056D816 /* AirfieldCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirfieldCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		52B889CA2291D9120056D816 /* FreqCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FreqCD+CoreDataClass.swift"; sourceTree = "<group>"; };
 		52B889CB2291D9120056D816 /* FreqCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FreqCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		52BF843422A73E7B007C9E55 /* LineUpCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCard.swift; sourceTree = "<group>"; };
+		52BF843622A74B01007C9E55 /* image01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image01.jpg; sourceTree = SOURCE_ROOT; };
+		52BF843822A74B3F007C9E55 /* image02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image02.jpg; sourceTree = SOURCE_ROOT; };
+		52BF843A22A74ED4007C9E55 /* LineUpCardPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCardPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,12 +232,12 @@
 		528E15F3229B28F800269816 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
+				52BF843622A74B01007C9E55 /* image01.jpg */,
+				52BF843822A74B3F007C9E55 /* image02.jpg */,
 				528E1604229B563D00269816 /* luc.htm */,
-				528E15EE229B28F200269816 /* invoice.html */,
-				528E15EF229B28F300269816 /* last_item.html */,
-				528E15ED229B28F200269816 /* single_item.html */,
 				528E15F4229B297600269816 /* HTMLHandler.swift */,
 				528E15F6229B2D6000269816 /* PDFGenerator.swift */,
+				52BF843422A73E7B007C9E55 /* LineUpCard.swift */,
 			);
 			path = HTML;
 			sourceTree = "<group>";
@@ -428,6 +430,7 @@
 		52B8896E2291D8610056D816 /* ToldTab */ = {
 			isa = PBXGroup;
 			children = (
+				52BF843A22A74ED4007C9E55 /* LineUpCardPreview.swift */,
 				528765B2229B9444007C4477 /* LineUpCardViewController.swift */,
 				52B8896F2291D8610056D816 /* WindInfoPopOverViewController.swift */,
 				52B889702291D8610056D816 /* ErrorTableViewController.swift */,
@@ -604,16 +607,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */,
+				52BF843722A74B01007C9E55 /* image01.jpg in Resources */,
 				52B888FA2291D8130056D816 /* LaunchT38A.storyboard in Resources */,
 				52B888FC2291D8130056D816 /* CalculatorTab.storyboard in Resources */,
-				528E15F2229B28F300269816 /* last_item.html in Resources */,
 				52B888FD2291D8130056D816 /* TOLDTab.storyboard in Resources */,
+				52BF843922A74B3F007C9E55 /* image02.jpg in Resources */,
 				528E1605229B563D00269816 /* luc.htm in Resources */,
 				52B888F82291D8130056D816 /* Main.storyboard in Resources */,
 				52B889A72291D8610056D816 /* Preflight.mp4 in Resources */,
 				52B888DE2291D6660056D816 /* Assets.xcassets in Resources */,
-				528E15F0229B28F300269816 /* single_item.html in Resources */,
-				528E15F1229B28F300269816 /* invoice.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +641,7 @@
 				52B889442291D8220056D816 /* BEBearingMark.swift in Sources */,
 				52B889922291D8610056D816 /* UIView+Extensions.swift in Sources */,
 				52B8895C2291D8220056D816 /* FirstLaunch.swift in Sources */,
+				52BF843522A73E7B007C9E55 /* LineUpCard.swift in Sources */,
 				52B889CE2291D9120056D816 /* ToldInputsCD+CoreDataClass.swift in Sources */,
 				52B889A92291D8610056D816 /* InitialVideoPlayerViewController.swift in Sources */,
 				52B889912291D8610056D816 /* UITableViewExtensions.swift in Sources */,
@@ -646,6 +649,7 @@
 				52B889D72291D9120056D816 /* NavaidCD+CoreDataProperties.swift in Sources */,
 				52B8895D2291D8220056D816 /* EdgeInsetLabel.swift in Sources */,
 				52B8893A2291D8220056D816 /* T38CD.xcdatamodeld in Sources */,
+				52BF843B22A74ED4007C9E55 /* LineUpCardPreview.swift in Sources */,
 				52B8899C2291D8610056D816 /* ErrorTableViewController.swift in Sources */,
 				52B889452291D8220056D816 /* StyleKML.swift in Sources */,
 				52B889942291D8610056D816 /* DoubleExtensions.swift in Sources */,

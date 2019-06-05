@@ -12,8 +12,8 @@ import UIKit
 
 class PDFGenerator: UIPrintPageRenderer {
     
-    let A4PageWidth: CGFloat = 740//595.2
-    let A4PageHeight: CGFloat = 841.8
+    let A4PageWidth: CGFloat = 560.0
+    let A4PageHeight: CGFloat = 800.0
     
     override init() {
         super .init()

@@ -583,17 +583,18 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBOutlet weak var lineUpCardButtonOutlet: UIButton!
-    @IBAction func exportLineUpCard(_ sender: UIButton) {
-        lineUpCardButtonOutlet.showPressed()
+    
+    fileprivate func generateHtml() -> String {
+        var result = ""
         var setosp10: String = ""
         if let setos = results.setos {
-            guard var setosp10D = Double(setos) else { return }
+            guard var setosp10D = Double(setos) else { return ""}
             setosp10D = setosp10D + 10.0
             setosp10 = setosp10D.toStringWithZeroDecimal()
         }
         if let metar = metar {
             let htmlH = HTMLHandler()
-            if let luc = htmlH.putCalculatedValuesInLineUpCard(callSign_1: callSign_1,
+            if let _ = htmlH.putCalculatedValuesInLineUpCard(callSign_1: callSign_1,
                                                                callSign_2: callSign_2,
                                                                callSign_3: callSign_3,
                                                                callSign_4: callSign_4,
@@ -643,9 +644,23 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
                 trainingObj3: trainingObj_3,
                 trainingObj4: trainingObj_4,
                 trainingObj5: "") {
-                htmlH.exportHTMLContentToPDF(HTMLContent: luc, view: self)
-            }
-            
+                result = htmlH.htmlContent ?? ""
+            }}
+        return result
+    }
+    
+    @IBAction func exportLineUpCard(_ sender: UIButton) {
+        lineUpCardButtonOutlet.showPressed()
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "printPreview":
+            let dvc = segue.destination as! LineUpCardPreview
+            dvc.lineUpCardHtml = generateHtml()
+        default:
+            print("What the?!?!?")
         }
     }
     
