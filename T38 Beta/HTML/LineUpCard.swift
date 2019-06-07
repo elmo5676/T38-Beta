@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import WebKit
 
 struct LineUpCard {
     
-    var luc: String
+    var luc: String = ""
     
     init() {
         luc = """

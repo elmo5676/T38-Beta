@@ -18,10 +18,10 @@ class HTMLHandler: NSObject {
     }
     
     var htmlContent: String?
+    let image01 = Bundle.main.path(forResource: "image_0001", ofType: "png")
+    let image02 = Bundle.main.path(forResource: "image_0001", ofType: "png")
+    let html = Bundle.main.path(forResource: "lineUpCardBAB", ofType: "htm")
     
-    
-    let image_01 = Bundle.main.path(forResource: "image01", ofType: "jpg")
-    let image_02 = Bundle.main.path(forResource: "image02", ofType: "jpg")
     
     var pdfFilename: String!
     
@@ -34,8 +34,15 @@ class HTMLHandler: NSObject {
     
     func putCalculatedValuesInLineUpCard(callSign_1: String, callSign_2: String, callSign_3: String, callSign_4: String, callSignNum_1: String, callSignNum_2: String, callSignNum_3: String, callSignNum_4: String, frontPilot_1: String, frontPilot_2: String, frontPilot_3: String, frontPilot_4: String, backPilot_1: String, backPilot_2: String, backPilot_3: String, backPilot_4: String, aircraft_1: String, aircraft_2: String, aircraft_3: String, aircraft_4: String, joker: String, bingo: String, macsSpeed: String, macsDist: String, ds: String, rsEf: String, setos: String, setosp10: String, cfl: String, eor: String, rsBeo: String, grDnSecg: String, grUpSecg: String, pa: String, temp: String, winds: String, cieling: String, icing: String, show: String, brief: String, step: String, to: String, land: String, missionOb1: String, missionOb2: String, trainingObj1: String, trainingObj2: String, trainingObj3: String, trainingObj4: String, trainingObj5: String) -> String! {
         
-        var HTMLContent = LineUpCard().luc
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#IMAGE_02#", with: image_02!)
+        var HTMLContent = ""
+        do {
+            HTMLContent = try String(contentsOfFile: html!)
+        } catch {
+            print(error)
+        }
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#image01#", with: "\(image01!)")
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#image02#", with: "https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg")
+        print("file:/\(image01!)")
         HTMLContent = HTMLContent.replacingOccurrences(of: "#DATE#", with: setDate())
         HTMLContent = HTMLContent.replacingOccurrences(of: "#RP1#", with: callSign_1)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#RP2#", with: callSign_2)
