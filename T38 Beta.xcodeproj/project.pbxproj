@@ -106,9 +106,7 @@
 		52B889DB2291D9120056D816 /* FreqCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B889CB2291D9120056D816 /* FreqCD+CoreDataProperties.swift */; };
 		52BF843522A73E7B007C9E55 /* LineUpCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF843422A73E7B007C9E55 /* LineUpCard.swift */; };
 		52BF843B22A74ED4007C9E55 /* LineUpCardPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF843A22A74ED4007C9E55 /* LineUpCardPreview.swift */; };
-		52EF557C22A901C1008CE632 /* image01.jp2 in Resources */ = {isa = PBXBuildFile; fileRef = 52EF557A22A901C1008CE632 /* image01.jp2 */; };
 		52EF557E22A906F8008CE632 /* lineUpCardBAB.htm in Resources */ = {isa = PBXBuildFile; fileRef = 52EF557D22A906F8008CE632 /* lineUpCardBAB.htm */; };
-		52EF557F22A9115A008CE632 /* image02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52EF558122A9115A008CE632 /* image02.jpg */; };
 		52EF558422A9E6AE008CE632 /* image_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = 52EF558322A9E6AD008CE632 /* image_0001.png */; };
 /* End PBXBuildFile section */
 
@@ -214,12 +212,7 @@
 		52B889CB2291D9120056D816 /* FreqCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FreqCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		52BF843422A73E7B007C9E55 /* LineUpCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCard.swift; sourceTree = "<group>"; };
 		52BF843A22A74ED4007C9E55 /* LineUpCardPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCardPreview.swift; sourceTree = "<group>"; };
-		52EF557222A8FC11008CE632 /* lineUpCardBAB_8190_image002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lineUpCardBAB_8190_image002.png; sourceTree = "<group>"; };
-		52EF557322A8FC11008CE632 /* lineUpCardBAB_8190_image001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lineUpCardBAB_8190_image001.png; sourceTree = "<group>"; };
-		52EF557A22A901C1008CE632 /* image01.jp2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = image01.jp2; path = LineUpCard/Luc/image01.jp2; sourceTree = SOURCE_ROOT; };
 		52EF557D22A906F8008CE632 /* lineUpCardBAB.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = lineUpCardBAB.htm; path = LineUpCard/Luc/lineUpCardBAB.htm; sourceTree = SOURCE_ROOT; };
-		52EF558022A9115A008CE632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Base; path = Base.lproj/image02.jpg; sourceTree = "<group>"; };
-		52EF558222A9115F008CE632 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = en.lproj/image02.jpg; sourceTree = "<group>"; };
 		52EF558322A9E6AD008CE632 /* image_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_0001.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,10 +232,6 @@
 			children = (
 				52EF557D22A906F8008CE632 /* lineUpCardBAB.htm */,
 				52EF558322A9E6AD008CE632 /* image_0001.png */,
-				52EF557A22A901C1008CE632 /* image01.jp2 */,
-				52EF558122A9115A008CE632 /* image02.jpg */,
-				52EF557222A8FC11008CE632 /* lineUpCardBAB_8190_image002.png */,
-				52EF557322A8FC11008CE632 /* lineUpCardBAB_8190_image001.png */,
 				528E15F4229B297600269816 /* HTMLHandler.swift */,
 				528E15F6229B2D6000269816 /* PDFGenerator.swift */,
 				52BF843422A73E7B007C9E55 /* LineUpCard.swift */,
@@ -641,11 +630,9 @@
 				5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */,
 				52B888FA2291D8130056D816 /* LaunchT38A.storyboard in Resources */,
 				52EF557E22A906F8008CE632 /* lineUpCardBAB.htm in Resources */,
-				52EF557F22A9115A008CE632 /* image02.jpg in Resources */,
 				52B888FC2291D8130056D816 /* CalculatorTab.storyboard in Resources */,
 				52B888FD2291D8130056D816 /* TOLDTab.storyboard in Resources */,
 				52B888F82291D8130056D816 /* Main.storyboard in Resources */,
-				52EF557C22A901C1008CE632 /* image01.jp2 in Resources */,
 				52B889A72291D8610056D816 /* Preflight.mp4 in Resources */,
 				52B888DE2291D6660056D816 /* Assets.xcassets in Resources */,
 				52EF558422A9E6AE008CE632 /* image_0001.png in Resources */,
@@ -772,16 +759,6 @@
 			);
 			name = CalculatorTab.storyboard;
 			sourceTree = "<group>";
-		};
-		52EF558122A9115A008CE632 /* image02.jpg */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52EF558022A9115A008CE632 /* Base */,
-				52EF558222A9115F008CE632 /* en */,
-			);
-			name = image02.jpg;
-			path = "/Users/elmo/Dropbox/00_Elmo/05_Coding/03_Working/T38-Beta/LineUpCard/Luc";
-			sourceTree = "<absolute>";
 		};
 /* End PBXVariantGroup section */
 
