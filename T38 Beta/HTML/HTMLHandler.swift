@@ -18,8 +18,9 @@ class HTMLHandler: NSObject {
     }
     
     var htmlContent: String?
-    let image01 = Bundle.main.path(forResource: "image_0001", ofType: "png")
-    let image02 = Bundle.main.path(forResource: "image_0001", ofType: "png")
+//    let image01 = Bundle.main.path(forResource: "image_0001", ofType: "png")
+    let image01 = Bundle.main.url(forResource: "image_0001", withExtension: "png")
+    let image02 = Bundle.main.path(forResource: "image_001", ofType: "png")
     let html = Bundle.main.path(forResource: "lineUpCardBAB", ofType: "htm")
     
     
@@ -41,8 +42,8 @@ class HTMLHandler: NSObject {
             print(error)
         }
         HTMLContent = HTMLContent.replacingOccurrences(of: "#image01#", with: "\(image01!)")
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#image02#", with: "https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg")
-        print("file:/\(image01!)")
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#image02#", with: "\(image02 ?? "")")
+        print("\(image01!)")
         HTMLContent = HTMLContent.replacingOccurrences(of: "#DATE#", with: setDate())
         HTMLContent = HTMLContent.replacingOccurrences(of: "#RP1#", with: callSign_1)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#RP2#", with: callSign_2)
