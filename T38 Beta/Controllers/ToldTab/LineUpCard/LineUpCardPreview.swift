@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 class LineUpCardPreview: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,7 +18,7 @@ class LineUpCardPreview: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         loadPage(html: lineUpCardHtml)
     }
-
+    
     var lineUpCardHtml = ""
     
     @IBOutlet weak var lineUpCardPreview: WKWebView!
@@ -28,12 +28,17 @@ class LineUpCardPreview: UIViewController {
     
     
     @IBAction func printBarButton(_ sender: UIBarButtonItem) {
-        HTMLHandler().exportHTMLContentToPDF(HTMLContent: lineUpCardHtml, view: self)
+//        HTMLHandler().exportHTMLContentToPDF(HTMLContent: lineUpCardHtml, view: self)
+        HTMLHandler().exportHTMLContentToPDFwithWebView(HTMLContent: lineUpCardHtml, webView: lineUpCardPreview, view: self)
     }
     
     
     func loadPage(html: String) {
-        lineUpCardPreview.loadHTMLString(html, baseURL: nil)
+        let nsHTML = html as NSString
+        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let pageURL = documentDirectory.appendingPathComponent("index.html")
+        try! nsHTML.write(to: pageURL, atomically: false, encoding: String.Encoding.utf8.rawValue)
+        lineUpCardPreview.loadFileURL(pageURL, allowingReadAccessTo: documentDirectory)
     }
     
     

@@ -30,10 +30,10 @@ class InitialLoadViewController: UIViewController {
             jsonH.removeAllFiles()
             if reachable.isConnectedToNetowrk() {
                 jsonH.initialVerificationWithProgressBar(pc: pc, moc: moc, progress: progressUpdate)
-                manuallyEnterDataButtonOutlet.isHidden = true
+                manuallyEnterDataButtonOutlet.isHidden = false
             } else {
                 initialLoadInfoLabel.text = "You are not connected to the internet and you are missing required downloads. If you would like to take advantage of the features, in T-38 version \(buildNumber), please connect to the internet and restart the app."
-                manuallyEnterDataButtonOutlet.isHidden = true
+                manuallyEnterDataButtonOutlet.isHidden = false
             }
         }
         if jsonH.initialVerification(pc: pc, moc: moc) ==  true {

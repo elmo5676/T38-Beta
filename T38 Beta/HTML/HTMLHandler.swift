@@ -9,22 +9,47 @@
 import Foundation
 import UIKit
 import MessageUI
+import WebKit
 
 
 class HTMLHandler: NSObject {
     
     override init() {
         super.init()
+        copyBundleItems([image01,image02])
     }
     
     var htmlContent: String?
-//    let image01 = Bundle.main.path(forResource: "image_0001", ofType: "png")
-    let image01 = Bundle.main.url(forResource: "image_0001", withExtension: "png")
-    let image02 = Bundle.main.path(forResource: "image_001", ofType: "png")
-    let html = Bundle.main.path(forResource: "lineUpCardBAB", ofType: "htm")
+    let image01 = "image_0001.png"
+    let image02 = "image_0002.png"
+    let html = Bundle.main.path(forResource: "lineUpCard_BAB_C", ofType: "htm")
     
     
     var pdfFilename: String!
+    
+    func copyBundleItems(_ items: [String]) {
+        let fileManager = FileManager.default
+        let documentsDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        do {
+            let existingFiles = try fileManager.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: nil)
+            if existingFiles.count > 0 {
+                for file in existingFiles {
+                    try fileManager.removeItem(at: file)
+                }}
+        } catch {
+            print("Error encountered while removing items: \(error)")
+        }
+        do {
+            for item in items {
+                let itemUrl = documentsDirectory.appendingPathComponent(item)
+                guard let bundleURL = Bundle.main.url(forResource: item, withExtension: nil) else {
+                    continue
+                }
+                try fileManager.copyItem(at: bundleURL, to: itemUrl)
+            }
+        } catch {
+            print("An error occured during copy operations: \(error)")
+        }}
     
     fileprivate func setDate() -> String {
         let date = Date()
@@ -33,7 +58,7 @@ class HTMLHandler: NSObject {
         return dateFormatter.string(from: date)
     }
     
-    func putCalculatedValuesInLineUpCard(callSign_1: String, callSign_2: String, callSign_3: String, callSign_4: String, callSignNum_1: String, callSignNum_2: String, callSignNum_3: String, callSignNum_4: String, frontPilot_1: String, frontPilot_2: String, frontPilot_3: String, frontPilot_4: String, backPilot_1: String, backPilot_2: String, backPilot_3: String, backPilot_4: String, aircraft_1: String, aircraft_2: String, aircraft_3: String, aircraft_4: String, joker: String, bingo: String, macsSpeed: String, macsDist: String, ds: String, rsEf: String, setos: String, setosp10: String, cfl: String, eor: String, rsBeo: String, grDnSecg: String, grUpSecg: String, pa: String, temp: String, winds: String, cieling: String, icing: String, show: String, brief: String, step: String, to: String, land: String, missionOb1: String, missionOb2: String, trainingObj1: String, trainingObj2: String, trainingObj3: String, trainingObj4: String, trainingObj5: String) -> String! {
+    func putCalculatedValuesInLineUpCard(callSign_1: String, callSign_2: String, callSign_3: String, callSign_4: String, callSignNum_1: String, callSignNum_2: String, callSignNum_3: String, callSignNum_4: String, frontPilot_1: String, frontPilot_2: String, frontPilot_3: String, frontPilot_4: String, backPilot_1: String, backPilot_2: String, backPilot_3: String, backPilot_4: String, airToAirTac_01: String, airToAirTac_02: String, airToAirTac_03: String, airToAirTac_04: String, line_01: String, line_02: String, line_03: String, line_04: String, event: String, aircraft_1: String, aircraft_2: String, aircraft_3: String, aircraft_4: String, joker: String, bingo: String, macsSpeed: String, macsDist: String, ds: String, rsEf: String, setos: String, setosp10: String, cfl: String, eor: String, rsBeo: String, grDnSecg: String, grUpSecg: String, pa: String, temp: String, winds: String, cieling: String, icing: String, show: String, brief: String, step: String, to: String, land: String) -> String! {
         
         var HTMLContent = ""
         do {
@@ -41,9 +66,8 @@ class HTMLHandler: NSObject {
         } catch {
             print(error)
         }
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#image01#", with: "\(image01!)")
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#image02#", with: "\(image02 ?? "")")
-        print("\(image01!)")
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#image01#", with: "\(image01)")
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#image02#", with: "\(image02)")
         HTMLContent = HTMLContent.replacingOccurrences(of: "#DATE#", with: setDate())
         HTMLContent = HTMLContent.replacingOccurrences(of: "#RP1#", with: callSign_1)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#RP2#", with: callSign_2)
@@ -61,6 +85,15 @@ class HTMLHandler: NSObject {
         HTMLContent = HTMLContent.replacingOccurrences(of: "#BAK2#", with: backPilot_2)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#BAK3#", with: backPilot_3)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#BAK4#", with: backPilot_4)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#A1#", with: airToAirTac_01)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#A2#", with: airToAirTac_02)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#A3#", with: airToAirTac_03)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#A4#", with: airToAirTac_04)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#LN1#", with: line_01)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#LN2#", with: line_02)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#LN3#", with: line_03)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#LN4#", with: line_04)
+        HTMLContent = HTMLContent.replacingOccurrences(of: "#EVENT#", with: event)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#ACFT1#", with: aircraft_1)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#ACFT2#", with: aircraft_2)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#ACFT3#", with: aircraft_3)
@@ -88,17 +121,20 @@ class HTMLHandler: NSObject {
         HTMLContent = HTMLContent.replacingOccurrences(of: "#STEP#", with: step)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#T/O#", with: to)
         HTMLContent = HTMLContent.replacingOccurrences(of: "#LD#", with: land)
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#MISSION OBJ 1#", with: missionOb1)
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#MISSION OBJ 2#", with: missionOb2)
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#TRNGOBJ1#", with: trainingObj1)
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#TRNGOBJ2#", with: trainingObj2)
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#TRNGOBJ3#", with: trainingObj3)
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#TRNGOBJ4#", with: trainingObj4)
-        HTMLContent = HTMLContent.replacingOccurrences(of: "#TRNGOBJ5#", with: trainingObj5)
         htmlContent = HTMLContent
         return HTMLContent
     }
     
+    func drawPDFUsingPrintPageRenderer(printPageRenderer: UIPrintPageRenderer) -> NSData {
+        let data = NSMutableData()
+        let A4PageWidth: CGFloat = 560.0
+        let A4PageHeight: CGFloat = 800.0
+        UIGraphicsBeginPDFContextToData(data, CGRect(x: 0, y: 0, width: A4PageHeight, height: A4PageWidth), nil)
+        UIGraphicsBeginPDFPage()
+        printPageRenderer.drawPage(at: 0, in: UIGraphicsGetPDFContextBounds())
+        UIGraphicsEndPDFContext()
+        return data
+    }
     
     func exportHTMLContentToPDF(HTMLContent: String, view: UIViewController) {
         let printPAgeRenderer = PDFGenerator()
@@ -113,33 +149,34 @@ class HTMLHandler: NSObject {
         
     }
     
-    func drawPDFUsingPrintPageRenderer(printPageRenderer: UIPrintPageRenderer) -> NSData {
-        let data = NSMutableData()
-        let A4PageWidth: CGFloat = 560.0
-        let A4PageHeight: CGFloat = 800.0
-        UIGraphicsBeginPDFContextToData(data, CGRect(x: 0, y: 0, width: A4PageHeight, height: A4PageWidth), nil)
-        UIGraphicsBeginPDFPage()
-        printPageRenderer.drawPage(at: 0, in: UIGraphicsGetPDFContextBounds())
-        UIGraphicsEndPDFContext()
-        return data
+    func exportHTMLContentToPDFwithWebView(HTMLContent: String, webView: WKWebView, view: UIViewController) {
+        let printPAgeRenderer = PDFGenerator()
+        let printFormatter = webView.viewPrintFormatter()
+        printPAgeRenderer.addPrintFormatter(printFormatter, startingAtPageAt: 0)
+        let pdfData = drawPDFUsingPrintPageRenderer(printPageRenderer: printPAgeRenderer)
+        pdfFilename = "testPdf.pdf"
+        let path = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(pdfFilename)!
+        print(path)
+        pdfData.write(to: path, atomically: true)
+        showOptionsAlert(pdfUrl: path, on: view, htmlLineUpCard: HTMLContent, pdfData: pdfData)
     }
     
     
     func showOptionsAlert(pdfUrl: URL, on: UIViewController, htmlLineUpCard: String, pdfData: NSData) {
-        let alertController = UIAlertController(title: "Line Up Card", message: "Would you Like to create a Line Up Card", preferredStyle: .alert)
-//        let actionEmail = UIAlertAction(title: "Email", style: .default) { (action) in
-//            self.sendEmail(pdfUrl: pdfUrl, view: on)
-//        }
+        let alertController = UIAlertController(title: "Line Up Card", message: "Would you Like to create a Line Up Card. If you choose to make one, have patience. Your ipad mini will take up to 30 seconds to produce this fine piece of artwork in a printable format. In that time it will look like its locked up. If you would like it to be faster... so would I. It will when we get the new ipad minis!", preferredStyle: .alert)
+        //        let actionEmail = UIAlertAction(title: "Email", style: .default) { (action) in
+        //            self.sendEmail(pdfUrl: pdfUrl, view: on)
+        //        }
         let actionShare = UIAlertAction(title: "Export", style: .default) { (action) in
             on.passDataToShareSheet(fileName: "LUC", ext: ".pdf", dataToWriteToFile: pdfData)
-//            on.presentingViewController?.dismiss(animated: true, completion: nil)
+            //            on.presentingViewController?.dismiss(animated: true, completion: nil)
         }
 //        let actionPrint = UIAlertAction(title: "Print", style: .default) { (action) in
 //            self.airPrint(htmlLineUpCard: htmlLineUpCard)
 //        }
         let actionNothing = UIAlertAction(title: "Dismiss", style: .default) { (action) in
         }
-//        alertController.addAction(actionEmail)
+        //        alertController.addAction(actionEmail)
         alertController.addAction(actionShare)
 //        alertController.addAction(actionPrint)
         alertController.addAction(actionNothing)

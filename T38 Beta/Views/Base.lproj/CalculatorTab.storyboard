@@ -380,7 +380,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g1p-dz-0Ge"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calculator" image="icons8-calculator" selectedImage="icons8-calculator_filled" id="z2J-Xi-r6s"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="calcTab" selectedImage="calcTabFilled" id="z2J-Xi-r6s"/>
                     <connections>
                         <outlet property="display" destination="bom-Nf-0Yh" id="H6M-dB-KFx"/>
                         <outlet property="iconImage" destination="IKl-DF-6Ru" id="wjn-2k-Bf4"/>
@@ -2302,9 +2302,9 @@
     <resources>
         <image name="FFT38Blue" width="942" height="942"/>
         <image name="FFT38Green" width="942" height="942"/>
+        <image name="calcTab" width="25" height="25"/>
+        <image name="calcTabFilled" width="25" height="25"/>
         <image name="iTunesArtwork-1" width="1024" height="1024"/>
-        <image name="icons8-calculator" width="25" height="25"/>
-        <image name="icons8-calculator_filled" width="25" height="25"/>
         <image name="icons8-close_window_filled" width="25" height="25"/>
     </resources>
 </document>

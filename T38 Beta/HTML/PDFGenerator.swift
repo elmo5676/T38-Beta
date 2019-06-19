@@ -18,7 +18,6 @@ class PDFGenerator: UIPrintPageRenderer {
     override init() {
         super .init()
         let pageFrame = CGRect(x: 0, y: 0, width: A4PageHeight, height: A4PageWidth)
-//        let printFrame = CGRect(x: 0.0, y: 0.0, width: A4PageWidth - 10, height: A4PageHeight - 10)
         self.setValue(NSValue(cgRect: pageFrame), forKey: "paperRect")
         self.setValue(NSValue(cgRect: pageFrame), forKey: "printableRect")
     }

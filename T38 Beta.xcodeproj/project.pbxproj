@@ -108,6 +108,8 @@
 		52BF843B22A74ED4007C9E55 /* LineUpCardPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF843A22A74ED4007C9E55 /* LineUpCardPreview.swift */; };
 		52EF557E22A906F8008CE632 /* lineUpCardBAB.htm in Resources */ = {isa = PBXBuildFile; fileRef = 52EF557D22A906F8008CE632 /* lineUpCardBAB.htm */; };
 		52EF558422A9E6AE008CE632 /* image_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = 52EF558322A9E6AD008CE632 /* image_0001.png */; };
+		52EF558622A9EC5F008CE632 /* image_0002.png in Resources */ = {isa = PBXBuildFile; fileRef = 52EF558522A9EC5E008CE632 /* image_0002.png */; };
+		52EF558A22AA27E9008CE632 /* lineUpCard_BAB_C.htm in Resources */ = {isa = PBXBuildFile; fileRef = 52EF558922AA27E9008CE632 /* lineUpCard_BAB_C.htm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -214,6 +216,8 @@
 		52BF843A22A74ED4007C9E55 /* LineUpCardPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCardPreview.swift; sourceTree = "<group>"; };
 		52EF557D22A906F8008CE632 /* lineUpCardBAB.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = lineUpCardBAB.htm; path = LineUpCard/Luc/lineUpCardBAB.htm; sourceTree = SOURCE_ROOT; };
 		52EF558322A9E6AD008CE632 /* image_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_0001.png; sourceTree = "<group>"; };
+		52EF558522A9EC5E008CE632 /* image_0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_0002.png; sourceTree = "<group>"; };
+		52EF558922AA27E9008CE632 /* lineUpCard_BAB_C.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = lineUpCard_BAB_C.htm; path = LineUpCard/lineUpCard_BAB_C.htm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,7 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				52EF557D22A906F8008CE632 /* lineUpCardBAB.htm */,
+				52EF558922AA27E9008CE632 /* lineUpCard_BAB_C.htm */,
 				52EF558322A9E6AD008CE632 /* image_0001.png */,
+				52EF558522A9EC5E008CE632 /* image_0002.png */,
 				528E15F4229B297600269816 /* HTMLHandler.swift */,
 				528E15F6229B2D6000269816 /* PDFGenerator.swift */,
 				52BF843422A73E7B007C9E55 /* LineUpCard.swift */,
@@ -627,6 +633,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EF558A22AA27E9008CE632 /* lineUpCard_BAB_C.htm in Resources */,
 				5263A10D22A34F5E00C5B5D0 /* SettingsReconfigured.storyboard in Resources */,
 				52B888FA2291D8130056D816 /* LaunchT38A.storyboard in Resources */,
 				52EF557E22A906F8008CE632 /* lineUpCardBAB.htm in Resources */,
@@ -636,6 +643,7 @@
 				52B889A72291D8610056D816 /* Preflight.mp4 in Resources */,
 				52B888DE2291D6660056D816 /* Assets.xcassets in Resources */,
 				52EF558422A9E6AE008CE632 /* image_0001.png in Resources */,
+				52EF558622A9EC5F008CE632 /* image_0002.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

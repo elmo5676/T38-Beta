@@ -89,6 +89,33 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
         if let back_4 = defaults.string(forKey: "back_4") {
             self.back_4 = back_4
         }
+        if let aa_01 = defaults.string(forKey: "aa_01") {
+            self.aa_01 = aa_01
+        }
+        if let aa_02 = defaults.string(forKey: "aa_02") {
+            self.aa_02 = aa_02
+        }
+        if let aa_03 = defaults.string(forKey: "aa_03") {
+            self.aa_03 = aa_03
+        }
+        if let aa_04 = defaults.string(forKey: "aa_04") {
+            self.aa_04 = aa_04
+        }
+        if let line_01 = defaults.string(forKey: "line_01") {
+            self.line_01 = line_01
+        }
+        if let line_02 = defaults.string(forKey: "line_02") {
+            self.line_02 = line_02
+        }
+        if let line_03 = defaults.string(forKey: "line_03") {
+            self.line_03 = line_03
+        }
+        if let line_04 = defaults.string(forKey: "line_04") {
+            self.line_04 = line_04
+        }
+        if let event = defaults.string(forKey: "event") {
+            self.event = event
+        }
         if let tail_1 = defaults.string(forKey: "tail_1") {
             self.tail_1 = tail_1
         }
@@ -121,24 +148,6 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
         }
         if let bingo = defaults.string(forKey: "bingo") {
             self.bingo = bingo
-        }
-        if let missionObj1 = defaults.string(forKey: "missionObj1") {
-            self.missionObj1 = missionObj1
-        }
-        if let missionObj2 = defaults.string(forKey: "missionObj2") {
-            self.missionObj2 = missionObj2
-        }
-        if let trainingObj_1 = defaults.string(forKey: "trainingObj_1") {
-            self.trainingObj_1 = trainingObj_1
-        }
-        if let trainingObj_2 = defaults.string(forKey: "trainingObj_2") {
-            self.trainingObj_2 = trainingObj_2
-        }
-        if let trainingObj_3 = defaults.string(forKey: "trainingObj_3") {
-            self.trainingObj_3 = trainingObj_3
-        }
-        if let trainingObj_4 = defaults.string(forKey: "trainingObj_4") {
-            self.trainingObj_4 = trainingObj_4
         }
     }
     
@@ -221,6 +230,51 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
             back_4_Outlet.text = back_4
             defaults.set(back_4, forKey: "back_4")
         }}
+    var aa_01 = "" {
+        didSet{
+            aa_1_Outlet.text = aa_01
+            defaults.set(aa_01, forKey: "aa_01")
+        }}
+    var aa_02 = "" {
+        didSet{
+            aa_2_Outlet.text = aa_02
+            defaults.set(aa_02, forKey: "aa_02")
+        }}
+    var aa_03 = "" {
+        didSet{
+            aa_3_Outlet.text = aa_03
+            defaults.set(aa_03, forKey: "aa_03")
+        }}
+    var aa_04 = "" {
+        didSet{
+            aa_4_Outlet.text = aa_04
+            defaults.set(aa_04, forKey: "aa_04")
+        }}
+    var line_01 = "" {
+        didSet{
+            line_1_Outlet.text = line_01
+            defaults.set(line_01, forKey: "line_01")
+        }}
+    var line_02 = "" {
+        didSet{
+            line_2_Outlet.text = line_02
+            defaults.set(line_02, forKey: "line_02")
+        }}
+    var line_03 = "" {
+        didSet{
+            line_3_Outlet.text = line_03
+            defaults.set(line_03, forKey: "line_03")
+        }}
+    var line_04 = "" {
+        didSet{
+            line_4_Outlet.text = line_04
+            defaults.set(line_04, forKey: "line_04")
+        }}
+    var event = "" {
+        didSet{
+            event_Outlet.text = event
+            defaults.set(event, forKey: "event")
+        }}
     var tail_1 = "" {
         didSet{
             tail_1_Outlet.text = tail_1
@@ -276,36 +330,6 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
             bingo_Outlet.text = bingo
             defaults.set(bingo, forKey: "bingo")
         }}
-    var missionObj1 = "" {
-        didSet{
-            missionObj1_Outlet.text = missionObj1
-            defaults.set(missionObj1, forKey: "missionObj1")
-        }}
-    var missionObj2 = "" {
-        didSet{
-            missionObj2_Outlet.text = missionObj2
-            defaults.set(missionObj2, forKey: "missionObj2")
-        }}
-    var trainingObj_1 = "" {
-        didSet{
-            trainingObj_1_Outlet.text = trainingObj_1
-            defaults.set(trainingObj_1, forKey: "trainingObj_1")
-        }}
-    var trainingObj_2 = "" {
-        didSet{
-            trainingObj_2_Outlet.text = trainingObj_2
-            defaults.set(trainingObj_2, forKey: "trainingObj_2")
-        }}
-    var trainingObj_3 = "" {
-        didSet{
-            trainingObj_3_Outlet.text = trainingObj_3
-            defaults.set(trainingObj_3, forKey: "trainingObj_3")
-        }}
-    var trainingObj_4 = "" {
-        didSet{
-            trainingObj_4_Outlet.text = trainingObj_4
-            defaults.set(trainingObj_4, forKey: "trainingObj_4")
-        }}
     
     @IBOutlet weak var callSignOutlet_1: UITextField!
     @IBOutlet weak var callSign_2_Outlet: UITextField!
@@ -323,6 +347,14 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var back_2_Outlet: UITextField!
     @IBOutlet weak var back_3_Outlet: UITextField!
     @IBOutlet weak var back_4_Outlet: UITextField!
+    @IBOutlet weak var aa_1_Outlet: UITextField!
+    @IBOutlet weak var aa_2_Outlet: UITextField!
+    @IBOutlet weak var aa_3_Outlet: UITextField!
+    @IBOutlet weak var aa_4_Outlet: UITextField!
+    @IBOutlet weak var line_1_Outlet: UITextField!
+    @IBOutlet weak var line_2_Outlet: UITextField!
+    @IBOutlet weak var line_3_Outlet: UITextField!
+    @IBOutlet weak var line_4_Outlet: UITextField!
     @IBOutlet weak var tail_1_Outlet: UITextField!
     @IBOutlet weak var tail_2_Outlet: UITextField!
     @IBOutlet weak var tail_3_Outlet: UITextField!
@@ -334,16 +366,9 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var land_Outlet: UITextField!
     @IBOutlet weak var joker_Outlet: UITextField!
     @IBOutlet weak var bingo_Outlet: UITextField!
-    @IBOutlet weak var missionObj1_Outlet: UITextField!
-    @IBOutlet weak var missionObj2_Outlet: UITextField!
-    @IBOutlet weak var trainingObj_1_Outlet: UITextField!
-    @IBOutlet weak var trainingObj_2_Outlet: UITextField!
-    @IBOutlet weak var trainingObj_3_Outlet: UITextField!
-    @IBOutlet weak var trainingObj_4_Outlet: UITextField!
-    
+    @IBOutlet weak var event_Outlet: UITextField!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var mainViewBlur: UIVisualEffectView!
-    
     
     @IBOutlet var labelCollection: [UILabel]!
     @IBOutlet var textFields: [UITextField]!
@@ -411,6 +436,42 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
         if let strValue = sender.text {
             back_4 = strValue
         }}
+    @IBAction func aa_01(_ sender: UITextField) {
+        if let strValue = sender.text {
+            aa_01 = strValue
+        }}
+    @IBAction func aa_02(_ sender: UITextField) {
+        if let strValue = sender.text {
+            aa_02 = strValue
+        }}
+    @IBAction func aa_03(_ sender: UITextField) {
+        if let strValue = sender.text {
+            aa_03 = strValue
+        }}
+    @IBAction func aa_04(_ sender: UITextField) {
+        if let strValue = sender.text {
+            aa_04 = strValue
+        }}
+    @IBAction func line_01(_ sender: UITextField) {
+        if let strValue = sender.text {
+            line_01 = strValue
+        }}
+    @IBAction func line_02(_ sender: UITextField) {
+        if let strValue = sender.text {
+            line_02 = strValue
+        }}
+    @IBAction func line_03(_ sender: UITextField) {
+        if let strValue = sender.text {
+            line_03 = strValue
+        }}
+    @IBAction func line_04(_ sender: UITextField) {
+        if let strValue = sender.text {
+            line_04 = strValue
+        }}
+    @IBAction func event(_ sender: UITextField) {
+        if let strValue = sender.text {
+            event = strValue
+        }}
     @IBAction func tail_1(_ sender: UITextField) {
         if let strValue = sender.text {
             tail_1 = strValue
@@ -455,30 +516,7 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
         if let strValue = sender.text {
             bingo = strValue
         }}
-    @IBAction func missionObj1(_ sender: UITextField) {
-        if let strValue = sender.text {
-            missionObj1 = strValue
-        }}
-    @IBAction func missionObj2(_ sender: UITextField) {
-        if let strValue = sender.text {
-            missionObj2 = strValue
-        }}
-    @IBAction func trainingObj_1(_ sender: UITextField) {
-        if let strValue = sender.text {
-            trainingObj_1 = strValue
-        }}
-    @IBAction func trainingObj_2(_ sender: UITextField) {
-        if let strValue = sender.text {
-            trainingObj_2 = strValue
-        }}
-    @IBAction func trainingObj_3(_ sender: UITextField) {
-        if let strValue = sender.text {
-            trainingObj_3 = strValue
-        }}
-    @IBAction func trainingObj_4(_ sender: UITextField) {
-        if let strValue = sender.text {
-            trainingObj_4 = strValue
-        }}
+    
     
     @IBOutlet weak var numberOfAircraftSegOutlet: UISegmentedControl!
     @IBAction func numberOfAircraftSeg(_ sender: UISegmentedControl) {
@@ -505,37 +543,55 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     
     func hideAcft2(_ hide: Bool) {
         let enable = !hide
-        if hide {callSign_2 = ""} else {callSign_2 = callSign_1}
+        if hide {
+            callSign_2 		= ""
+            callSignNum_2	= ""
+            front_2 		= ""
+            back_2 			= ""
+            aa_02 			= ""
+            line_02 		= ""
+            tail_2 			= ""
+        } else {callSign_2 = callSign_1}
         callSign_2_Outlet.isHidden = hide
         callSign_2_Outlet.isEnabled = enable
         callSignNum_2_Outlet.isHidden = hide
         callSignNum_2_Outlet.isEnabled = enable
         front_2_Outlet.isHidden = hide
-        front_2_Outlet.insertText("")
         front_2_Outlet.isEnabled = enable
         back_2_Outlet.isHidden = hide
-        back_2_Outlet.insertText("")
         back_2_Outlet.isEnabled = enable
+        aa_2_Outlet.isHidden = hide
+        aa_2_Outlet.isEnabled = enable
+        line_2_Outlet.isHidden = hide
+        line_2_Outlet.isEnabled = enable
         tail_2_Outlet.isHidden = hide
-        tail_2_Outlet.insertText("")
         tail_2_Outlet.isEnabled = enable
     }
     
     func hideAcft3(_ hide: Bool) {
         let enable = !hide
-        if hide {callSign_3 = ""} else {callSign_3 = callSign_1}
+        if hide {
+            callSign_3		= ""
+            callSignNum_3 	= ""
+            front_3     	= ""
+            back_3      	= ""
+            aa_03       	= ""
+            line_03     	= ""
+            tail_3      	= ""
+        } else {callSign_3 = callSign_1}
         callSign_3_Outlet.isHidden = hide
         callSign_3_Outlet.isEnabled = enable
         callSignNum_3_Outlet.isHidden = hide
         callSignNum_3_Outlet.isEnabled = enable
         front_3_Outlet.isHidden = hide
-        front_3_Outlet.insertText("")
         front_3_Outlet.isEnabled = enable
         back_3_Outlet.isHidden = hide
-        back_3_Outlet.insertText("")
         back_3_Outlet.isEnabled = enable
+        aa_3_Outlet.isHidden = hide
+        aa_3_Outlet.isEnabled = enable
+        line_3_Outlet.isHidden = hide
+        line_3_Outlet.isEnabled = enable
         tail_3_Outlet.isHidden = hide
-        tail_3_Outlet.insertText("")
         tail_3_Outlet.isEnabled = enable
     }
     
@@ -543,20 +599,29 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var buttonSpacerStackView: UIStackView!
     func hideAcft4(_ hide: Bool) {
         let enable = !hide
-        if hide {callSign_4 = ""} else {callSign_4 = callSign_1}
+        if hide {
+            callSign_4		= ""
+            callSignNum_4 	= ""
+            front_4     	= ""
+            back_4      	= ""
+            aa_04       	= ""
+            line_04     	= ""
+            tail_4      	= ""
+        } else {callSign_4 = callSign_1}
         buttonSpacerStackView.isHidden = !hide
         callSign_4_Outlet.isHidden = hide
         callSign_4_Outlet.isEnabled = enable
         callSignNum_4_Outlet.isHidden = hide
         callSignNum_4_Outlet.isEnabled = enable
         front_4_Outlet.isHidden = hide
-        front_4_Outlet.insertText("")
         front_4_Outlet.isEnabled = enable
         back_4_Outlet.isHidden = hide
-        back_4_Outlet.insertText("")
         back_4_Outlet.isEnabled = enable
+        aa_4_Outlet.isHidden = hide
+        aa_4_Outlet.isEnabled = enable
+        line_4_Outlet.isHidden = hide
+        line_4_Outlet.isEnabled = enable
         tail_4_Outlet.isHidden = hide
-        tail_4_Outlet.insertText("")
         tail_4_Outlet.isEnabled = enable
     }
     
@@ -564,6 +629,8 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var clearAllButtonOutlet: UIButton!
     @IBAction func clearAllButton(_ sender: UIButton) {
         clearAllButtonOutlet.showPressed()
+        numberOfAircraftSegOutlet.selectedSegmentIndex = 0
+        leadTail = ""
         hideAcft2(true)
         hideAcft3(true)
         hideAcft4(true)
@@ -610,6 +677,15 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
                                                                backPilot_2: back_2,
                                                                backPilot_3: back_3,
                                                                backPilot_4: back_4,
+                                                               airToAirTac_01: aa_01,
+                                                               airToAirTac_02: aa_02,
+                                                               airToAirTac_03: aa_03,
+                                                               airToAirTac_04: aa_04,
+                                                               line_01: line_01,
+                                                               line_02: line_02,
+                                                               line_03: line_03,
+                                                               line_04: line_04,
+                                                               event: event,
                                                                aircraft_1: leadTail ?? tail_1,
                                                                aircraft_2: tail_2,
                                                                aircraft_3: tail_3,
@@ -636,14 +712,7 @@ class LineUpCardViewController: UIViewController, UITextFieldDelegate {
                 brief: brief,
                 step: step,
                 to: to,
-                land: land,
-                missionOb1: missionObj1,
-                missionOb2: missionObj2,
-                trainingObj1: trainingObj_1,
-                trainingObj2: trainingObj_2,
-                trainingObj3: trainingObj_3,
-                trainingObj4: trainingObj_4,
-                trainingObj5: "") {
+                land: land) {
                 result = htmlH.htmlContent ?? ""
             }}
         return result

@@ -104,7 +104,7 @@
         <scene sceneID="9ZG-R0-25h">
             <objects>
                 <navigationController id="IDs-cS-sh6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="icons8-horizontal_settings_mixer" selectedImage="icons8-horizontal_settings_mixer_filled" id="spA-Ww-MBf"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settingsTab" selectedImage="sttingsTabFilled" id="spA-Ww-MBf"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="Uw3-jd-9hT">
                         <rect key="frame" x="0.0" y="20" width="768" height="102"/>
@@ -997,7 +997,7 @@
     </scenes>
     <resources>
         <image name="iTunesArtwork-1" width="1024" height="1024"/>
-        <image name="icons8-horizontal_settings_mixer" width="25" height="25"/>
-        <image name="icons8-horizontal_settings_mixer_filled" width="25" height="25"/>
+        <image name="settingsTab" width="25" height="25"/>
+        <image name="sttingsTabFilled" width="25" height="25"/>
     </resources>
 </document>
