@@ -15,8 +15,12 @@ struct InfoStrings {
         buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
         
         disclaimer = "This data is provided for reference use only and it is the end user’s responsibility to verify all data with an approved source."
-        
-        restrictions = """
+
+    }
+    
+    var buildNumber: String = ""
+    
+    var restrictions: String {return """
         T38 V\(self.buildNumber) Beta::\(disclaimer)
         
         DISTRIBUTION STATEMENT E - Distribution authorized to DoD Components only for unclassified and classified technical data. (16 November 2011). Other requests for this document shall be referred to OO-ALC/WLDEJ, 6057 Box Elder Lane, Hill AFB, UT 84056-5811.
@@ -27,12 +31,7 @@ struct InfoStrings {
         
         MODEL: T-38A (AFGSC), DATE: 29 Sep 11
         DATA BASIS: FLIGHT TEST
-        """
-    }
-    
-    var buildNumber: String = ""
-    
-    var restrictions: String = ""
+        """}
     
     var disclaimer: String = ""
 }
