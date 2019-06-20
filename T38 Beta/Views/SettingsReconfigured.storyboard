@@ -932,14 +932,15 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOM-LK-lEy">
-                                                        <rect key="frame" x="267" y="676" width="42" height="149"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="676" width="576" height="149"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="t69-vV-tou" firstAttribute="width" secondItem="MDX-Nm-Cqx" secondAttribute="width" id="BZh-jp-Tx7"/>
+                                                    <constraint firstItem="XOM-LK-lEy" firstAttribute="width" secondItem="MDX-Nm-Cqx" secondAttribute="width" id="IO7-VN-p6m"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>

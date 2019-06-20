@@ -34,7 +34,6 @@ class AboutThisAppViewController: UIViewController {
     func setLabelsText() {
         versionLabel.text = "Version: \(buildNumber) Beta"
         restrictionsLabel.text = restrictions
-        print(restrictions)
     }
     
     

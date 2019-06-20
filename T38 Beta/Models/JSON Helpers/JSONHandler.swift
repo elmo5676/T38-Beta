@@ -273,7 +273,6 @@ class JSONHandler  {
                             print(counter)
                             if counter == missingStates.count {
                                 cdu.verifyCoreDataMatchesJSONwithProgressBar(pc: pc, moc: moc, progress: progress)
-                                
                             }
                         } catch (let writeError) {
                             print("Error creating a file \(destinationFileUrl) : \(writeError)")
@@ -285,21 +284,10 @@ class JSONHandler  {
                         progress()
                     }
                 }
-                
-                
                 task.resume()
             }
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     //////////////////////////////////////////////// INITIAL VERIFICATION FUNCTION  ////////////////////////////////////////////////
     /* This one works... but it only checks for and then downloads the missing states.... it doesn't load them into CoreData
@@ -392,108 +380,6 @@ class JSONHandler  {
         }}
     
     
-    //////////////////////////////////////////////// NOTHING TO SEE HERE - JUST THE WEATHER DOWNLOADER ////////////////////////////////////////////////
-    // MARK: Weather
-    func downloadWeather(baseUrl: String, icao: String) {
-        let fileName = "\(icao).json"
-        let fileAndPath = self.documentsUrl.appendingPathComponent(fileName)
-        print(fileAndPath)
-        let fullUrl = "\(baseUrl)\(icao)"
-        if FileManager.default.fileExists(atPath: fileAndPath.path) {
-            removeFile(fileNamewithExtension: fileName)
-            downloadData(fullUrl, fileNamewithExtension: fileName)
-            print("\(icao) weather downlaoded")
-        } else {
-            downloadData(fullUrl, fileNamewithExtension: fileName)
-            print("\(icao) weather downlaoded")
-        }
-    }
-    
-//    func currentWeather(icao: String) -> Weather? {
-//        var currentWeather: Weather?
-//        let weatherUrl = self.documentsUrl.appendingPathComponent("\(icao).json")
-//        let decoder = JSONDecoder()
-//        do {
-//            currentWeather = try decoder.decode(Weather.self, from: Data(contentsOf: weatherUrl))
-//        } catch {
-//            print(error)
-//        }
-//        return currentWeather
-//    }
-    
-    func downloadWeatherWithEscaping(baseUrl: String, icao: String, processWeather: @escaping (String) -> Void) {
-        let fileName = "\(icao).json"
-        let fileAndPath = self.documentsUrl.appendingPathComponent(fileName)
-        let fullUrl = "\(baseUrl)\(icao)"
-        if FileManager.default.fileExists(atPath: fileAndPath.path) {
-            removeFile(fileNamewithExtension: fileName)
-            downloadDataWithEscaping(fullUrl, fileNamewithExtension: fileName, icao: icao, processWeather: processWeather)
-            print("\(icao) weather downlaoded")
-        } else {
-            downloadDataWithEscaping(fullUrl, fileNamewithExtension: fileName, icao: icao, processWeather: processWeather)
-            print("\(icao) weather downlaoded")
-        }
-    }
-    
-//    func downloadWeatherWithEscapeAndATISCheatCode(baseUrl: String, icao: String, button: UIButton, processWeather: @escaping (String) -> Void) {
-//        let fileName = "\(icao).json"
-//        let fileAndPath = self.documentsUrl.appendingPathComponent(fileName)
-//        let fullUrl = "\(baseUrl)\(icao)"
-//        if FileManager.default.fileExists(atPath: fileAndPath.path) {
-//            removeFile(fileNamewithExtension: fileName)
-//            downloadDataWithEscapeAndATISCheatCode(fullUrl, fileNamewithExtension: fileName, icao: icao, button: button, processWeather: processWeather)
-//            print("\(icao) weather downlaoded")
-//        } else {
-//            downloadDataWithEscapeAndATISCheatCode(fullUrl, fileNamewithExtension: fileName, icao: icao, button: button, processWeather: processWeather)
-//            print("\(icao) weather downlaoded")
-//        }
-//    }
-//
-//    func downloadDataWithEscapeAndATISCheatCode(_ sourceFile: String, fileNamewithExtension fileName: String, icao: String, button: UIButton, processWeather: @escaping (String) -> Void) {
-//        // Create destination URL
-//        let destinationFileUrl = self.documentsUrl.appendingPathComponent(fileName)
-//        //Create URL to the source file you want to download
-//        let fileURL = URL(string: sourceFile)
-//        let sessionConfig = URLSessionConfiguration.default
-//        let session = URLSession(configuration: sessionConfig)
-//        let request = URLRequest(url:fileURL!)
-//        let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
-//            if let tempLocalUrl = tempLocalUrl, error == nil {
-//                // Success
-//                if let statusCode = (response as? HTTPURLResponse)?.statusCode {
-//                    print("Successfully downloaded. Status code: \(statusCode)")
-//                    OperationQueue.main.addOperation {
-//                        button.isHidden = false
-//                    }
-//                }
-//
-//                do {
-//                    try FileManager.default.copyItem(at: tempLocalUrl, to: destinationFileUrl)
-//
-//                    DispatchQueue.main.async {
-//                        processWeather(icao)
-//                    }
-//                } catch (let writeError) {
-//                    print("Error creating a file \(destinationFileUrl) : \(writeError)")
-//                }
-//            } else {
-//                print("Error took place while downloading a file. Error description: %@", error?.localizedDescription as Any);
-//            }}; task.resume() }
-    
-    func downloadWeatherWithEscapeAndATISCheatCode(baseUrl: String, icao: String, processWeather: @escaping (String) -> Void, performSequePopUp: @escaping () -> Void) {
-        let fileName = "\(icao).json"
-        let fileAndPath = self.documentsUrl.appendingPathComponent(fileName)
-        let fullUrl = "\(baseUrl)\(icao)"
-        if FileManager.default.fileExists(atPath: fileAndPath.path) {
-            removeFile(fileNamewithExtension: fileName)
-            downloadDataWithEscapeAndATISCheatCode(fullUrl, fileNamewithExtension: fileName, icao: icao, processWeather: processWeather, performSequePopUp: performSequePopUp)
-            print("\(icao) weather downlaoded")
-        } else {
-            downloadDataWithEscapeAndATISCheatCode(fullUrl, fileNamewithExtension: fileName, icao: icao, processWeather: processWeather, performSequePopUp: performSequePopUp)
-            print("\(icao) weather downlaoded")
-        }
-    }
-    
     func downloadDataWithEscapeAndATISCheatCode(_ sourceFile: String, fileNamewithExtension fileName: String, icao: String, processWeather: @escaping (String) -> Void, performSequePopUp: @escaping () -> Void) {
         // Create destination URL
         let destinationFileUrl = self.documentsUrl.appendingPathComponent(fileName)
@@ -526,12 +412,6 @@ class JSONHandler  {
             }}; task.resume() }
     
     
-    
-    
-    
-    
-    
-    
     func downloadDataWithEscaping(_ sourceFile: String, fileNamewithExtension fileName: String, icao: String, processWeather: @escaping (String) -> Void) {
         // Create destination URL
         let destinationFileUrl = self.documentsUrl.appendingPathComponent(fileName)
@@ -561,62 +441,6 @@ class JSONHandler  {
                 print("Error took place while downloading a file. Error description: %@", error?.localizedDescription as Any);
             }}; task.resume() }
 
-    
-    
-
-
-    
-    
-//    func downloadWeatherWithIndicator(baseUrl: String, icao: String, button: UIButton) {
-//        let fileName = "\(icao).json"
-//        let fileAndPath = self.documentsUrl.appendingPathComponent(fileName)
-//        let fullUrl = "\(baseUrl)\(icao)"
-//        if FileManager.default.fileExists(atPath: fileAndPath.path) {
-//            removeFile(fileNamewithExtension: fileName)
-//            downloadDataWithIndicator(fullUrl, fileNamewithExtension: fileName, button: button)
-//            print("\(icao) weather downlaoded")
-//        } else {
-//            downloadDataWithIndicator(fullUrl, fileNamewithExtension: fileName, button: button)
-//            print("\(icao) weather downlaoded")
-//        }
-//    }
-
-    
-//    func downloadDataWithIndicator(_ sourceFile: String, fileNamewithExtension fileName: String, button: UIButton) {
-//        // Create destination URL
-//        let destinationFileUrl = self.documentsUrl.appendingPathComponent(fileName)
-//        //Create URL to the source file you want to download
-//        let fileURL = URL(string: sourceFile)
-//        let sessionConfig = URLSessionConfiguration.default
-//        let session = URLSession(configuration: sessionConfig)
-//        let request = URLRequest(url:fileURL!)
-//        let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
-//            if let tempLocalUrl = tempLocalUrl, error == nil {
-//                // Success
-//                if let statusCode = (response as? HTTPURLResponse)?.statusCode {
-//                    print("Successfully downloaded. Status code: \(statusCode)")
-//                    OperationQueue.main.addOperation {
-//                        button.isHidden = false
-//                    }
-//                }
-//
-//                do {
-//                    try FileManager.default.copyItem(at: tempLocalUrl, to: destinationFileUrl)
-//                } catch (let writeError) {
-//                    print("Error creating a file \(destinationFileUrl) : \(writeError)")
-//                }
-//            } else {
-//                print("Error took place while downloading a file. Error description: %@", error?.localizedDescription as Any);
-//            }}; task.resume() }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
 

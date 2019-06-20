@@ -203,7 +203,6 @@ class CoreDataUtilies {
         print("Number of Freqs: \(numOfComms)")
         return (numOfAirfields: numOfAirfields, numOfRunways: numOfRunways, numOfNavaids: numOfNavaids, numOfComms: numOfComms)
     }
-    //////////////////////////////////////////////// PRINT RESULTS FUNCTION ////////////////////////////////////////////////
 
     //////////////////////////////////////////////// VERIFY CD MATCHES JSON FUNCTION ////////////////////////////////////////////////
     func verifyCoreDataMatchesJSON(pc: NSPersistentContainer ,moc: NSManagedObjectContext) {
@@ -211,16 +210,16 @@ class CoreDataUtilies {
             let startTime = Date()
             var airfieldReturn = false
             var runwayReturn = false
-            var navaidReturn = false
-            var commReturn = false
+//            var navaidReturn = false
+//            var commReturn = false
             var counterAirfieldsJSON = 0
             var counterRunwaysJSON = 0
-            var counterNavaidsJSON = 0
-            var counterCommsJSON = 0
+//            var counterNavaidsJSON = 0
+//            var counterCommsJSON = 0
             let counterAirfieldsCD = self.printResults(moc: context).numOfAirfields
             let counterRunwaysCD = self.printResults(moc: context).numOfRunways
-            let counterNavaidsCD = self.printResults(moc: context).numOfNavaids
-            let counterCommsCD = self.printResults(moc: context).numOfComms
+//            let counterNavaidsCD = self.printResults(moc: context).numOfNavaids
+//            let counterCommsCD = self.printResults(moc: context).numOfComms
             let documentsURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             for state in StateCode.allValues {
                 let airfieldstURL = documentsURL.appendingPathComponent(state.rawValue).appendingPathExtension("json")
@@ -230,8 +229,8 @@ class CoreDataUtilies {
                     counterAirfieldsJSON += resultAirfields.count
                     for airfield in resultAirfields {
                         counterRunwaysJSON += airfield.runways.count
-                        counterNavaidsJSON += airfield.navaids.count
-                        counterCommsJSON += airfield.communications.count
+//                        counterNavaidsJSON += airfield.navaids.count
+//                        counterCommsJSON += airfield.communications.count
                     }
                 } catch {print(error)}
             }
@@ -241,12 +240,12 @@ class CoreDataUtilies {
             if counterRunwaysCD == counterRunwaysJSON {
                 runwayReturn = true
             }
-            if counterNavaidsCD == counterNavaidsJSON {
-                navaidReturn = true
-            }
-            if counterCommsCD == counterCommsJSON {
-                commReturn = true
-            }
+//            if counterNavaidsCD == counterNavaidsJSON {
+//                navaidReturn = true
+//            }
+//            if counterCommsCD == counterCommsJSON {
+//                commReturn = true
+//            }
             print("*****************************************************************************")
             print("Airfields in JSON: \(counterAirfieldsJSON)")
             print("Airfields in CoreData: \(counterAirfieldsCD)")
@@ -254,17 +253,17 @@ class CoreDataUtilies {
             print("Runways in JSON: \(counterRunwaysJSON)")
             print("Runways in CoreData: \(counterRunwaysCD)")
             print("*****************************************************************************")
-            print("Navaids in JSON: \(counterNavaidsJSON)")
-            print("Navaids in CoreData: \(counterNavaidsCD)")
-            print("*****************************************************************************")
-            print("Comms in JSON: \(counterCommsJSON)")
-            print("Comms in CoreData: \(counterCommsCD)")
-            print("*****************************************************************************")
+//            print("Navaids in JSON: \(counterNavaidsJSON)")
+//            print("Navaids in CoreData: \(counterNavaidsCD)")
+//            print("*****************************************************************************")
+//            print("Comms in JSON: \(counterCommsJSON)")
+//            print("Comms in CoreData: \(counterCommsCD)")
+//            print("*****************************************************************************")
             let endTime = Date()
             print("Airfields match: \(airfieldReturn)")
             print("Runways match: \(runwayReturn)")
-            print("Navaids match: \(navaidReturn)")
-            print("Comms match: \(commReturn)")
+//            print("Navaids match: \(navaidReturn)")
+//            print("Comms match: \(commReturn)")
             print("*****************************************************************************")
             print("Completion Time: \(endTime.timeIntervalSince(startTime))")
             print("*****************************************************************************")
@@ -966,32 +965,32 @@ class CoreDataUtilies {
                     runwayDB.overrunLowType_CD = runway.overrunLowType
                     airfieldDB.addToRunways_R_CD(runwayDB)
                 }
-                for navaid in airfield.navaids {
-                    let navaidDB = NavaidCD(context: moc)
-                    navaidDB.airfieldID_CD = airfieldDB.id_CD
-                    navaidDB.id_CD = Int32(navaid.id)
-                    navaidDB.name_CD = navaid.name
-                    navaidDB.ident_CD = navaid.ident
-                    navaidDB.type_CD = navaid.type
-                    navaidDB.lat_CD = navaid.lat
-                    navaidDB.long_CD = navaid.lon
-                    navaidDB.frequency_CD = navaid.frequency
-                    navaidDB.channel_CD = Int32(navaid.channel)
-                    navaidDB.tacanDMEMode_CD = navaid.tacanDMEMode
-                    navaidDB.course_CD = Int32(navaid.course)
-                    navaidDB.distance_CD = navaid.distance
-                }
-                for comm in airfield.communications {
-                    let communicationDB = CommunicationCD(context: moc)
-                    communicationDB.airfieldID_CD = airfieldDB.id_CD
-                    communicationDB.id_CD = Int32(comm.id)
-                    communicationDB.name_CD = comm.name
-                    for freq in comm.freqs {
-                        let freqDB = FreqCD(context: moc)
-                        freqDB.communicationsId_CD = communicationDB.id_CD
-                        freqDB.id_CD = Int32(freq.id)
-                        freqDB.freq_CD = freq.freq
-                    }}
+//                for navaid in airfield.navaids {
+//                    let navaidDB = NavaidCD(context: moc)
+//                    navaidDB.airfieldID_CD = airfieldDB.id_CD
+//                    navaidDB.id_CD = Int32(navaid.id)
+//                    navaidDB.name_CD = navaid.name
+//                    navaidDB.ident_CD = navaid.ident
+//                    navaidDB.type_CD = navaid.type
+//                    navaidDB.lat_CD = navaid.lat
+//                    navaidDB.long_CD = navaid.lon
+//                    navaidDB.frequency_CD = navaid.frequency
+//                    navaidDB.channel_CD = Int32(navaid.channel)
+//                    navaidDB.tacanDMEMode_CD = navaid.tacanDMEMode
+//                    navaidDB.course_CD = Int32(navaid.course)
+//                    navaidDB.distance_CD = navaid.distance
+//                }
+//                for comm in airfield.communications {
+//                    let communicationDB = CommunicationCD(context: moc)
+//                    communicationDB.airfieldID_CD = airfieldDB.id_CD
+//                    communicationDB.id_CD = Int32(comm.id)
+//                    communicationDB.name_CD = comm.name
+//                    for freq in comm.freqs {
+//                        let freqDB = FreqCD(context: moc)
+//                        freqDB.communicationsId_CD = communicationDB.id_CD
+//                        freqDB.id_CD = Int32(freq.id)
+//                        freqDB.freq_CD = freq.freq
+//                    }}
                 airfieldCounter += 1
                 return airfieldDB
             }
@@ -1005,66 +1004,66 @@ class CoreDataUtilies {
         } catch {print(error)}
     }
     
-    func loadNavaidsToDBfromJSON(_ nameOfJSON: String, moc: NSManagedObjectContext){
-        let documentsURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-        let airfieldstURL = documentsURL.appendingPathComponent(nameOfJSON).appendingPathExtension("json")
-        let decoder = JSONDecoder()
-        var navaidCounter = 0
-        do {
-            let resultAirfields = try decoder.decode(Airfields.self, from: Data(contentsOf: airfieldstURL))
-            for airfield in resultAirfields {
-                let airfieldDB = AirfieldCD(context: moc)
-                for navaid in airfield.navaids {
-                    let navaidDB = NavaidCD(context: moc)
-                    navaidDB.airfieldID_CD = airfieldDB.id_CD
-                    navaidDB.id_CD = Int32(navaid.id)
-                    navaidDB.name_CD = navaid.name
-                    navaidDB.ident_CD = navaid.ident
-                    navaidDB.type_CD = navaid.type
-                    navaidDB.lat_CD = navaid.lat
-                    navaidDB.long_CD = navaid.lon
-                    navaidDB.frequency_CD = navaid.frequency
-                    navaidDB.channel_CD = Int32(navaid.channel)
-                    navaidDB.tacanDMEMode_CD = navaid.tacanDMEMode
-                    navaidDB.course_CD = Int32(navaid.course)
-                    navaidDB.distance_CD = navaid.distance
-                    navaidCounter += 1
-                    try? moc.save()
-                }
-            }
-            try? moc.save()
-        } catch {print(error)}
-    }
+//    func loadNavaidsToDBfromJSON(_ nameOfJSON: String, moc: NSManagedObjectContext){
+//        let documentsURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+//        let airfieldstURL = documentsURL.appendingPathComponent(nameOfJSON).appendingPathExtension("json")
+//        let decoder = JSONDecoder()
+//        var navaidCounter = 0
+//        do {
+//            let resultAirfields = try decoder.decode(Airfields.self, from: Data(contentsOf: airfieldstURL))
+//            for airfield in resultAirfields {
+//                let airfieldDB = AirfieldCD(context: moc)
+//                for navaid in airfield.navaids {
+//                    let navaidDB = NavaidCD(context: moc)
+//                    navaidDB.airfieldID_CD = airfieldDB.id_CD
+//                    navaidDB.id_CD = Int32(navaid.id)
+//                    navaidDB.name_CD = navaid.name
+//                    navaidDB.ident_CD = navaid.ident
+//                    navaidDB.type_CD = navaid.type
+//                    navaidDB.lat_CD = navaid.lat
+//                    navaidDB.long_CD = navaid.lon
+//                    navaidDB.frequency_CD = navaid.frequency
+//                    navaidDB.channel_CD = Int32(navaid.channel)
+//                    navaidDB.tacanDMEMode_CD = navaid.tacanDMEMode
+//                    navaidDB.course_CD = Int32(navaid.course)
+//                    navaidDB.distance_CD = navaid.distance
+//                    navaidCounter += 1
+//                    try? moc.save()
+//                }
+//            }
+//            try? moc.save()
+//        } catch {print(error)}
+//    }
     
-    func loadCommsToDBfromJSON(_ nameOfJSON: String, moc: NSManagedObjectContext){
-        let documentsURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-        let airfieldstURL = documentsURL.appendingPathComponent(nameOfJSON).appendingPathExtension("json")
-        let decoder = JSONDecoder()
-        var commCounter = 0
-        do {
-            let resultAirfields = try decoder.decode(Airfields.self, from: Data(contentsOf: airfieldstURL))
-            for airfield in resultAirfields {
-                let airfieldDB = AirfieldCD(context: moc)
-                for comm in airfield.communications {
-                    let communicationDB = CommunicationCD(context: moc)
-                    communicationDB.airfieldID_CD = airfieldDB.id_CD
-                    communicationDB.id_CD = Int32(comm.id)
-                    communicationDB.name_CD = comm.name
-                    try? moc.save()
-                    for freq in comm.freqs {
-                        let freqDB = FreqCD(context: moc)
-                        freqDB.communicationsId_CD = communicationDB.id_CD
-                        freqDB.id_CD = Int32(freq.id)
-                        freqDB.freq_CD = freq.freq
-                        try? moc.save()
-                    }
-                    commCounter += 1
-                    try? moc.save()
-                }
-            }
-            try? moc.save()
-        } catch {print(error)}
-    }
+//    func loadCommsToDBfromJSON(_ nameOfJSON: String, moc: NSManagedObjectContext){
+//        let documentsURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+//        let airfieldstURL = documentsURL.appendingPathComponent(nameOfJSON).appendingPathExtension("json")
+//        let decoder = JSONDecoder()
+//        var commCounter = 0
+//        do {
+//            let resultAirfields = try decoder.decode(Airfields.self, from: Data(contentsOf: airfieldstURL))
+//            for airfield in resultAirfields {
+//                let airfieldDB = AirfieldCD(context: moc)
+//                for comm in airfield.communications {
+//                    let communicationDB = CommunicationCD(context: moc)
+//                    communicationDB.airfieldID_CD = airfieldDB.id_CD
+//                    communicationDB.id_CD = Int32(comm.id)
+//                    communicationDB.name_CD = comm.name
+//                    try? moc.save()
+//                    for freq in comm.freqs {
+//                        let freqDB = FreqCD(context: moc)
+//                        freqDB.communicationsId_CD = communicationDB.id_CD
+//                        freqDB.id_CD = Int32(freq.id)
+//                        freqDB.freq_CD = freq.freq
+//                        try? moc.save()
+//                    }
+//                    commCounter += 1
+//                    try? moc.save()
+//                }
+//            }
+//            try? moc.save()
+//        } catch {print(error)}
+//    }
     
     func loadToDBFromJSON(_ nameOfJSON: String, moc: NSManagedObjectContext){
         let documentsURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -1120,41 +1119,41 @@ class CoreDataUtilies {
                     try? moc.save()
                 }
                 
-                for navaid in airfield.navaids {
-                    let navaidDB = NavaidCD(context: moc)
-                    navaidDB.airfieldID_CD = airfieldDB.id_CD
-                    navaidDB.id_CD = Int32(navaid.id)
-                    navaidDB.name_CD = navaid.name
-                    navaidDB.ident_CD = navaid.ident
-                    navaidDB.type_CD = navaid.type
-                    navaidDB.lat_CD = navaid.lat
-                    navaidDB.long_CD = navaid.lon
-                    navaidDB.frequency_CD = navaid.frequency
-                    navaidDB.channel_CD = Int32(navaid.channel)
-                    navaidDB.tacanDMEMode_CD = navaid.tacanDMEMode
-                    navaidDB.course_CD = Int32(navaid.course)
-                    navaidDB.distance_CD = navaid.distance
-                    airfieldDB.addToNavaids_R_CD(navaidDB)
-                    try? moc.save()
-                }
+//                for navaid in airfield.navaids {
+//                    let navaidDB = NavaidCD(context: moc)
+//                    navaidDB.airfieldID_CD = airfieldDB.id_CD
+//                    navaidDB.id_CD = Int32(navaid.id)
+//                    navaidDB.name_CD = navaid.name
+//                    navaidDB.ident_CD = navaid.ident
+//                    navaidDB.type_CD = navaid.type
+//                    navaidDB.lat_CD = navaid.lat
+//                    navaidDB.long_CD = navaid.lon
+//                    navaidDB.frequency_CD = navaid.frequency
+//                    navaidDB.channel_CD = Int32(navaid.channel)
+//                    navaidDB.tacanDMEMode_CD = navaid.tacanDMEMode
+//                    navaidDB.course_CD = Int32(navaid.course)
+//                    navaidDB.distance_CD = navaid.distance
+//                    airfieldDB.addToNavaids_R_CD(navaidDB)
+//                    try? moc.save()
+//                }
                 
-                for comm in airfield.communications {
-                    let communicationDB = CommunicationCD(context: moc)
-                    communicationDB.airfieldID_CD = airfieldDB.id_CD
-                    communicationDB.id_CD = Int32(comm.id)
-                    communicationDB.name_CD = comm.name
-                    try? moc.save()
-                    for freq in comm.freqs {
-                        let freqDB = FreqCD(context: moc)
-                        freqDB.communicationsId_CD = communicationDB.id_CD
-                        freqDB.id_CD = Int32(freq.id)
-                        freqDB.freq_CD = freq.freq
-                        communicationDB.addToFreqs_R_CD(freqDB)
-                        try? moc.save()
-                    }
-                    airfieldDB.addToCommunications_R_CD(communicationDB)
-                    try? moc.save()
-                }
+//                for comm in airfield.communications {
+//                    let communicationDB = CommunicationCD(context: moc)
+//                    communicationDB.airfieldID_CD = airfieldDB.id_CD
+//                    communicationDB.id_CD = Int32(comm.id)
+//                    communicationDB.name_CD = comm.name
+//                    try? moc.save()
+//                    for freq in comm.freqs {
+//                        let freqDB = FreqCD(context: moc)
+//                        freqDB.communicationsId_CD = communicationDB.id_CD
+//                        freqDB.id_CD = Int32(freq.id)
+//                        freqDB.freq_CD = freq.freq
+//                        communicationDB.addToFreqs_R_CD(freqDB)
+//                        try? moc.save()
+//                    }
+//                    airfieldDB.addToCommunications_R_CD(communicationDB)
+//                    try? moc.save()
+//                }
             }
             try? moc.save()
         } catch {print(error)}
@@ -1171,13 +1170,13 @@ class CoreDataUtilies {
     func deleteAllFromDB(moc: NSManagedObjectContext) {
         let deleteAirPort = NSBatchDeleteRequest(fetchRequest: AirfieldCD.fetchRequest())
         let deleteRunway = NSBatchDeleteRequest(fetchRequest: RunwayCD.fetchRequest())
-        let deleteNavaids = NSBatchDeleteRequest(fetchRequest: NavaidCD.fetchRequest())
-        let deleteFreqs = NSBatchDeleteRequest(fetchRequest: CommunicationCD.fetchRequest())
+//        let deleteNavaids = NSBatchDeleteRequest(fetchRequest: NavaidCD.fetchRequest())
+//        let deleteFreqs = NSBatchDeleteRequest(fetchRequest: CommunicationCD.fetchRequest())
         do {
             try moc.execute(deleteAirPort)
             try moc.execute(deleteRunway)
-            try moc.execute(deleteNavaids)
-            try moc.execute(deleteFreqs)
+//            try moc.execute(deleteNavaids)
+//            try moc.execute(deleteFreqs)
             try moc.save()
         } catch {
             print("Nope")
@@ -1206,28 +1205,26 @@ class CoreDataUtilies {
         }
     }
     
-    func deleteNavaidsFromDB(moc: NSManagedObjectContext) {
-        let deleteNavaids = NSBatchDeleteRequest(fetchRequest: NavaidCD.fetchRequest())
-        do {
-            try moc.execute(deleteNavaids)
-            try moc.save()
-            print("All Navaids were succesfully deleted from CoreData")
-        } catch {
-            print("Nope")
-        }
-    }
-    func deleteCommsFromDB(moc: NSManagedObjectContext) {
-        let deleteFreqs = NSBatchDeleteRequest(fetchRequest: CommunicationCD.fetchRequest())
-        do {
-            try moc.execute(deleteFreqs)
-            try moc.save()
-            print("All Communications were succesfully deleted from CoreData")
-        } catch {
-            print("Nope")
-        }
-    }
-    
-    
+//    func deleteNavaidsFromDB(moc: NSManagedObjectContext) {
+//        let deleteNavaids = NSBatchDeleteRequest(fetchRequest: NavaidCD.fetchRequest())
+//        do {
+//            try moc.execute(deleteNavaids)
+//            try moc.save()
+//            print("All Navaids were succesfully deleted from CoreData")
+//        } catch {
+//            print("Nope")
+//        }
+//    }
+//    func deleteCommsFromDB(moc: NSManagedObjectContext) {
+//        let deleteFreqs = NSBatchDeleteRequest(fetchRequest: CommunicationCD.fetchRequest())
+//        do {
+//            try moc.execute(deleteFreqs)
+//            try moc.save()
+//            print("All Communications were succesfully deleted from CoreData")
+//        } catch {
+//            print("Nope")
+//        }
+//    }
     
 }
 
